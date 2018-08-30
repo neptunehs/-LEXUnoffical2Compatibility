@@ -22,3 +22,4 @@ ancestors:5%.I fixed all uncompatible code in 2.x,but never try this event.
 Other feature:1.No retreat for burst mode.(Haven't try it)
               2.Difficulty mode.
               3.NSC compatibility.(Not good,and no ASB compatibility.)
+              4.Make all ship(except some ancestors ship) armor-shield balanced.

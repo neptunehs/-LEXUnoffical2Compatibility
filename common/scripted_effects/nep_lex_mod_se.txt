@@ -1,0 +1,14 @@
+lex_mod = {
+	if = {
+		limit = {
+			has_global_flag = has_nsc_active
+			NOT = {
+				has_modifier = lex_nsc
+			}
+		}
+		add_modifier = {
+			modifier = "lex_nsc"
+			days = -1
+		}
+	}
+}

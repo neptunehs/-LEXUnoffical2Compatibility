@@ -1,0 +1,37 @@
+on_megastructure_built = {
+	events = {
+		lexmega.1000
+		lexmega.1011
+		lexmega.1012
+		lexmega.1013
+		lexmega.1014
+		lexmega.2000
+		lexmega.3000
+		lexmega.4000
+		lexmega.5000
+	}
+}
+on_megastructure_upgraded = {
+	events = {
+		lexmega.1001
+		lexmega.1002
+		lexmega.1003
+		lexmega.1004
+		lexmega.1005
+		lexmega.1006
+		lexmega.1007
+		lexmega.1008
+		lexmega.1009
+		lexmega.2001
+		lexmega.2002
+		lexmega.2003
+		lexmega.2004
+		lexmega.2005
+		lexmega.2006
+		lexmega.2007
+		lexmega.2008
+		lexmega.3001
+		lexmega.4001
+		lexmega.5001
+	}
+}

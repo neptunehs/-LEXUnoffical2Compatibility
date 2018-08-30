@@ -1,0 +1,20 @@
+﻿l_english:
+
+ bwm_artifact.1031.name:0 "Seal Broke"
+ bwm_artifact.1031.desc:0 "We can reveal cipher now.Send scientist ship to §YLetham."
+ bwm_artifact.1031.a:0 "Acknowledged."
+  
+ bwm_artifact.1051.name:0 "Seal Broke"
+ bwm_artifact.1051.desc:0 "We can reveal cipher now.Send scientist ship to §YCuisu."
+ bwm_artifact.1051.a:0 "Acknowledged."
+ 
+ bwm_artifact.1071.name:0 "Seal Broke"
+ bwm_artifact.1071.desc:0 "We can reveal cipher now.Send scientist ship to §YCharun."
+ bwm_artifact.1071.a:0 "Acknowledged."
+ 
+ bwm_garden_guardian_poi_2:0 "Point of Interest"
+ bwm_garden_guardian_poi_2_desc:0 "Discover the origin of the sensor anomaly."
+ 
+ bwm_the_conduit.0:0 "Go further"
+ bwm_the_conduit.0.desc:0 "Nothing here but a wormhole.We need further investigation after we go through it."
+ bwm_the_conduit.0.a:0 "Acknowledged."

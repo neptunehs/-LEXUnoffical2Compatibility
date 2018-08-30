@@ -1,0 +1,126 @@
+stopbombs = {
+	country_resource_influence_mult = -0.33
+	pop_happiness = -0.1	
+}
+
+lex_nsc = {
+	ship_weapon_damage = 2
+	ship_hull_mult = 1
+	ship_shield_mult = 1
+	ship_armor_mult = 1
+	ship_WEAPON_RANGE_MULT = 0.2
+}
+
+mod_lex_diff_125x = {
+	ship_weapon_damage = 0.25
+	ship_hull_mult = 0.25
+	ship_shield_mult = 0.25
+	ship_armor_mult = 0.25
+}
+
+mod_lex_diff_15x = {
+	ship_weapon_damage = 0.5
+	ship_hull_mult = 0.5
+	ship_shield_mult = 0.5
+	ship_armor_mult = 0.5
+}
+
+mod_lex_diff_175x = {
+	ship_weapon_damage = 0.75
+	ship_hull_mult = 0.75
+	ship_shield_mult = 0.75
+	ship_armor_mult = 0.75
+}
+
+mod_lex_diff_2x = {
+	ship_weapon_damage = 1
+	ship_hull_mult = 1
+	ship_shield_mult = 1
+	ship_armor_mult = 1
+}
+
+mod_lex_diff_25x = {
+	ship_weapon_damage = 1.5
+	ship_hull_mult = 1.5
+	ship_shield_mult = 1.5
+	ship_armor_mult = 1.5
+}
+
+mod_lex_diff_3x = {
+	ship_weapon_damage = 2
+	ship_hull_mult = 2
+	ship_shield_mult = 2
+	ship_armor_mult = 2
+}
+
+mod_lex_diff_35x = {
+	ship_weapon_damage = 2.5
+	ship_hull_mult = 2.5
+	ship_shield_mult = 2.5
+	ship_armor_mult = 2.5
+}
+
+mod_lex_diff_4x = {
+	ship_weapon_damage = 3
+	ship_hull_mult = 3
+	ship_shield_mult = 3
+	ship_armor_mult = 3
+}
+
+mod_lex_diff_45x = {
+	ship_weapon_damage = 3.5
+	ship_hull_mult = 3.5
+	ship_shield_mult = 3.5
+	ship_armor_mult = 3.5
+}
+
+mod_lex_diff_5x = {
+	ship_weapon_damage = 4
+	ship_hull_mult = 4
+	ship_shield_mult = 4
+	ship_armor_mult = 4
+}
+
+mod_lex_diff_l = {
+	ship_weapon_damage = 5
+	ship_hull_mult = 5
+	ship_shield_mult = 5
+	ship_armor_mult = 5
+	ship_hull_damage_mult = 0.2
+	ship_fire_rate_mult = 0.2
+	ship_WEAPON_RANGE_MULT = 0.2
+	ship_evasion_mult = 0.05
+}
+
+
+mod_lex_diff_d = {
+	ship_weapon_damage = 7
+	ship_hull_mult = 7
+	ship_shield_mult = 7
+	ship_armor_mult = 7
+	ship_hull_damage_mult = 0.3
+	ship_fire_rate_mult = 0.3
+	ship_WEAPON_RANGE_MULT = 0.3
+	ship_evasion_mult = 0.1
+}
+
+#mod_lex_diff_i = {
+#	ship_weapon_damage = 8.9
+#	ship_hull_mult = 8.9
+#	ship_shield_mult = 8.9
+#	ship_armor_mult = 8.9
+#	ship_hull_damage_mult = 0.5
+#	ship_fire_rate_mult = 0.5
+#	ship_WEAPON_RANGE_MULT = 0.5
+#	ship_evasion_mult = 0.15
+#}
+
+mod_lex_hyperlane_range = {
+	ship_sensor_range_add = 100
+	ship_hyperlane_range_add = 100
+}
+
+mod_lex_no_retreat = {
+	ship_disengage_chance_reduction = 1
+#	ship_emergency_ftl_min_days_mult = 0.5
+}

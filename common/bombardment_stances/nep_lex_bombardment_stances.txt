@@ -1,0 +1,66 @@
+#example = {
+#	# root = fleet
+#	trigger = {		
+#		always = yes
+#	}
+#	
+#	icon_frame = 1	# This is the frame for the shared icon file, will also need a GFX_fleet_order_button_ground_support_NAME entry
+#	default = yes	# Is this the default stance that new fleets will use?
+#	
+#	stop_when_armies_dead = yes	# Will this stance continue to bombard planets where all defensive armies are dead? default = no
+#	abduct_pops = no	# Will this stance attempt to abduct pops to your own planets instead of killing them? default = no
+#
+#	planet_damage = 0.5		# General scale of damage to planet, default = 1.0
+#	army_damage = 1.0		# General scale of damage to armies, default = 1.0
+#	
+#	kill_pop_chance = 0.2		# Chance that a pop is killed when planetary damage reaches 100%, default = 0
+#	min_pops_to_kill_pop = 8	# Will not kill/abduct pops if pops < this number already, default = 0
+#	add_blocker_chance = 0.2	# Chance that blocker is added to tile hen planetary damage reaches 100%, default = 0
+#	max_blockers = 3			# Will not add bombardment blockers if bombardment blockers >= this number already, default = 0 (if set to -1, unrestricted number)
+#	
+#	# root = fleet
+#	# from = planet
+#	ai_weight = {
+#		weight = 1
+#	}
+#}
+
+lex_doom = {
+	trigger = {
+		owner = {
+			OR = { 
+				is_country_type = bwm_ancient_drone_guardian
+				is_country_type = bwm_ragnarok_guardian
+				is_country_type = bwm_shroud_guardian
+				is_country_type = bwm_ring_guardian
+				is_country_type = bwm_ring_guardian_passive
+				is_country_type = bwm_grave_guardian
+				is_country_type = bwm_grave_guardian_passive
+				is_country_type = bwm_conduit_guardian
+				is_country_type = bwm_ancestor_guardian
+				is_country_type = bwm_prison_passive
+				is_country_type = bwm_gate_guardian
+			}		
+		}
+	}
+	
+	icon_frame = 3
+	default = no
+	
+	stop_when_armies_dead = no
+	abduct_pops = no
+
+	planet_damage = 3.3
+	army_damage = 10	
+	
+	kill_pop_chance = 0.75
+	min_pops_to_kill_pop = 0
+	add_blocker_chance = 0.6
+	max_blockers = -1
+	
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 1000
+	}
+}

@@ -1,0 +1,13 @@
+lex_get_full_map = {
+	if = {
+		limit = {
+			NOT = {
+				has_modifier = mod_lex_hyperlane_range
+			}
+		}
+		add_modifier = {
+			modifier = mod_lex_hyperlane_range
+			days = -1
+		}
+	}
+}

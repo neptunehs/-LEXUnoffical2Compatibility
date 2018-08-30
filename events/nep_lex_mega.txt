@@ -1,0 +1,576 @@
+namespace = lexmega
+
+country_event = {
+	id = lexmega.1000
+	title = "lexmega.1000.name"
+	desc = "lexmega.1000.desc"
+	picture = GFX_evt_unknown_ships
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_shipyard_00 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.1001
+	title = "lexmega.1001.name"
+	desc = "lexmega.1001.desc"
+	picture = GFX_evt_megastructure_construction_background
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_shipyard_01 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.1002
+	title = "lexmega.1002.name"
+	desc = "lexmega.1002.desc"
+	picture = GFX_evt_megastructure_construction_background
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_shipyard_02 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.1003
+	title = "lexmega.1003.name"
+	desc = "lexmega.1003.desc"
+	picture = GFX_evt_megastructure_construction_background
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_shipyard_03 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.1004
+	title = "lexmega.1004.name"
+	desc = "lexmega.1004.desc"
+	picture = GFX_evt_megastructure_construction_background
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_shipyard_04 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.1005
+	title = "lexmega.1005.name"
+	desc = "lexmega.1005.desc"
+	picture = GFX_evt_megastructure_construction_background
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_shipyard_05 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.1006
+	title = "lexmega.1006.name"
+	desc = "lexmega.1006.desc"
+	picture = GFX_evt_megastructure_construction_background
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_shipyard_06 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.1007
+	title = "lexmega.1007.name"
+	desc = "lexmega.1007.desc"
+	picture = GFX_evt_megastructure_construction_background
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_shipyard_07 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.1008
+	title = "lexmega.1008.name"
+	desc = "lexmega.1008.desc"
+	picture = GFX_evt_megastructure_construction_background
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_shipyard_08 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.1009
+	title = "lexmega.1009.name"
+	desc = "lexmega.1009.desc"
+	picture = GFX_evt_enigmatic_fortress
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_shipyard_09 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.1011
+	title = "lexmega.1011.name"
+	desc = "lexmega.1011.desc"
+	picture = GFX_evt_unknown_ships
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_corvette_00 }
+		NOT = { has_country_flag = never_noti_ship_build }
+	}
+	
+	option = {
+		name = OK
+	}
+
+	option = {
+		name = "lexmega.101x.never"
+		hidden_effect = { set_country_flag = never_noti_ship_build }
+	}
+}
+
+country_event = {
+	id = lexmega.1012
+	title = "lexmega.1012.name"
+	desc = "lexmega.1012.desc"
+	picture = GFX_evt_unknown_ships
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_destroyer_00 }
+		NOT = { has_country_flag = never_noti_ship_build }
+	}
+	
+	option = {
+		name = OK
+	}
+
+	option = {
+		name = "lexmega.101x.never"
+		hidden_effect = { set_country_flag = never_noti_ship_build }
+	}
+}
+
+country_event = {
+	id = lexmega.1013
+	title = "lexmega.1013.name"
+	desc = "lexmega.1013.desc"
+	picture = GFX_evt_unknown_ships
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_cruiser_00 }
+		NOT = { has_country_flag = never_noti_ship_build }
+	}
+	
+	option = {
+		name = OK
+	}
+
+	option = {
+		name = "lexmega.101x.never"
+		hidden_effect = { set_country_flag = never_noti_ship_build }
+	}
+}
+
+country_event = {
+	id = lexmega.1014
+	title = "lexmega.1014.name"
+	desc = "lexmega.1014.desc"
+	picture = GFX_evt_unknown_ships
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_battleship_00 }
+		NOT = { has_country_flag = never_noti_ship_build }
+	}
+	
+	option = {
+		name = OK
+	}
+
+	option = {
+		name = "lexmega.101x.never"
+		hidden_effect = { set_country_flag = never_noti_ship_build }
+	}
+}
+
+country_event = {
+	id = lexmega.2000
+	title = "lexmega.2000.name"
+	desc = "lexmega.2000.desc"
+	picture = GFX_evt_unknown_ships
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_converter_00 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.2001
+	title = "lexmega.2001.name"
+	desc = "lexmega.2001.desc"
+	picture = GFX_evt_megastructure_construction_background
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_converter_01 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.2002
+	title = "lexmega.2002.name"
+	desc = "lexmega.2002.desc"
+	picture = GFX_evt_megastructure_construction_background
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_converter_02 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.2003
+	title = "lexmega.2003.name"
+	desc = "lexmega.2003.desc"
+	picture = GFX_evt_megastructure_construction_background
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_converter_03 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.2004
+	title = "lexmega.2004.name"
+	desc = "lexmega.2004.desc"
+	picture = GFX_evt_megastructure_construction_background
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_converter_04 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.2005
+	title = "lexmega.2005.name"
+	desc = "lexmega.2005.desc"
+	picture = GFX_evt_megastructure_construction_background
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_converter_05 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.2006
+	title = "lexmega.2006.name"
+	desc = "lexmega.2006.desc"
+	picture = GFX_evt_megastructure_construction_background
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_converter_06 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.2007
+	title = "lexmega.2007.name"
+	desc = "lexmega.2007.desc"
+	picture = GFX_evt_megastructure_construction_background
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_converter_07 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.2008
+	title = "lexmega.2008.name"
+	desc = "lexmega.2008.desc"
+	picture = GFX_evt_enigmatic_fortress
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_conduit_converter_08 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.3000
+	title = "lexmega.3000.name"
+	desc = "lexmega.3000.desc"
+	picture = GFX_evt_unknown_ships
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_gravekeeper_project_00 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.3001
+	title = "lexmega.3001.name"
+	desc = "lexmega.3001.desc"
+	picture = GFX_evt_unknown_ships
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_gravekeeper_project_01 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.4000
+	title = "lexmega.4000.name"
+	desc = "lexmega.4000.desc"
+	picture = GFX_evt_unknown_ships
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_solar_envoy_project_00 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.4001
+	title = "lexmega.4001.name"
+	desc = "lexmega.4001.desc"
+	picture = GFX_evt_unknown_ships
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_solar_envoy_project_01 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.5000
+	title = "lexmega.5000.name"
+	desc = "lexmega.5000.desc"
+	picture = GFX_evt_unknown_ships
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_magma_diver_project_00 }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+country_event = {
+	id = lexmega.5001
+	title = "lexmega.5001.name"
+	desc = "lexmega.5001.desc"
+	picture = GFX_evt_unknown_ships
+	show_sound = event_ringworld_build_start
+	location = FROMFROM
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_megastructure_type = bwm_magma_diver_project_01 }
+	}
+	
+	option = {
+		name = OK
+	}
+}

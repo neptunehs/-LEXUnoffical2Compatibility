@@ -1,0 +1,449 @@
+namespace = lexdiff
+
+country_event = {
+	id = lexdiff.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+#		if = {
+#			limit = {
+#				has_global_flag = flag_lex_diff_1
+#			}
+#
+#			remove_global_flag = flag_lex_diff_1
+#		}
+
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_1.25
+			}
+
+			remove_global_flag = flflag_lex_diff_1.25
+		}
+
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_1.5
+			}
+
+			remove_global_flag = flag_lex_diff_1.5
+		}
+
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_1.75
+			}
+
+			remove_global_flag = flag_lex_diff_1.75
+		}
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_2
+			}
+
+			remove_global_flag = flag_lex_diff_2
+		}
+
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_2.5
+			}
+
+			remove_global_flag = flflag_lex_diff_2.5
+		}
+
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_3
+			}
+
+			remove_global_flag = flag_lex_diff_3
+		}
+
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_3.5
+			}
+
+			remove_global_flag = flag_lex_diff_3.5
+		}
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_4
+			}
+
+			remove_global_flag = flag_lex_diff_4
+		}
+
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_4.5
+			}
+
+			remove_global_flag = flflag_lex_diff_4.5
+		}
+
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_5
+			}
+
+			remove_global_flag = flag_lex_diff_5
+		}
+
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_lethal
+			}
+
+			remove_global_flag = flag_lex_diff_lethal
+		}
+
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_doom
+			}
+
+			remove_global_flag = flag_lex_diff_doom
+		}
+
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = bwm_ancient_drone_guardian
+					is_country_type = bwm_ragnarok_guardian
+					is_country_type = bwm_shroud_guardian
+					is_country_type = bwm_ring_guardian
+					is_country_type = bwm_ring_guardian_passive
+					is_country_type = bwm_grave_guardian
+					is_country_type = bwm_grave_guardian_passive
+					is_country_type = bwm_conduit_guardian
+					is_country_type = bwm_ancestor_guardian
+					is_country_type = bwm_prison_passive
+					is_country_type = bwm_gate_guardian
+				}
+			}
+
+			country_event = { id = lexdiff.2 }
+		}
+	}
+}
+
+country_event = {
+	id = lexdiff.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_modifier = mod_lex_diff_125x
+			}
+
+			remove_modifier = mod_lex_diff_125x
+		}
+
+		if = {
+			limit = {
+				has_modifier = mod_lex_diff_15x
+			}
+
+			remove_modifier = mod_lex_diff_15x
+		}
+
+		if = {
+			limit = {
+				has_modifier = mod_lex_diff_175x
+			}
+
+			remove_modifier = mod_lex_diff_175x
+		}
+
+		if = {
+			limit = {
+				has_modifier = mod_lex_diff_2x
+			}
+
+			remove_modifier = mod_lex_diff_2x
+		}
+
+		if = {
+			limit = {
+				has_country_flag = mod_lex_diff_25x
+			}
+
+			remove_country_flag = mod_lex_diff_25x
+		}
+
+		if = {
+			limit = {
+				has_modifier = mod_lex_diff_3x
+			}
+
+			remove_modifier = mod_lex_diff_3x
+		}
+
+		if = {
+			limit = {
+				has_modifier = mod_lex_diff_35x
+			}
+
+			remove_modifier = mod_lex_diff_35x
+		}
+
+		if = {
+			limit = {
+				has_modifier = mod_lex_diff_4x
+			}
+
+			remove_modifier = mod_lex_diff_4x
+		}
+
+		if = {
+			limit = {
+				has_modifier = mod_lex_diff_45x
+			}
+
+			remove_modifier = mod_lex_diff_45x
+		}
+
+		if = {
+			limit = {
+				has_country_flag = mod_lex_diff_5x
+			}
+
+			remove_country_flag = mod_lex_diff_5x
+		}
+
+		if = {
+			limit = {
+				has_modifier = mod_lex_diff_l
+			}
+
+			remove_modifier = mod_lex_diff_l
+		}
+
+		if = {
+			limit = {
+				has_modifier = mod_lex_diff_d
+			}
+
+			remove_modifier = mod_lex_diff_d
+		}
+
+		if = {
+			limit = {
+				has_country_flag = has_mod_lex_diff
+			}
+
+			remove_country_flag = has_mod_lex_diff
+		}
+	}
+}
+
+country_event = {
+	id = lexdiff.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					has_global_flag = flag_lex_diff_1.25
+					has_global_flag = flag_lex_diff_1.5
+					has_global_flag = flag_lex_diff_1.75
+					has_global_flag = flag_lex_diff_2
+					has_global_flag = flag_lex_diff_2.5
+					has_global_flag = flag_lex_diff_3
+					has_global_flag = flag_lex_diff_3.5
+					has_global_flag = flag_lex_diff_4
+					has_global_flag = flag_lex_diff_4.5
+					has_global_flag = flag_lex_diff_5
+					has_global_flag = flag_lex_diff_lethal
+					has_global_flag = flag_lex_diff_doom
+				}
+			}
+
+			every_country = {
+				limit = {
+					OR = {
+						is_country_type = bwm_ancient_drone_guardian
+						is_country_type = bwm_ragnarok_guardian
+						is_country_type = bwm_shroud_guardian
+						is_country_type = bwm_ring_guardian
+						is_country_type = bwm_ring_guardian_passive
+						is_country_type = bwm_grave_guardian
+						is_country_type = bwm_grave_guardian_passive
+						is_country_type = bwm_conduit_guardian
+						is_country_type = bwm_ancestor_guardian
+						is_country_type = bwm_prison_passive
+						is_country_type = bwm_gate_guardian
+					}
+					NOT = { has_country_flag = has_mod_lex_diff }
+				}
+
+				# Clears buffs
+				country_event = { id = lexdiff.2 }
+
+				# Adds correct buff
+				country_event = { id = lexdiff.4 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = lexdiff.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_1.25
+			}
+
+			add_modifier = {
+				modifier = mod_lex_diff_125x
+				days = -1
+			}
+
+			set_country_flag = has_mod_lex_diff
+		}
+
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_1.5
+			}
+
+			add_modifier = {
+				modifier = mod_lex_diff_15x
+				days = -1
+			}
+
+			set_country_flag = has_mod_lex_diff
+		}
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_1.75
+			}
+
+			add_modifier = {
+				modifier = mod_lex_diff_175x
+				days = -1
+			}
+
+			set_country_flag = has_mod_lex_diff
+		}
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_2
+			}
+
+			add_modifier = {
+				modifier = mod_lex_diff_2x
+				days = -1
+			}
+
+			set_country_flag = has_mod_lex_diff
+		}
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_2.5
+			}
+
+			add_modifier = {
+				modifier = mod_lex_diff_25x
+				days = -1
+			}
+
+			set_country_flag = has_mod_lex_diff
+		}
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_3
+			}
+
+			add_modifier = {
+				modifier = mod_lex_diff_3x
+				days = -1
+			}
+
+			set_country_flag = has_mod_lex_diff
+		}
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_3.5
+			}
+
+			add_modifier = {
+				modifier = mod_lex_diff_35x
+				days = -1
+			}
+
+			set_country_flag = has_mod_lex_diff
+		}
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_4
+			}
+
+			add_modifier = {
+				modifier = mod_lex_diff_4x
+				days = -1
+			}
+
+			set_country_flag = has_mod_lex_diff
+		}
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_4.5
+			}
+
+			add_modifier = {
+				modifier = mod_lex_diff_45x
+				days = -1
+			}
+
+			set_country_flag = has_mod_lex_diff
+		}
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_5
+			}
+
+			add_modifier = {
+				modifier = mod_lex_diff_5x
+				days = -1
+			}
+
+			set_country_flag = has_mod_lex_diff
+		}
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_lethal
+			}
+
+			add_modifier = {
+				modifier = mod_lex_diff_l
+				days = -1
+			}
+
+			set_country_flag = has_mod_lex_diff
+		}
+		if = {
+			limit = {
+				has_global_flag = flag_lex_diff_doom
+			}
+
+			add_modifier = {
+				modifier = mod_lex_diff_d
+				days = -1
+			}
+
+			set_country_flag = has_mod_lex_diff
+		}
+	}
+}

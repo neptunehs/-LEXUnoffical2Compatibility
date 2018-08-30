@@ -1,0 +1,67 @@
+namespace = lexpoli
+
+country_event = {
+	id = lexpoli.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+		if = {
+			limit = {
+				has_country_flag = flag_lex_no_retreat
+			}
+	
+			remove_country_flag = flag_lex_no_retreat
+		}
+	
+		every_owned_ship = {
+			limit = {
+				OR = {
+					is_ship_size = bwm_grave_awakened_pc
+					is_ship_size = bwm_titan
+					is_ship_size = bwm_conduit_avatar
+				}
+				has_modifier = mod_lex_no_retreat				
+			}
+
+			remove_modifier = mod_lex_no_retreat
+			
+		}
+	}
+}
+
+
+country_event = {
+	id = lexpoli.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_lex_no_retreat }
+			}
+	
+			set_country_flag = flag_lex_no_retreat
+		}
+	
+		every_owned_ship = {
+			limit = {
+				OR = {
+					is_ship_size = bwm_grave_awakened_pc
+					is_ship_size = bwm_titan
+					is_ship_size = bwm_conduit_avatar
+				}
+				NOT = { has_modifier = mod_lex_no_retreat }				
+			}
+			
+				
+			add_modifier = {
+				modifier = mod_lex_no_retreat
+				days = -1
+			}
+		}
+	}
+}

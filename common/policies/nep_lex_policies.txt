@@ -1,0 +1,520 @@
+lex_diff_policy = {
+
+	potential = {
+		always = yes
+	}
+	
+	option = {
+		name = "lex_diff_policy_1"
+
+		potential = { }
+
+		policy_flags = {
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				if = {
+					limit = { is_ai = no }
+
+					# clears old lex mods
+					country_event = { id = lexdiff.1 }
+					
+					# set_global_flag = flag_lex_diff_1
+					
+					# Set new lex diff mod
+					# country_event = { id = lexdiff.3 }
+				}
+			}
+		}
+
+		AI_weight = {
+			modifier = {
+				factor = 1
+			}
+		}
+	}
+	
+	
+	option = {
+		name = "lex_diff_policy_1.25"
+
+		potential = { }
+
+		policy_flags = {
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				if = {
+					limit = { is_ai = no }
+
+					# clears old lex mods
+					country_event = { id = lexdiff.1 }
+					
+					set_global_flag = flag_lex_diff_1.25
+					
+					# Set new lex diff mod
+					country_event = { id = lexdiff.3 }
+				}
+			}
+		}
+
+		AI_weight = {
+			modifier = {
+				factor = 0
+				always = yes
+			}
+		}
+	}
+
+	
+	option = {
+		name = "lex_diff_policy_1.5"
+
+		potential = { }
+
+		policy_flags = {
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				if = {
+					limit = { is_ai = no }
+
+					# clears old lex mods
+					country_event = { id = lexdiff.1 }
+					
+					set_global_flag = flag_lex_diff_1.5
+					
+					# Set new lex diff mod
+					country_event = { id = lexdiff.3 }
+				}
+			}
+		}
+
+		AI_weight = {
+			modifier = {
+				factor = 0
+				always = yes
+			}
+		}
+	}
+
+	
+	option = {
+		name = "lex_diff_policy_1.75"
+
+		potential = { }
+
+		policy_flags = {
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				if = {
+					limit = { is_ai = no }
+
+					# clears old lex mods
+					country_event = { id = lexdiff.1 }
+					
+					set_global_flag = flag_lex_diff_1.75
+					
+					# Set new lex diff mod
+					country_event = { id = lexdiff.3 }
+				}
+			}
+		}
+
+		AI_weight = {
+			modifier = {
+				factor = 0
+				always = yes
+			}
+		}
+	}
+
+	
+	option = {
+		name = "lex_diff_policy_2"
+
+		potential = { }
+
+		policy_flags = {
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				if = {
+					limit = { is_ai = no }
+
+					# clears old lex mods
+					country_event = { id = lexdiff.1 }
+					
+					set_global_flag = flag_lex_diff_2
+					
+					# Set new lex diff mod
+					country_event = { id = lexdiff.3 }
+				}
+			}
+		}
+
+		AI_weight = {
+			modifier = {
+				factor = 0
+				always = yes
+			}
+		}
+	}
+
+	
+	option = {
+		name = "lex_diff_policy_2.5"
+
+		potential = { }
+
+		policy_flags = {
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				if = {
+					limit = { is_ai = no }
+
+					# clears old lex mods
+					country_event = { id = lexdiff.1 }
+					
+					set_global_flag = flag_lex_diff_2.5
+					
+					# Set new lex diff mod
+					country_event = { id = lexdiff.3 }
+				}
+			}
+		}
+
+		AI_weight = {
+			modifier = {
+				factor = 0
+				always = yes
+			}
+		}
+	}
+
+	
+	option = {
+		name = "lex_diff_policy_3"
+
+		potential = { }
+
+		policy_flags = {
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				if = {
+					limit = { is_ai = no }
+
+					# clears old lex mods
+					country_event = { id = lexdiff.1 }
+					
+					set_global_flag = flag_lex_diff_3
+					
+					# Set new lex diff mod
+					country_event = { id = lexdiff.3 }
+				}
+			}
+		}
+
+		AI_weight = {
+			modifier = {
+				factor = 0
+				always = yes
+			}
+		}
+	}
+
+	
+	option = {
+		name = "lex_diff_policy_3.5"
+
+		potential = { }
+
+		policy_flags = {
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				if = {
+					limit = { is_ai = no }
+
+					# clears old lex mods
+					country_event = { id = lexdiff.1 }
+					
+					set_global_flag = flag_lex_diff_3.5
+					
+					# Set new lex diff mod
+					country_event = { id = lexdiff.3 }
+				}
+			}
+		}
+
+		AI_weight = {
+			modifier = {
+				factor = 0
+				always = yes
+			}
+		}
+	}
+
+	
+	option = {
+		name = "lex_diff_policy_4"
+
+		potential = { }
+
+		policy_flags = {
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				if = {
+					limit = { is_ai = no }
+
+					# clears old lex mods
+					country_event = { id = lexdiff.1 }
+					
+					set_global_flag = flag_lex_diff_4
+					
+					# Set new lex diff mod
+					country_event = { id = lexdiff.3 }
+				}
+			}
+		}
+
+		AI_weight = {
+			modifier = {
+				factor = 0
+				always = yes
+			}
+		}
+	}
+
+	option = {
+		name = "lex_diff_policy_4.5"
+
+		potential = { }
+
+		policy_flags = {
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				if = {
+					limit = { is_ai = no }
+
+					# clears old lex mods
+					country_event = { id = lexdiff.1 }
+					
+					set_global_flag = flag_lex_diff_4.5
+					
+					# Set new lex diff mod
+					country_event = { id = lexdiff.3 }
+				}
+			}
+		}
+
+		AI_weight = {
+			modifier = {
+				factor = 0
+				always = yes
+			}
+		}
+	}
+
+	option = {
+		name = "lex_diff_policy_5"
+
+		potential = { }
+
+		policy_flags = {
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				if = {
+					limit = { is_ai = no }
+
+					# clears old lex mods
+					country_event = { id = lexdiff.1 }
+					
+					set_global_flag = flag_lex_diff_5
+					
+					# Set new lex diff mod
+					country_event = { id = lexdiff.3 }
+				}
+			}
+		}
+
+		AI_weight = {
+			modifier = {
+				factor = 0
+				always = yes
+			}
+		}
+	}
+
+	option = {
+		name = "lex_diff_policy_lethal"
+
+		potential = { }
+
+		policy_flags = {
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				if = {
+					limit = { is_ai = no }
+
+					# clears old lex mods
+					country_event = { id = lexdiff.1 }
+					
+					set_global_flag = flag_lex_diff_lethal
+					
+					# Set new lex diff mod
+					country_event = { id = lexdiff.3 }
+				}
+			}
+		}
+
+		AI_weight = {
+			modifier = {
+				factor = 0
+				always = yes
+			}
+		}
+	}
+
+	option = {
+		name = "lex_diff_policy_doom"
+
+		potential = { }
+
+		policy_flags = {
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				if = {
+					limit = { is_ai = no }
+
+					# clears old lex mods
+					country_event = { id = lexdiff.1 }
+					
+					set_global_flag = flag_lex_diff_doom
+					
+					# Set new lex diff mod
+					country_event = { id = lexdiff.3 }
+				}
+			}
+		}
+
+		AI_weight = {
+			modifier = {
+				factor = 0
+				always = yes
+			}
+		}
+	}
+
+#	option = {
+#		name = "lex_diff_policy_impo"
+#
+#		potential = { }
+#
+#		policy_flags = {
+#		}
+#
+#		on_enabled = {
+#			hidden_effect = {
+#				if = {
+#					limit = { is_ai = no }
+#
+#					country_event = { id = lexdiff.1 }
+#					
+#					set_global_flag = flag_lex_diff_impo
+#					
+#					country_event = { id = lexdiff.3 }
+#				}
+#			}
+#		}
+#
+#		AI_weight = {
+#			modifier = {
+#				factor = 0
+#				always = yes
+#			}
+#		}
+#	}
+}
+
+lex_no_retreat = {
+
+	potential = {
+		is_ai = no
+		OR = {
+			has_country_flag = bwm_grave_overdrive_unlock
+			has_country_flag = bwm_titan_overdrive_unlock
+			has_country_flag = bwm_conduit_overdrive_unlock
+		}
+	}
+	
+	option = {
+		name = "lex_no_retreat_NO"
+		
+		potential = { }
+
+		policy_flags = {
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				if = {
+					limit = { is_ai = no }
+					country_event = { id = lexpoli.1 }
+				}
+			}
+		}
+
+		AI_weight = {
+			modifier = {
+				factor = 1
+			}
+		}
+	}
+
+		option = {
+		name = "lex_no_retreat_YES"
+		
+		potential = { }
+
+		policy_flags = {
+		}
+
+
+		on_enabled = {
+			hidden_effect = {
+				if = {
+					limit = { is_ai = no }
+					country_event = { id = lexpoli.2 }
+				}
+			}
+		}
+		AI_weight = {
+			modifier = {
+				factor = 0
+				always = yes
+			}
+		}
+	}
+}

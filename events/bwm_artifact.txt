@@ -5067,7 +5067,9 @@ country_event = {
 			}
 		}
 		
-		country_event = { id = bwm_artifact.1031 }
+		event_target:bwm_artifact_seal_destroyer_1_loc = {
+			country_event = { id = bwm_artifact.1031 }
+		}
 	}	
 }
 
@@ -5207,8 +5209,9 @@ country_event = {
 				destroy_ambient_object = this
 			}
 		}
-		
-		country_event = { id = bwm_artifact.1051 }
+		event_target:bwm_artifact_seal_destroyer_2_loc = {
+			country_event = { id = bwm_artifact.1051 }
+		}
 	}
 }
 
@@ -5348,8 +5351,9 @@ country_event = {
 				destroy_ambient_object = this
 			}
 		}
-		
-		country_event = { id = bwm_artifact.1071 }
+		event_target:bwm_artifact_seal_destroyer_3_loc = {
+			country_event = { id = bwm_artifact.1071 }
+		}
 	}
 }
 

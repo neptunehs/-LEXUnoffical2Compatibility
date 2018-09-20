@@ -3700,6 +3700,23 @@ ship_event = {
 			}
 			save_event_target_as = bwm_conduit_system 
 		}
+		event_target:bwm_conduit_system = {
+			if = {
+				limit = {
+					any_ship_in_system = {
+						is_ship_class = shipclass_starbase
+					}
+				}
+				random_fleet_in_system = {
+					limit = {
+						any_owned_ship = {
+							is_ship_class = shipclass_starbase
+						}
+					}
+					destroy_fleet = this
+				}
+			}
+		}
 		every_country = {
 			if = {
 				limit = {

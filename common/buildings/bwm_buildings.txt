@@ -3,64 +3,52 @@
 @feproduction_lab = 8
 
 bwm_building_ancient_ruin_1 = {
-	
-    is_listed = no
+	can_build = no
+	can_be_ruined = no
+	can_be_disabled = no
 	icon = "building_old_ruins"
 
 	allow = {
 		always = no
 	}
 	
-	upgrades = {
-		bwm_building_ancient_factory
+	convert_to = {
+		bwm_building_ancient_factory_1
+		bwm_building_ancient_factory_2
+		bwm_building_ancient_factory_3
+		bwm_building_ancient_factory_4
 		bwm_building_dark_matter_power_plant
 		bwm_building_agri_processing_complex
 		bwm_building_engineering_facility
 		bwm_building_biolab
 		bwm_building_physics_lab
 	}
-	
-	ai_replace = no
-	event_building = yes
-	
-	produced_resources = {
-		food = 0.1
-		energy = 0.1
-	}
-
-	prerequisites = {
-	}
 }
 
 bwm_building_ancient_ruin_2 = {
-	
-    is_listed = no
+    can_build = no
+	can_be_ruined = no
+	can_be_disabled = no
 	icon = "building_destroyed"
 
 	allow = {
 		always = no
-	}
-	
-	prerequisites = {
 	}
 }
 
 bwm_building_crisis_ruin = {
-	
-    is_listed = no
+    can_build = no
 	icon = "building_destroyed"
 
 	allow = {
 		always = no
 	}
-	
-	prerequisites = {
-	}
 }
 
 bwm_building_shipwreck_0 = {
-	
-    is_listed = no
+    can_build = no
+	can_be_ruined = no
+	can_be_disabled = no
 	icon = "building_bwm_lex_shipwreck"
 
 	allow = {
@@ -70,37 +58,33 @@ bwm_building_shipwreck_0 = {
 	upgrades = {
 		bwm_building_shipwreck_1
 	}
-	
-	ai_replace = no
-	event_building = yes
-	
-	prerequisites = {
-	}
 }
 
 bwm_building_shipwreck_1 = {
 	base_buildtime = 960
-    is_listed = no
+    can_build = no
+	can_be_ruined = no
+	can_be_disabled = no
 	icon = "building_bwm_lex_shipwreck"
 
-	cost = {
-		  energy = 5000
-		  influence = 100
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 5000
+			influence = 100
+		}
 	}
 	
 	allow = {
 	}
-
-	ai_replace = no
-	event_building = yes
-	
-	prerequisites = {
-	}
 }
 
 bwm_building_ancient_monolith_0 = {
+    can_build = no	
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
 	
-    is_listed = no
 	icon = "building_monolith"
 
 	allow = {
@@ -113,21 +97,20 @@ bwm_building_ancient_monolith_0 = {
 		bwm_building_ancient_monolith_3
 		bwm_building_ancient_monolith_4
 	}
-	
-	ai_replace = no
-	event_building = yes
-	
-	prerequisites = {
-	}
 }
 
 bwm_building_ancient_monolith_1 = {
-	
-    is_listed = no
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
 	icon = "building_bwm_lex_ring_monolith"
 	
-	cost = {
-		  energy = 1000
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 1000
+		}
 	}
 
 	allow = {
@@ -135,7 +118,7 @@ bwm_building_ancient_monolith_1 = {
 			text = "bwm_monolith_text"
 			planet = {
 				owner = {
-				has_country_flag = bwm_monolith 
+					has_country_flag = bwm_monolith 
 				}
 			    has_planet_flag = "bwm_ring_1"
 			    NOT = { has_planet_flag = "bwm_nuked" }
@@ -143,26 +126,25 @@ bwm_building_ancient_monolith_1 = {
 		}
 	}
 	
-	ai_replace = no
-	event_building = yes
-	
-	planet_modifier  = {
-		tile_resource_engineering_research_mult = 0.5
-		tile_resource_society_research_mult = 0.5
-		tile_resource_physics_research_mult = 0.5
-	}
-			
-	prerequisites = {
+	planet_modifier = {
+		planets_engineering_research_produces_mult = 0.5
+		planets_society_research_produces_mult = 0.5
+		planets_physics_research_produces_mult = 0.5
 	}
 }
 
 bwm_building_ancient_monolith_2 = {
-	
-    is_listed = no
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
 	icon = "building_bwm_lex_ring_monolith"
 	
-	cost = {
-		  energy = 1000
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 1000
+		}
 	}
 
 	allow = {
@@ -177,12 +159,8 @@ bwm_building_ancient_monolith_2 = {
 		}
 	}
 	
-	ai_replace = no
-	event_building = yes
-
 	planet_modifier  = {
-		tile_resource_energy_mult = 0.5
-		
+		planets_energy_produces_mult = 0.5		
 	}
 		
 	prerequisites = {
@@ -190,14 +168,19 @@ bwm_building_ancient_monolith_2 = {
 }
 
 bwm_building_ancient_monolith_3 = {
-	
-    is_listed = no
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
 	icon = "building_bwm_lex_ring_monolith"
 	
-	cost = {
-		  energy = 1000
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 1000
+		}
 	}
-
+	
 	allow = {
 		custom_tooltip = {
 		    text = "bwm_monolith_text"
@@ -211,11 +194,9 @@ bwm_building_ancient_monolith_3 = {
 		}
 	}
 	
-	ai_replace = no
-	event_building = yes
-
 	planet_modifier  = {
-	    tile_resource_minerals_mult = 0.5
+	    planets_minerals_produces_mult = 0.5
+		
 	}
 		
 	prerequisites = {
@@ -223,12 +204,17 @@ bwm_building_ancient_monolith_3 = {
 }
 
 bwm_building_ancient_monolith_4 = {
-	
-    is_listed = no
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
 	icon = "building_bwm_lex_ring_monolith"
 	
-	cost = {
-		  energy = 10000
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 10000
+		}
 	}
 
 	allow = {
@@ -240,9 +226,6 @@ bwm_building_ancient_monolith_4 = {
 		}
 	}
 	
-	ai_replace = no
-	event_building = yes
-
 	country_modifier = {
 		country_naval_cap_mult = 0.5
 	}
@@ -251,14 +234,9 @@ bwm_building_ancient_monolith_4 = {
 	}
 }
 
-bwm_building_ancient_factory = {
-	
-    is_listed = no
+bwm_building_ancient_factory_1 = {
+    can_build = no
 	icon = "building_ancient_factory"
-	
-	cost = {
-		  energy = 500
-	}
 	
 	allow = {
 		custom_tooltip = {
@@ -268,31 +246,133 @@ bwm_building_ancient_factory = {
 			}
 		}
 	}
-	
-	ai_replace = no
-	event_building = yes
-		
-	produced_resources = {
-		minerals = @feproduction
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 500
+		}
+		produces = {
+			minerals = 25
+		}
+		upkeep = {
+			energy = 8
+		}
 	}
 	
-	required_resources = {
-		energy = @feupkeep
-	}	
+	planet_modifier = {
+		planet_housing_add = 5
+		job_clerk_add = 3
+		job_chemist_add = 2
+		job_artisan_add = 2
+	}
+}
+
+bwm_building_ancient_factory_2 = {
+    can_build = no
+	icon = "building_ancient_factory"
 	
-	prerequisites = {
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_ancient_monolith"
+			planet = {
+					has_building = "bwm_building_ancient_monolith_3"
+			}
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 500
+		}
+		produces = {
+			minerals = 25
+		}
+		upkeep = {
+			energy = 8
+		}
+	}
+	
+	planet_modifier = {
+		planet_housing_add = 5
+		job_clerk_add = 3
+		job_translucer_add = 2	
+		job_artisan_add = 2
+	}
+}
+
+bwm_building_ancient_factory_3 = {
+    can_build = no
+	icon = "building_ancient_factory"
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_ancient_monolith"
+			planet = {
+					has_building = "bwm_building_ancient_monolith_3"
+			}
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 500
+		}
+		produces = {
+			minerals = 25
+		}
+		upkeep = {
+			energy = 8
+		}
+	}
+	
+	planet_modifier = {
+		planet_housing_add = 5
+		job_clerk_add = 3
+		job_gas_refiner_add = 2
+		job_artisan_add = 2
+	}
+}
+
+bwm_building_ancient_factory_4 = {
+    can_build = no
+	icon = "building_ancient_factory"
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_ancient_monolith"
+			planet = {
+					has_building = "bwm_building_ancient_monolith_3"
+			}
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 500
+		}
+		produces = {
+			minerals = 25
+		}
+		upkeep = {
+			energy = 8
+		}
+	}
+	
+	planet_modifier = {
+		planet_housing_add = 5
+		job_clerk_add = 2
+		job_foundry_add = 5
 	}
 }
 
 bwm_building_dark_matter_power_plant = {
-	
-    is_listed = no
+    can_build = no
 	icon = "building_dark_matter_power_plant"
-	
-	cost = {
-		  energy = 500
-	}
-	
+
 	allow = {
 		custom_tooltip = {
 			text = "requires_building_ancient_monolith"
@@ -302,25 +382,27 @@ bwm_building_dark_matter_power_plant = {
 		}
 	}
 	
-	ai_replace = no
-	event_building = yes
-		
-	produced_resources = {
-		energy = 15
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 500
+		}
+		produces = {
+			energy = 32
+		}
 	}
 	
-	prerequisites = {
+	planet_modifier = {
+		planet_housing_add = 5
+		job_clerk_add = 2
+		job_artisan_add = 2
+		job_telepath_add = 1
 	}
 }
 
 bwm_building_agri_processing_complex = {
-	
-    is_listed = no
+    can_build = no
 	icon = "building_agri_processing_complex"
-	
-	cost = {
-		  energy = 500
-	}
 	
 	allow = {
 		custom_tooltip = {
@@ -335,29 +417,29 @@ bwm_building_agri_processing_complex = {
 		}
 	}
 	
-	ai_replace = no
-	event_building = yes
-	
-	produced_resources = {
-		food = @feproduction
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 500
+		}
+		produces = {
+			food = 25
+		}
+		upkeep = {
+			energy = 8
+		}
 	}
 	
-	required_resources = {
-		energy = @feupkeep
-	}
-	
-	prerequisites = {
+	planet_modifier = {
+		planet_housing_add = 5
+		job_clerk_add = 2
+		job_farmer_add = 5
 	}
 }
 
 bwm_building_engineering_facility = {
-
-	is_listed = no
+	can_build = no
 	icon = "building_bwm_lex_ring_engineering_facility"
-	
-	cost = {
-		  energy = 500
-	}
 	
 	allow = {
 		custom_tooltip = {
@@ -368,32 +450,34 @@ bwm_building_engineering_facility = {
 		}
 	}
 	
-	ai_replace = no
-	event_building = yes
-	
-	produced_resources = {
-		engineering_research = @feproduction_lab
-		physics_research = 1
-		society_research = 1
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 500
+		}
+		produces = {
+			engineering_research = 20
+			physics_research = 1
+			society_research = 1
+		}
+		upkeep = {
+			energy = 8
+		}
 	}
 	
-	required_resources = {
-		energy = @feupkeep
+	planet_modifier = {
+		planet_housing_add = 5
+		job_clerk_add = 2
+		job_nep_e_researcher_add = 5
 	}
-	
-	prerequisites = {
-	}	
 }
 
 bwm_building_biolab = {
 
-	is_listed = no
+	can_build = no
 	icon = "building_bwm_lex_ring_biolab"
 	
-	cost = {
-		  energy = 500
-	}
-	
+
 	allow = {
 		custom_tooltip = {
 			text = "requires_building_ancient_monolith"
@@ -403,31 +487,31 @@ bwm_building_biolab = {
 		}
 	}
 	
-	ai_replace = no
-	event_building = yes
-	
-	produced_resources = {
-		engineering_research = 1
-		physics_research = 1
-		society_research = @feproduction_lab
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 500
+		}
+		produces = {
+			engineering_research = 1
+			physics_research = 1
+			society_research = 20
+		}
+		upkeep = {
+			energy = 8
+		}
 	}
 	
-	required_resources = {
-		energy = @feupkeep
+	planet_modifier = {
+		planet_housing_add = 5
+		job_clerk_add = 2
+		job_nep_s_researcher_add = 5
 	}
-	
-	prerequisites = {
-	}	
 }
 
 bwm_building_physics_lab = {
-
-	is_listed = no
+	can_build = no
 	icon = "building_bwm_lex_ring_physics_lab"
-	
-	cost = {
-		  energy = 500
-	}
 	
 	allow = {
 		custom_tooltip = {
@@ -438,26 +522,33 @@ bwm_building_physics_lab = {
 		}
 	}
 	
-	ai_replace = no
-	event_building = yes
-	
-	produced_resources = {
-		engineering_research = 1
-		physics_research = @feproduction_lab
-		society_research = 1
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 500
+		}
+		produces = {
+			engineering_research = 1
+			physics_research = 20
+			society_research = 1
+		}
+		upkeep = {
+			energy = 8
+		}
 	}
 	
-	required_resources = {
-		energy = @feupkeep
+	planet_modifier = {
+		planet_housing_add = 5
+		job_clerk_add = 2
+		job_nep_p_researcher_add = 5
 	}
-	
-	prerequisites = {
-	}	
 }
 
 bwm_building_obelisk_0_1 = {
-	
-    is_listed = no
+    can_build = no	
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
 	icon = "building_zanaam_obelisk"
 
 	allow = {
@@ -468,22 +559,21 @@ bwm_building_obelisk_0_1 = {
 		bwm_building_obelisk_1
 	}
 	
-	produced_resources = {
-		engineering_research = 8
-		society_research = 8
-		physics_research = 8
-	}
-	
-	ai_replace = no
-	event_building = yes
-	
-	prerequisites = {
+	resources = {
+		category = planet_buildings
+		produces = {
+			engineering_research = 15
+			physics_research = 15
+			society_research = 15
+		}
 	}
 }
 
 bwm_building_obelisk_0_2 = {
-	
-    is_listed = no
+    can_build = no	
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
 	icon = "building_zanaam_obelisk"
 
 	allow = {
@@ -494,22 +584,21 @@ bwm_building_obelisk_0_2 = {
 		bwm_building_obelisk_2
 	}
 	
-	produced_resources = {
-		engineering_research = 8
-		society_research = 8
-		physics_research = 8
-	}
-	
-	ai_replace = no
-	event_building = yes
-	
-	prerequisites = {
+	resources = {
+		category = planet_buildings
+		produces = {
+			engineering_research = 15
+			physics_research = 15
+			society_research = 15
+		}
 	}
 }
 
 bwm_building_obelisk_0_3 = {
-	
-    is_listed = no
+    can_build = no	
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
 	icon = "building_zanaam_obelisk"
 
 	allow = {
@@ -520,22 +609,21 @@ bwm_building_obelisk_0_3 = {
 		bwm_building_obelisk_3
 	}
 	
-	produced_resources = {
-		engineering_research = 8
-		society_research = 8
-		physics_research = 8
-	}
-	
-	ai_replace = no
-	event_building = yes
-	
-	prerequisites = {
+	resources = {
+		category = planet_buildings
+		produces = {
+			engineering_research = 15
+			physics_research = 15
+			society_research = 15
+		}
 	}
 }
 
 bwm_building_obelisk_0_4 = {
-	
-    is_listed = no
+    can_build = no	
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
 	icon = "building_zanaam_obelisk"
 
 	allow = {
@@ -546,29 +634,23 @@ bwm_building_obelisk_0_4 = {
 		bwm_building_obelisk_4
 	}
 	
-	produced_resources = {
-		engineering_research = 8
-		society_research = 8
-		physics_research = 8
-	}
-	
-	ai_replace = no
-	event_building = yes
-	
-	prerequisites = {
+	resources = {
+		category = planet_buildings
+		produces = {
+			engineering_research = 15
+			physics_research = 15
+			society_research = 15
+		}
 	}
 }
 
 bwm_building_obelisk_1 = {
-	
-    is_listed = no
+    can_build = no	
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
 	icon = "building_bwm_lex_obelisk"
 	
-	cost = {
-		  energy = 1000
-		  influence = 50
-	}
-
 	allow = {
 		custom_tooltip = {
 			text = "requires_building_ancient_obelisk"
@@ -582,32 +664,33 @@ bwm_building_obelisk_1 = {
 		}
 	}
 
-	produced_resources = {
-		engineering_research = 8
-		society_research = 8
-		physics_research = 8
+	resources = {
+		category = planet_buildings
+		produces = {
+			engineering_research = 15
+			physics_research = 15
+			society_research = 15
+		}
+		cost = {
+			energy = 1000
+			influence = 50
+		}
 	}
 	
 	planet_modifier  = {
-		tile_resource_engineering_research_mult = 0.25
-		tile_resource_physics_research_mult = 0.25
-		tile_resource_society_research_mult = 0.25
+		planets_engineering_research_produces_mult = 0.25
+		planets_physics_research_produces_mult = 0.25
+		planets_society_research_produces_mult = 0.25
 	}
-	
-	ai_replace = no
-	event_building = yes
 }
 
 bwm_building_obelisk_2 = {
-	
-    is_listed = no
+    can_build = no	
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
 	icon = "building_bwm_lex_obelisk"
 	
-	cost = {
-		  energy = 2000
-		  influence = 100
-	}
-
 	allow = {
 		custom_tooltip = {
 			text = "requires_building_ancient_obelisk"
@@ -621,32 +704,33 @@ bwm_building_obelisk_2 = {
 		}
 	}
 	
-	produced_resources = {
-		engineering_research = 8
-		society_research = 8
-		physics_research = 8
+	resources = {
+		category = planet_buildings
+		produces = {
+			engineering_research = 15
+			physics_research = 15
+			society_research = 15
+		}
+		cost = {
+			energy = 2000
+			influence = 100
+		}
 	}
 	
 	planet_modifier  = {
-		tile_resource_engineering_research_mult = 0.25
-		tile_resource_physics_research_mult = 0.25
-		tile_resource_society_research_mult = 0.25
+		planets_engineering_research_produces_mult = 0.25
+		planets_physics_research_produces_mult = 0.25
+		planets_society_research_produces_mult = 0.25
 	}
-	
-	ai_replace = no
-	event_building = yes
 }
 
 bwm_building_obelisk_3 = {
-	
-    is_listed = no
+    can_build = no	
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
 	icon = "building_bwm_lex_obelisk"
 	
-	cost = {
-		  energy = 3000
-		  influence = 150
-	}
-
 	allow = {
 		custom_tooltip = {
 			text = "requires_building_ancient_obelisk"
@@ -660,32 +744,33 @@ bwm_building_obelisk_3 = {
 		}
 	}
 	
-	produced_resources = {
-		engineering_research = 8
-		society_research = 8
-		physics_research = 8
+	resources = {
+		category = planet_buildings
+		produces = {
+			engineering_research = 15
+			physics_research = 15
+			society_research = 15
+		}
+		cost = {
+			energy = 3000
+			influence = 150
+		}
 	}
 	
 	planet_modifier  = {
-		tile_resource_engineering_research_mult = 0.25
-		tile_resource_physics_research_mult = 0.25
-		tile_resource_society_research_mult = 0.25
+		planets_engineering_research_produces_mult = 0.25
+		planets_physics_research_produces_mult = 0.25
+		planets_society_research_produces_mult = 0.25
 	}
-	
-	ai_replace = no
-	event_building = yes
 }
 
 bwm_building_obelisk_4 = {
-	
-    is_listed = no
+    can_build = no	
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
 	icon = "building_bwm_lex_obelisk"
 	
-	cost = {
-		  energy = 4000
-		  influence = 200
-	}
-
 	allow = {
 		custom_tooltip = {
 			text = "requires_building_ancient_obelisk"
@@ -699,18 +784,22 @@ bwm_building_obelisk_4 = {
 		}
 	}
 	
-	produced_resources = {
-		engineering_research = 8
-		society_research = 8
-		physics_research = 8
+	resources = {
+		category = planet_buildings
+		produces = {
+			engineering_research = 15
+			physics_research = 15
+			society_research = 15
+		}
+		cost = {
+			energy = 4000
+			influence = 200
+		}
 	}
 	
 	planet_modifier  = {
-		tile_resource_engineering_research_mult = 0.25
-		tile_resource_physics_research_mult = 0.25
-		tile_resource_society_research_mult = 0.25
+		planets_engineering_research_produces_mult = 0.25
+		planets_physics_research_produces_mult = 0.25
+		planets_society_research_produces_mult = 0.25
 	}
-	
-	ai_replace = no
-	event_building = yes
 }

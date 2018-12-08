@@ -18,3 +18,22 @@
  bwm_the_conduit.0:0 "Go further"
  bwm_the_conduit.0.desc:0 "Nothing here but a wormhole.We need further investigation after we go through it."
  bwm_the_conduit.0.a:0 "Acknowledged."
+ 
+ bwm_artifact.2400.name:0 "Truce"
+ bwm_artifact.2400.desc:0 "You are banned to use any artifact bombs."
+ 
+ bwm_building_ancient_factory_1:0 "$building_ancient_factory$"
+ bwm_building_ancient_factory_1_desc:0 "$building_ancient_factory_desc$"
+ bwm_building_ancient_factory_2:0 "$building_ancient_factory$"
+ bwm_building_ancient_factory_2_desc:0 "$building_ancient_factory_desc$"
+ bwm_building_ancient_factory_3:0 "$building_ancient_factory$"
+ bwm_building_ancient_factory_3_desc:0 "$building_ancient_factory_desc$"
+ bwm_building_ancient_factory_4:0 "$building_ancient_factory$"
+ bwm_building_ancient_factory_4_desc:0 "$building_ancient_factory_desc$"
+ 
+ job_nep_e_researcher:0 "$job_researcher$"
+ job_nep_e_researcher_desc:0 "$job_researcher_desc$"
+ job_nep_s_researcher:0 "$job_researcher$"
+ job_nep_s_researcher_desc:0 "$job_researcher_desc$"
+ job_nep_p_researcher:0 "$job_researcher$"
+ job_nep_p_researcher_desc:0 "$job_researcher_desc$"

@@ -8,7 +8,16 @@ weapon_component_template = {
 	icon_frame = 1
 
 	power = -600.0
-	cost = 600.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 600
+		}
+		upkeep = {
+			energy = @xl_t7_upkeep_energy
+			alloys = @xl_t7_upkeep_alloys
+		}
+	}
 	
 	damage = { min = 3200.0 max = 6400.0 }
 	windup = { min = 25.0 max = 35.0 }
@@ -109,8 +118,17 @@ weapon_component_template = {
 	icon = "GFX_bwm_weapon_1"
 	icon_frame = 1
 
-	power = -600.0
-	cost = 600.0
+	power = -600.0	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 600
+		}
+		upkeep = {
+			energy = @xl_t7_upkeep_energy
+			alloys = @xl_t7_upkeep_alloys
+		}
+	}
 	
 	damage = { min = 3200.0 max = 6400.0 }
 	windup = { min = 25.0 max = 35.0 }
@@ -209,7 +227,16 @@ weapon_component_template = {
 	icon_frame = 1
 
 	power = -600.0
-	cost = 600.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 600
+		}
+		upkeep = {
+			energy = @xl_t7_upkeep_energy
+			alloys = @xl_t7_upkeep_alloys
+		}
+	}
 	
 	damage = { min = 1600.0 max = 3200.0 }
 	windup = { min = 25.0 max = 35.0 }
@@ -311,7 +338,16 @@ weapon_component_template = {
 	icon_frame = 1
 
 	power = -600.0
-	cost = 600.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 600
+		}
+		upkeep = {
+			energy = @xl_t7_upkeep_energy
+			alloys = @xl_t7_upkeep_alloys
+		}
+	}
 	
 	damage = { min = 1600.0 max = 3200.0 }
 	windup = { min = 25.0 max = 35.0 }
@@ -410,7 +446,16 @@ weapon_component_template = {
 	icon_frame = 1
 
 	power = -240.0
-	cost = 240.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 240
+		}
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
 	
 	damage = { min = 800.0 max = 1600.0 }
 	windup = { min = 1.0 max = 25.0 }
@@ -506,7 +551,16 @@ weapon_component_template = {
 	icon_frame = 1
 	
 	power = -120.0
-	cost = 120.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 120
+		}
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
 	
 	damage = { min = 400.0 max = 800.0 }
 	windup = { min = 15.0 max = 25.0 }
@@ -548,7 +602,16 @@ weapon_component_template = {
 	icon_frame = 1
 	
 	power = -120.0
-	cost = 120.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 120
+		}
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
 	
 	damage = { min = 400.0 max = 800.0 }
 	windup = { min = 15.0 max = 25.0 }
@@ -587,7 +650,16 @@ weapon_component_template = {
 	icon_frame = 1
 	
 	power = -60.0
-	cost = 60.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+		}
+		upkeep = {
+			energy = @m_t7_upkeep_energy
+			alloys = @m_t7_upkeep_alloys
+		}
+	}
 	
 	damage = { min = 200.0 max = 400.0 }
 	windup = { min = 1.0 max = 15.0 }
@@ -624,7 +696,16 @@ weapon_component_template = {
 	icon_frame = 1
 	
 	power = -30.0
-	cost = 30.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+		upkeep = {
+			energy = @s_t7_upkeep_energy
+			alloys = @s_t7_upkeep_alloys
+		}
+	}
 	
 	damage = { min = 100.0 max = 200.0 }
 	windup = { min = 1.0 max = 15.0 }
@@ -661,7 +742,16 @@ weapon_component_template = {
 	icon_frame = 1
 	
 	power = -20.0
-	cost = 20.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = @s_t7_upkeep_energy
+			alloys = @s_t7_upkeep_alloys
+		}
+	}
 	
 	damage = { min = 50.0 max = 100.0 }
 	windup = { min = 1.0 max = 5.0 }

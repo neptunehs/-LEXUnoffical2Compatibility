@@ -10,16 +10,18 @@ bwm_gravekeeper_project_00 = {
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @phase_0_entity_x y = @phase_0_entity_y }
 	build_time = 1800
-	
-	build_cost = {
-		minerals = 4000
-		influence = 200
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+			influence = 200
+		}
+		
+		upkeep = {
+			energy = 10
+		}
 	}
 
-	maintenance = {
-		energy = 10
-	}
-	
 	prerequisites = { "tech_bwm_gravekeeper" }
 
 	potential = {
@@ -102,9 +104,16 @@ bwm_gravekeeper_project_00 = {
 				AND = {
 					is_asteroid = yes
 					OR = {
-						has_deposit = d_rich_mineral_deposit
-						has_deposit = d_vast_mineral_deposit
-						has_deposit = d_immense_mineral_deposit
+						has_deposit = d_minerals_1
+						has_deposit = d_minerals_2
+						has_deposit = d_minerals_3
+						has_deposit = d_minerals_4
+						has_deposit = d_minerals_5
+						has_deposit = d_minerals_6
+						has_deposit = d_minerals_7
+						has_deposit = d_minerals_8
+						has_deposit = d_minerals_9
+						has_deposit = d_minerals_10
 					}
 				}
 			}
@@ -152,13 +161,17 @@ bwm_gravekeeper_project_01 = {
 		bwm_gravekeeper_project_00
 	}
 	build_time = 4320
-	build_cost = {
-		minerals = 40000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 20000
+		}
+		
+		upkeep = {
+			energy = 20
+		}
 	}
 
-	maintenance = {
-		energy = 20
-	}
 	
 	potential = {
 		OR = {
@@ -171,7 +184,9 @@ bwm_gravekeeper_project_01 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_gravekeeper_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}

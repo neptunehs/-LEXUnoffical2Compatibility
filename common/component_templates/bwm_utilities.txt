@@ -4,7 +4,12 @@ utility_component_template = {
 	icon = "GFX_bwm_drive"
 	icon_frame = 1
 	power = -20
-	cost = 60
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 15
+		}
+	}
 	ftl = yes
 	jumpdrive = yes
 
@@ -28,7 +33,12 @@ utility_component_template = {
 	icon = "GFX_bwm_thruster"
 	icon_frame = 1
 	power = -40
-	cost = 40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 15
+		}
+	}
 	
 	prerequisites = { "tech_bwm_lex_thruster" }
 	
@@ -46,7 +56,12 @@ utility_component_template = {
 	icon = "GFX_bwm_sensor"
 	icon_frame = 1
 	power = -30
-	cost = 20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+	}
 	sensor_range = 5
 	hyperlane_range = 10
 	
@@ -69,7 +84,12 @@ utility_component_template = {
 	icon = "GFX_bwm_sensor"
 	icon_frame = 1
 	power = -30
-	cost = 20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+	}
 	sensor_range = 5
 	hyperlane_range = 10
 	
@@ -92,7 +112,12 @@ utility_component_template = {
 	icon = "GFX_bwm_cpu"
 	icon_frame = 1
 	power = -40
-	cost = 40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+	}
 	
 	prerequisites = { "tech_bwm_lex_cpu" }
 
@@ -115,7 +140,12 @@ utility_component_template = {
 	icon = "GFX_bwm_cpu"
 	icon_frame = 1
 	power = -40
-	cost = 40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+	}
 	
 	prerequisites = { "tech_bwm_lex_cpu" }
 
@@ -143,7 +173,12 @@ utility_component_template = {
 	icon = "GFX_bwm_cpu"
 	icon_frame = 1
 	power = -40
-	cost = 40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+	}
 	
 	prerequisites = { "tech_bwm_lex_cpu" }
 
@@ -171,7 +206,12 @@ utility_component_template = {
 	icon = "GFX_bwm_cpu"
 	icon_frame = 1
 	power = -40
-	cost = 40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+	}
 	
 	prerequisites = { "tech_bwm_lex_cpu" }
 
@@ -199,7 +239,12 @@ utility_component_template = {
 	icon = "GFX_bwm_power"
 	icon_frame = 1
 	power = 1000
-	cost = 60
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+		}
+	}
 	
 	prerequisites = { "tech_bwm_lex_power" }
 	
@@ -216,7 +261,12 @@ utility_component_template = {
 	icon = "GFX_bwm_power"
 	icon_frame = 1
 	power = 2000
-	cost = 120
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+		}
+	}
 	
 	prerequisites = { "tech_bwm_lex_power" }
 	
@@ -233,7 +283,12 @@ utility_component_template = {
 	icon = "GFX_bwm_power"
 	icon_frame = 1
 	power = 3500
-	cost = 240
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 160
+		}
+	}
 	
 	prerequisites = { "tech_bwm_lex_power" }
 	
@@ -250,7 +305,12 @@ utility_component_template = {
 	icon = "GFX_bwm_power"
 	icon_frame = 1
 	power = 9000
-	cost = 480
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 320
+		}
+	}
 	
 	prerequisites = { "tech_bwm_lex_power" }
 	
@@ -267,7 +327,12 @@ utility_component_template = {
 	icon = "GFX_bwm_power"
 	icon_frame = 1
 	power = 22000
-	cost = 960
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 640
+		}
+	}
 	
 	prerequisites = { "tech_bwm_lex_power" }
 	
@@ -284,7 +349,16 @@ utility_component_template = {
 	icon = "GFX_bwm_shield"
 	icon_frame = 1
 	power = -350
-	cost = 120
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t7_cost
+		}
+		upkeep = {
+			energy = @shield_l_t7_upkeep_energy
+			alloys = @shield_l_t7_upkeep_alloys
+		}
+	}
 	
 	prerequisites = { "tech_bwm_lex_shield" }
 	
@@ -306,7 +380,16 @@ utility_component_template = {
 	icon = "GFX_bwm_shield"
 	icon_frame = 1
 	power = -140
-	cost = 60
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t7_cost
+		}
+		upkeep = {
+			energy = @shield_m_t7_upkeep_energy
+			alloys = @shield_m_t7_upkeep_alloys
+		}
+	}
 	
 	prerequisites = { "tech_bwm_lex_shield" }
 	
@@ -328,7 +411,16 @@ utility_component_template = {
 	icon = "GFX_bwm_shield"
 	icon_frame = 1
 	power = -55
-	cost = 30
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t7_cost
+		}
+		upkeep = {
+			energy = @shield_s_t7_upkeep_energy
+			alloys = @shield_s_t7_upkeep_alloys
+		}
+	}
 	
 	prerequisites = { "tech_bwm_lex_shield" }
 	
@@ -350,7 +442,16 @@ utility_component_template = {
 	icon = "GFX_bwm_armor"
 	icon_frame = 1
 	power = 0
-	cost = 80
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+		}		
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
 	
 	prerequisites = { "tech_bwm_lex_armor" }
 	
@@ -371,7 +472,16 @@ utility_component_template = {
 	icon = "GFX_bwm_armor"
 	icon_frame = 1
 	power = 0
-	cost = 40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t7_cost
+		}		
+		upkeep = {
+			energy = @m_t7_upkeep_energy
+			alloys = @m_t7_upkeep_alloys
+		}
+	}
 	
 	prerequisites = { "tech_bwm_lex_armor" }
 	
@@ -392,7 +502,16 @@ utility_component_template = {
 	icon = "GFX_bwm_armor"
 	icon_frame = 1
 	power = 0
-	cost = 20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t7_cost
+		}		
+		upkeep = {
+			energy = @s_t7_upkeep_energy
+			alloys = @s_t7_upkeep_alloys
+		}
+	}
 	
 	prerequisites = { "tech_bwm_lex_armor" }
 	
@@ -414,7 +533,12 @@ utility_component_template = {
 	icon = "GFX_bwm_shield_repair"
 	icon_frame = 1
 	power = -40
-	cost = 40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+	}
 	
 	modifier = {
 		ship_shield_mult = 0.15
@@ -434,7 +558,12 @@ utility_component_template = {
 	icon = "GFX_bwm_hull_repair"
 	icon_frame = 1
 	power = -40
-	cost = 40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+	}
 	
 	prerequisites = { "tech_bwm_lex_hull_repair" }
 	
@@ -456,7 +585,12 @@ utility_component_template = {
 	icon = "GFX_bwm_aura"
 	icon_frame = 1
 	power = 0
-	cost = 40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+	}
 	
 	border_extrusion_range = 50
 	
@@ -477,7 +611,6 @@ utility_component_template = {
 	icon = "GFX_ship_part_computer_default"
 	icon_frame = 1
 	power = 0
-	cost = 0
 	class_restriction = { shipclass_military }
 	size_restriction = { bwm_artifact_ship }
 	component_set = "combat_computers"
@@ -491,7 +624,12 @@ utility_component_template = {
 	icon = "GFX_ship_part_computer_aggressive_basic"
 	icon_frame = 1
 	power = -5
-	cost = 5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 5
+		}
+	}
 	class_restriction = { shipclass_military }
 	size_restriction = { bwm_artifact_ship }
 	component_set = "combat_computers"
@@ -514,7 +652,12 @@ utility_component_template = {
 	icon = "GFX_ship_part_computer_aggressive_advanced"
 	icon_frame = 1
 	power = -10
-	cost = 10
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+	}
 	class_restriction = { shipclass_military }
 	size_restriction = { bwm_artifact_ship }
 	component_set = "combat_computers"
@@ -536,7 +679,12 @@ utility_component_template = {
 	icon = "GFX_ship_part_computer_sapient"
 	icon_frame = 1
 	power = -20
-	cost = 20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+	}
 	class_restriction = { shipclass_military }
 	size_restriction = { bwm_artifact_ship }
 	component_set = "combat_computers"
@@ -560,7 +708,12 @@ utility_component_template = {
 	icon = "GFX_ship_part_computer_pregoc"
 	icon_frame = 1
 	power = -20
-	cost = 20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+	}
 	class_restriction = { shipclass_military }
 	size_restriction = { bwm_artifact_ship }
 	component_set = "combat_computers"

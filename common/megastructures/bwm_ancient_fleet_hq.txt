@@ -17,7 +17,7 @@
 
 	# country_modifier = {
 		# navy_size_mult = 1.0	
-		# ship_upkeep_mult = -0.5
+		# ships_upkeep_mult = -0.5
 		# ship_accuracy_add = 10
 		# ship_tracking_add = 10
 		# ship_evasion_add = 10

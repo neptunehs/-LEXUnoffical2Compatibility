@@ -8,7 +8,12 @@ weapon_component_template = {
 	icon_frame = 1
 
 	power = -600.0
-	cost = 600.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 600
+		}
+	}
 	
 	damage = { min = 5100.0 max = 10200.0 }
 	windup = { min = 30.0 max = 40.0 }
@@ -110,7 +115,12 @@ weapon_component_template = {
 	icon_frame = 1
 
 	power = -600.0
-	cost = 600.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 600
+		}
+	}
 	
 	damage = { min = 2540.0 max = 5080.0 }
 	windup = { min = 30.0 max = 40.0 }
@@ -212,7 +222,12 @@ weapon_component_template = {
 	icon_frame = 1
 
 	power = -600.0
-	cost = 600.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 600
+		}
+	}
 	
 	damage = { min = 2540.0 max = 5080.0 }
 	windup = { min = 30.0 max = 40.0 }
@@ -310,7 +325,12 @@ weapon_component_template = {
 	icon_frame = 1
 
 	power = -240.0
-	cost = 240.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 240
+		}
+	}
 	
 	damage = { min = 1260.0 max = 2520.0 }
 	windup = { min = 1.0 max = 30.0 }
@@ -407,7 +427,12 @@ weapon_component_template = {
 	icon_frame = 1
 	
 	power = -120.0
-	cost = 120.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 120
+		}
+	}
 	
 	damage = { min = 620.0 max = 1240.0 }
 	windup = { min = 20.0 max = 30.0 }
@@ -444,7 +469,12 @@ weapon_component_template = {
 	icon_frame = 1
 	
 	power = -60.0
-	cost = 60.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+		}
+	}
 	
 	damage = { min = 300.0 max = 600.0 }
 	windup = { min = 1.0 max = 20.0 }
@@ -481,7 +511,12 @@ weapon_component_template = {
 	icon_frame = 1
 	
 	power = -30.0
-	cost = 30.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+	}
 	
 	damage = { min = 140.0 max = 280.0 }
 	windup = { min = 1.0 max = 20.0 }
@@ -518,7 +553,12 @@ weapon_component_template = {
 	icon_frame = 1
 	
 	power = -20.0
-	cost = 20.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+	}
 	
 	damage = { min = 60.0 max = 120.0 }
 	windup = { min = 1.0 max = 10.0 }
@@ -554,7 +594,6 @@ weapon_component_template = {
 	icon_frame = 1
 
 	power = 0
-	cost = 0
 	
 	damage = { min = 230.0 max = 460.0 }
 	windup = { min = 1.0 max = 5.0 }
@@ -591,7 +630,6 @@ weapon_component_template = {
 	icon_frame = 1
 
 	power = 0
-	cost = 0
 	
 	damage = { min = 110.0 max = 220.0 }
 	windup = { min = 1.0 max = 5.0 }
@@ -627,7 +665,6 @@ weapon_component_template = {
 	icon_frame = 1
 
 	power = 0
-	cost = 0
 	
 	damage = { min = 50.0 max = 100.0 }
 	windup = { min = 1.0 max = 5.0 }
@@ -663,7 +700,6 @@ weapon_component_template = {
 	icon_frame = 1
 
 	power = 0
-	cost = 0
 	
 	damage = { min = 20.0 max = 40.0 }
 	windup = { min = 1.0 max = 5.0 }
@@ -699,7 +735,6 @@ weapon_component_template = {
 	icon_frame = 1
 
 	power = 0
-	cost = 0
 	
 	damage = { min = 5.0 max = 10.0 }
 	windup = { min = 1.0 max = 5.0 }

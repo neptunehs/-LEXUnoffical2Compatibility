@@ -5,7 +5,12 @@ utility_component_template = {
 	icon_frame = 1
 	
 	power = -400
-    cost = 400
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 400
+		}
+	}
 	
 	hidden = yes
 
@@ -33,7 +38,6 @@ utility_component_template = {
 	icon_frame = 1
 	
 	power = 0
-	cost = 0
 	
 	hidden = yes
 
@@ -61,7 +65,12 @@ utility_component_template = {
 	icon = "GFX_bwm_aura"
 	icon_frame = 1
 	power = -400
-	cost = 400
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 400
+		}
+	}
 	
 	hidden = yes
 	
@@ -88,7 +97,6 @@ utility_component_template = {
 	icon = "GFX_bwm_aura"
 	icon_frame = 1
 	power = 0
-	cost = 0
 	
 	hidden = yes
 	
@@ -115,7 +123,6 @@ utility_component_template = {
 	icon = "GFX_bwm_aura"
 	icon_frame = 1
 	power = 0
-	cost = 0
 	
 	hidden = yes
 	
@@ -142,7 +149,12 @@ utility_component_template = {
 	icon = "GFX_bwm_aura"
 	icon_frame = 1
 	power = -400
-	cost = 400
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 400
+		}
+	}
 	
 	hidden = yes
 	
@@ -170,7 +182,12 @@ utility_component_template = {
 	icon_frame = 1
 	
 	power = -400
-    cost = 400
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 400
+		}
+	}
 	
 	hidden = yes
 	
@@ -225,7 +242,12 @@ utility_component_template = {
 	icon_frame = 1
 	
 	power = -400
-    cost = 400
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 400
+		}
+	}
 	
 	hidden = yes
 	
@@ -280,7 +302,12 @@ utility_component_template = {
 	icon_frame = 1
 	
 	power = -400
-    cost = 400
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 400
+		}
+	}
 	
 	hidden = yes
 	
@@ -335,7 +362,12 @@ utility_component_template = {
 	icon_frame = 1
 	
 	power = -400
-    cost = 400
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 400
+		}
+	}
 	
 	hidden = yes
 	
@@ -390,7 +422,12 @@ utility_component_template = {
 	icon_frame = 1
 	
 	power = -400
-    cost = 400
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 400
+		}
+	}
 	
 	hidden = yes
 	
@@ -445,7 +482,12 @@ utility_component_template = {
 	icon_frame = 1
 	
 	power = -400
-    cost = 400
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 400
+		}
+	}
 	
 	hidden = yes
 	
@@ -473,7 +515,6 @@ utility_component_template = {
 	icon_frame = 1
 	
 	power = 0
-    cost = 0
 	
 	hidden = yes
 	
@@ -501,7 +542,12 @@ utility_component_template = {
 	icon_frame = 1
 	
 	power = -400
-    cost = 400
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 400
+		}
+	}
 	
 	hidden = yes
 
@@ -529,7 +575,6 @@ utility_component_template = {
 	icon_frame = 1
 	
 	power = 0
-    cost = 0
 	
 	hidden = yes
 
@@ -558,7 +603,6 @@ utility_component_template = {
 	icon_frame = 1
 	
 	power = 0
-    cost = 0
 	
 	hidden = yes
 
@@ -573,7 +617,7 @@ utility_component_template = {
 		}
 		
 		modifier = {
-			ship_upkeep_mult = 0.5
+			ships_upkeep_mult = 0.5
 			ship_speed_mult = -0.5
 		}
 	}
@@ -989,7 +1033,12 @@ utility_component_template = {
 	icon_frame = 1
 	
 	power = -400
-    cost = 400
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 400
+		}
+	}
 	
 	hidden = yes
 
@@ -1104,7 +1153,6 @@ utility_component_template = {
 	icon_frame = 1
 	
 	power = 0
-	cost = 0
 	
 	hidden = yes
 

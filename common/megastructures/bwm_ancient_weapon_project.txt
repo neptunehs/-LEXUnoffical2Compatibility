@@ -11,13 +11,16 @@ bwm_ancient_weapon_project_00 = {
 	entity_offset = { x = @phase_0_entity_x y = @phase_0_entity_y }
 	build_time = 1800
 	
-	build_cost = {
-		minerals = 5000
-		influence = 400
-	}
-
-	maintenance = {
-		energy = 10
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2500
+			influence = 400
+		}
+		
+		upkeep = {
+			energy = 10
+		}
 	}
 	
 	prerequisites = { "tech_bwm_ancient_weapon" }
@@ -116,12 +119,20 @@ bwm_ancient_weapon_project_00 = {
 				}
 			}
 			custom_tooltip = {
-				fail_text = "must_build_around_asteroid"
+				fail_text = "must_build_around_asteroid_with_mineral"
 				AND = {
 					is_asteroid = yes
 					OR = {
-						has_deposit = d_vast_mineral_deposit
-						has_deposit = d_immense_mineral_deposit
+						has_deposit = d_minerals_1
+						has_deposit = d_minerals_2
+						has_deposit = d_minerals_3
+						has_deposit = d_minerals_4
+						has_deposit = d_minerals_5
+						has_deposit = d_minerals_6
+						has_deposit = d_minerals_7
+						has_deposit = d_minerals_8
+						has_deposit = d_minerals_9
+						has_deposit = d_minerals_10
 					}
 				}
 			}
@@ -161,13 +172,17 @@ bwm_ancient_weapon_project_01 = {
 		bwm_ancient_weapon_project_00
 	}
 	build_time = 1440
-	build_cost = {
-		minerals = 16000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 8000
+		}
+		
+		upkeep = {
+			energy = 20
+		}
 	}
 
-	maintenance = {
-		energy = 20
-	}
 	
 	potential = {
 		is_ai = no
@@ -176,8 +191,10 @@ bwm_ancient_weapon_project_01 = {
 	possible = {
 		from = {
 			OR = {
-				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_country_flag = bwm_ancient_weapon_builder				
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp			
 			}
 		}
 	}
@@ -193,13 +210,17 @@ bwm_ancient_weapon_project_02 = {
 		bwm_ancient_weapon_project_01
 	}
 	build_time = 1080
-	build_cost = {
-		minerals = 8000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		
+		upkeep = {
+			energy = 30
+		}
 	}
 
-	maintenance = {
-		energy = 30
-	}
 	
 	potential = {
 		is_ai = no
@@ -209,7 +230,9 @@ bwm_ancient_weapon_project_02 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -225,12 +248,15 @@ bwm_ancient_weapon_project_03 = {
 		bwm_ancient_weapon_project_02
 	}
 	build_time = 1080
-	build_cost = {
-		minerals = 8000
-	}
-
-	maintenance = {
-		energy = 30
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		
+		upkeep = {
+			energy = 30
+		}
 	}
 	
 	potential = {
@@ -241,7 +267,9 @@ bwm_ancient_weapon_project_03 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -257,13 +285,17 @@ bwm_ancient_weapon_project_04 = {
 		bwm_ancient_weapon_project_03
 	}
 	build_time = 1080
-	build_cost = {
-		minerals = 8000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		
+		upkeep = {
+			energy = 30
+		}
 	}
 
-	maintenance = {
-		energy = 30
-	}
 	
 	potential = {
 		is_ai = no
@@ -273,7 +305,9 @@ bwm_ancient_weapon_project_04 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -289,14 +323,17 @@ bwm_ancient_weapon_project_05 = {
 		bwm_ancient_weapon_project_04
 	}
 	build_time = 1080
-	build_cost = {
-		minerals = 8000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		
+		upkeep = {
+			energy = 30
+		}
 	}
 
-	maintenance = {
-		energy = 30
-	}
-	
 	potential = {
 		is_ai = no
 	}
@@ -305,7 +342,9 @@ bwm_ancient_weapon_project_05 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -320,13 +359,16 @@ bwm_ancient_weapon_project_06 = {
 	upgrade_from = {
 		bwm_ancient_weapon_project_05
 	}
-	build_time = 1080
-	build_cost = {
-		minerals = 8000
-	}
-
-	maintenance = {
-		energy = 30
+	build_time = 1080	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		
+		upkeep = {
+			energy = 30
+		}
 	}
 	
 	potential = {
@@ -337,7 +379,9 @@ bwm_ancient_weapon_project_06 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -352,13 +396,16 @@ bwm_ancient_weapon_project_07 = {
 	upgrade_from = {
 		bwm_ancient_weapon_project_06
 	}
-	build_time = 1080
-	build_cost = {
-		minerals = 8000
-	}
-
-	maintenance = {
-		energy = 30
+	build_time = 1080	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		
+		upkeep = {
+			energy = 30
+		}
 	}
 	
 	potential = {
@@ -369,7 +416,9 @@ bwm_ancient_weapon_project_07 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -385,12 +434,15 @@ bwm_ancient_weapon_project_08 = {
 		bwm_ancient_weapon_project_07
 	}
 	build_time = 1080
-	build_cost = {
-		minerals = 8000
-	}
-
-	maintenance = {
-		energy = 30
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		
+		upkeep = {
+			energy = 30
+		}
 	}
 	
 	potential = {
@@ -401,7 +453,9 @@ bwm_ancient_weapon_project_08 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -417,12 +471,15 @@ bwm_ancient_weapon_project_09 = {
 		bwm_ancient_weapon_project_08
 	}
 	build_time = 1080
-	build_cost = {
-		minerals = 8000
-	}
-
-	maintenance = {
-		energy = 30
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		
+		upkeep = {
+			energy = 30
+		}
 	}
 	
 	potential = {
@@ -433,7 +490,9 @@ bwm_ancient_weapon_project_09 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -449,12 +508,15 @@ bwm_ancient_weapon_project_10 = {
 		bwm_ancient_weapon_project_09
 	}
 	build_time = 1080
-	build_cost = {
-		minerals = 8000
-	}
-
-	maintenance = {
-		energy = 30
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		
+		upkeep = {
+			energy = 30
+		}
 	}
 	
 	potential = {
@@ -465,7 +527,9 @@ bwm_ancient_weapon_project_10 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -481,12 +545,15 @@ bwm_ancient_weapon_project_11 = {
 		bwm_ancient_weapon_project_10
 	}
 	build_time = 1080
-	build_cost = {
-		minerals = 8000
-	}
-
-	maintenance = {
-		energy = 30
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		
+		upkeep = {
+			energy = 30
+		}
 	}
 	
 	potential = {
@@ -497,7 +564,9 @@ bwm_ancient_weapon_project_11 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -513,12 +582,15 @@ bwm_ancient_weapon_project_12 = {
 		bwm_ancient_weapon_project_11
 	}
 	build_time = 1080
-	build_cost = {
-		minerals = 8000
-	}
-
-	maintenance = {
-		energy = 30
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		
+		upkeep = {
+			energy = 30
+		}
 	}
 	
 	potential = {
@@ -529,7 +601,9 @@ bwm_ancient_weapon_project_12 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -545,13 +619,17 @@ bwm_ancient_weapon_project_13 = {
 		bwm_ancient_weapon_project_12
 	}
 	build_time = 1080
-	build_cost = {
-		minerals = 8000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		
+		upkeep = {
+			energy = 30
+		}
 	}
 
-	maintenance = {
-		energy = 30
-	}
 	
 	potential = {
 		is_ai = no
@@ -561,7 +639,9 @@ bwm_ancient_weapon_project_13 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -577,12 +657,15 @@ bwm_ancient_weapon_project_14 = {
 		bwm_ancient_weapon_project_13
 	}
 	build_time = 720
-	build_cost = {
-		minerals = 4000
-	}
-
-	maintenance = {
-		energy = 40
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+		
+		upkeep = {
+			energy = 40
+		}
 	}
 	
 	potential = {
@@ -593,7 +676,9 @@ bwm_ancient_weapon_project_14 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -608,24 +693,29 @@ bwm_ancient_weapon_project_15 = {
 	upgrade_from = {
 		bwm_ancient_weapon_project_14
 	}
-	build_time = 720
-	build_cost = {
-		minerals = 4000
+	build_time = 720	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+		
+		upkeep = {
+			energy = 40
+		}
 	}
 	
 	potential = {
 		is_ai = no
 	}
 
-	maintenance = {
-		energy = 40
-	}
-
 	possible = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -641,23 +731,29 @@ bwm_ancient_weapon_project_16 = {
 		bwm_ancient_weapon_project_15
 	}
 	build_time = 720
-	build_cost = {
-		minerals = 4000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+		
+		upkeep = {
+			energy = 40
+		}
 	}
 	
 	potential = {
 		is_ai = no
 	}
 
-	maintenance = {
-		energy = 40
-	}
 
 	possible = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -673,23 +769,27 @@ bwm_ancient_weapon_project_17 = {
 		bwm_ancient_weapon_project_16
 	}
 	build_time = 720
-	build_cost = {
-		minerals = 4000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+		
+		upkeep = {
+			energy = 40
+		}
 	}
-	
 	potential = {
 		is_ai = no
-	}
-
-	maintenance = {
-		energy = 40
 	}
 
 	possible = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -705,23 +805,28 @@ bwm_ancient_weapon_project_18 = {
 		bwm_ancient_weapon_project_17
 	}
 	build_time = 720
-	build_cost = {
-		minerals = 4000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+		
+		upkeep = {
+			energy = 40
+		}
 	}
 	
 	potential = {
 		is_ai = no
 	}
 
-	maintenance = {
-		energy = 40
-	}
-
 	possible = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -737,23 +842,28 @@ bwm_ancient_weapon_project_19 = {
 		bwm_ancient_weapon_project_18
 	}
 	build_time = 720
-	build_cost = {
-		minerals = 4000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+		
+		upkeep = {
+			energy = 40
+		}
 	}
 	
 	potential = {
 		is_ai = no
 	}
 
-	maintenance = {
-		energy = 40
-	}
-
 	possible = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -769,23 +879,28 @@ bwm_ancient_weapon_project_20 = {
 		bwm_ancient_weapon_project_19
 	}
 	build_time = 360
-	build_cost = {
-		minerals = 2000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1000
+		}
+		
+		upkeep = {
+			energy = 50
+		}
 	}
 	
 	potential = {
 		is_ai = no
 	}
 
-	maintenance = {
-		energy = 50
-	}
-
 	possible = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -801,23 +916,28 @@ bwm_ancient_weapon_project_21 = {
 		bwm_ancient_weapon_project_20
 	}
 	build_time = 360
-	build_cost = {
-		minerals = 2000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1000
+		}
+		
+		upkeep = {
+			energy = 50
+		}
 	}
 	
 	potential = {
 		is_ai = no
 	}
 
-	maintenance = {
-		energy = 50
-	}
-
 	possible = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -833,23 +953,29 @@ bwm_ancient_weapon_project_22 = {
 		bwm_ancient_weapon_project_21
 	}
 	build_time = 360
-	build_cost = {
-		minerals = 2000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1000
+		}
+		
+		upkeep = {
+			energy = 50
+		}
 	}
 	
 	potential = {
 		is_ai = no
 	}
 
-	maintenance = {
-		energy = 50
-	}
 
 	possible = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -865,23 +991,28 @@ bwm_ancient_weapon_project_23 = {
 		bwm_ancient_weapon_project_22
 	}
 	build_time = 360
-	build_cost = {
-		minerals = 2000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1000
+		}
+		
+		upkeep = {
+			energy = 50
+		}
 	}
 	
 	potential = {
 		is_ai = no
 	}
 
-	maintenance = {
-		energy = 50
-	}
-
 	possible = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -897,12 +1028,15 @@ bwm_ancient_weapon_project_24 = {
 		bwm_ancient_weapon_project_23
 	}
 	build_time = 360
-	build_cost = {
-		minerals = 2000
-	}
-
-	maintenance = {
-		energy = 50
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1000
+		}
+		
+		upkeep = {
+			energy = 50
+		}
 	}
 	
 	potential = {
@@ -913,7 +1047,9 @@ bwm_ancient_weapon_project_24 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -929,12 +1065,15 @@ bwm_ancient_weapon_project_25 = {
 		bwm_ancient_weapon_project_24
 	}
 	build_time = 360
-	build_cost = {
-		minerals = 2000
-	}
-
-	maintenance = {
-		energy = 50
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1000
+		}
+		
+		upkeep = {
+			energy = 50
+		}
 	}
 	
 	potential = {
@@ -945,7 +1084,9 @@ bwm_ancient_weapon_project_25 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_ancient_weapon_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}

@@ -81,9 +81,11 @@ ship_event = {
 		custom_tooltip = bwm_gravekeeper.2.a.tooltip
 		set_global_flag = bwm_grave_appeared
 		owner = { 
-			add_physics_research = 1000
-			add_society_research = 1000
-			add_engineering_research = 1000
+			add_resource = {
+				physics_research = 1000
+				society_research = 1000
+				engineering_research = 1000
+			}
 		}
 		hidden_effect = {
 			event_target:bwm_gravekeeper_system = {
@@ -127,7 +129,7 @@ ship_event = {
 				save_global_event_target_as = bwm_grave_country
 				set_country_flag = bwm_grave_country
 				set_graphical_culture = fallen_empire_04
-				guardian_difficulty = yes
+				#guardian_difficulty = yes
 				lex_get_full_map = yes
 			}
 			create_fleet = {
@@ -169,7 +171,9 @@ ship_event = {
 	option = {
 		name = bwm_gravekeeper.2.b
 		owner = { 
-			add_influence = 100
+			add_resource = {
+				influence = 100
+			}
 		}
 	}
 }
@@ -844,7 +848,9 @@ country_event = {
 	}
 	option = {
 		name = bwm_gravekeeper.31.b
-		add_influence = 100
+		add_resource = {
+			influence = 100
+		}
 	}
 }
 
@@ -991,8 +997,10 @@ country_event = {
 	}
 	option = {
 		name = "bwm_gravekeeper.41.b"
-		add_minerals = 10000
-		add_energy = 10000
+		add_resource = {
+			minerals = 10000
+			energy = 10000
+		}
 		hidden_effect = {
 			event_target:bwm_disabled_gravekeeper_object = {
 			destroy_ambient_object = this 
@@ -1457,7 +1465,9 @@ country_event = {
 	}
 	option = {
 		name = "bwm_gravekeeper.60.b"
-		add_influence = 100
+		add_resource = {
+			influence = 100
+		}
 	}
 }
 
@@ -1618,7 +1628,9 @@ country_event = {
 	}
 	option = {
 		name = "bwm_gravekeeper.71.b"
-		add_influence = 100
+		add_resource = {
+			influence = 100
+		}
 	}
 }
 
@@ -1820,7 +1832,9 @@ country_event = {
 	}
 	option = {
 		name = "bwm_gravekeeper.77.b"
-		add_influence = 100
+		add_resource = {
+			influence = 100
+		}
 		hidden_effect = {
 			set_country_flag = bwm_gravekeeper_schematic_tech_lock
 		}

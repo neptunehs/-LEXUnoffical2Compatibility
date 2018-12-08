@@ -1312,12 +1312,13 @@ planet_event = {
 			set_owner = event_target:bwm_ancestor_swarm_owner_3
 			set_planet_flag = bwm_ancestor_world
 			remove_planet_flag = bwm_ancestor_touched
-			every_tile = {
-				set_blocker = tb_bwm_nature
+			while = {
+				limit = { num_free_districts = { type = any value > 0 } }
+				add_deposit = tb_bwm_nature
 			}
-			random_tile = {
-				set_deposit = d_alien_pets_deposit
-			}
+#			random_tile = {
+#				set_deposit = d_alien_pets_deposit
+#			}
 			add_modifier = {
 				modifier = "bwm_ancestor_garden_world"
 				days = -1
@@ -1336,17 +1337,10 @@ planet_event = {
 			change_pc = pc_nuked
 			remove_planet_flag = bwm_ancestor_touched
 			bwm_ancestor_terraform = yes
-			every_tile = {
-				if = {
-					limit = {
-						has_building = yes
-					}
-					set_building = bwm_building_crisis_ruin
-				}
-			}
-			random_tile = {
-				set_deposit = d_betharian_deposit
-			}
+			remove_all_buildings = yes
+#			random_tile = {
+#				set_deposit = d_betharian_deposit
+#			}
 			break = yes
 		}
 		if = {
@@ -1357,9 +1351,7 @@ planet_event = {
 			change_pc = pc_bwm_cracked	
 			bwm_ancestor_terraform = yes
 			reset_planet = yes
-			orbital_deposit_tile = {
-				add_dark_matter = yes 
-			}
+			add_dark_matter = yes 
 			break = yes
 		}
 		if = {
@@ -1370,9 +1362,7 @@ planet_event = {
 			change_pc = pc_ringworld_habitable_damaged
 			bwm_ancestor_terraform = yes
 			reset_planet = yes
-			orbital_deposit_tile = {
-				set_deposit = d_living_metal_deposit
-			}
+			set_deposit = d_living_metal_deposit
 			break = yes
 		}
 		if = {
@@ -1436,13 +1426,9 @@ planet_event = {
 		}
 		random_list = {
 			75 = {
-				every_tile = {
-					if = {
-						limit = {
-							has_blocker = "tb_bwm_nature"
-						}
-						remove_blocker = yes
-					}
+				while = {
+					limit = { any_deposit = { is_deposit_type = tb_bwm_nature } }
+					remove_deposit = tb_bwm_nature
 				}
 			}
 			25 = {
@@ -1560,12 +1546,11 @@ planet_event = {
 						count_pops = {
 							count > 1
 						}
-					}						
+					}
 					random_pop = {
 						limit = {
 							NOT = {
 								has_modifier = bwm_pop_ancestor
-								is_growing = yes 
 							}
 						}
 						add_modifier = {
@@ -1677,80 +1662,80 @@ planet_event = {
 			99 = {
 			}
 		}
-		random_list = {
-			1 = {
-				random_tile = {
-					limit = {
-						has_building = yes
-						is_ruined = no
-					}
-					set_ruined = yes
-				}
-				add_threat = {
-					who = FROM.OWNER
-					amount = 10
-				}
-			}
-			99 = {
-			}
-		}
-		random_list = {
-			1 = {
-				if = {
-					limit = {
-						planet = {
-							count_pops = {
-								count > 1
-							}
-						}
-					}
-					random_tile = {
-						limit = {
-							has_grown_pop = no
-							has_growing_pop = no 
-							has_blocker = no
-							has_building = yes
-							is_ruined = yes
-						}
-						set_blocker = "tb_bwm_nature"
-					}
-					add_threat = {
-						who = FROM.OWNER
-						amount = 10
-					}
-				}
-			}
-			99 = {
-			}
-		}
-		random_list = {
-			1 = {	
-				if = {
-					limit = {
-						planet = {
-							count_pops = {
-								count > 1
-							}
-						}
-					}
-					random_tile = {
-						limit = {
-							has_grown_pop = no
-							has_growing_pop = no 
-							has_blocker = no
-							has_building = no
-						}
-						set_blocker = "tb_bwm_nature"
-					}
-					add_threat = {
-						who = FROM.OWNER
-						amount = 10
-					}
-				}
-			}
-			99 = {
-			}
-		}
+		# random_list = {
+			# 1 = {
+				# random_tile = {
+					# limit = {
+						# has_building = yes
+						# is_ruined = no
+					# }
+					# set_ruined = yes
+				# }
+				# add_threat = {
+					# who = FROM.OWNER
+					# amount = 10
+				# }
+			# }
+			# 99 = {
+			# }
+		# }
+		# random_list = {
+			# 1 = {
+				# if = {
+					# limit = {
+						# planet = {
+							# count_pops = {
+								# count > 1
+							# }
+						# }
+					# }
+					# random_tile = {
+						# limit = {
+							# has_grown_pop = no
+							# has_growing_pop = no 
+							# has_blocker = no
+							# has_building = yes
+							# is_ruined = yes
+						# }
+						# set_blocker = "tb_bwm_nature"
+					# }
+					# add_threat = {
+						# who = FROM.OWNER
+						# amount = 10
+					# }
+				# }
+			# }
+			# 99 = {
+			# }
+		# }
+		# random_list = {
+			# 1 = {	
+				# if = {
+					# limit = {
+						# planet = {
+							# count_pops = {
+								# count > 1
+							# }
+						# }
+					# }
+					# random_tile = {
+						# limit = {
+							# has_grown_pop = no
+							# has_growing_pop = no 
+							# has_blocker = no
+							# has_building = no
+						# }
+						# set_blocker = "tb_bwm_nature"
+					# }
+					# add_threat = {
+						# who = FROM.OWNER
+						# amount = 10
+					# }
+				# }
+			# }
+			# 99 = {
+			# }
+		# }
 	}
 }
 
@@ -1824,12 +1809,13 @@ event = {
 				set_owner = event_target:bwm_ancestor_country
 				set_planet_flag = bwm_ancestor_world
 				remove_planet_flag = bwm_ancestor_touched
-				every_tile = {
-					set_blocker = tb_bwm_nature
+				while = {
+					limit = { num_free_districts = { type = any value > 0 } }
+					add_deposit = tb_bwm_nature
 				}
-				random_tile = {
-					set_deposit = d_alien_pets_deposit
-				}
+				# random_tile = {
+					# set_deposit = d_alien_pets_deposit
+				# }
 				add_modifier = {
 					modifier = "bwm_ancestor_garden_world"
 					days = -1
@@ -1861,17 +1847,10 @@ event = {
 				bwm_ancestor_terraform = yes
 				change_pc = pc_nuked
 				remove_planet_flag = bwm_ancestor_touched
-				every_tile = {
-					if = {
-						limit = {
-							has_building = yes
-						}
-						set_building = bwm_building_crisis_ruin
-					}
-				}
-				random_tile = {
-					set_deposit = d_betharian_deposit
-				}
+				remove_all_buildings = yes
+				# random_tile = {
+					# set_deposit = d_betharian_deposit
+				# }
 				add_threat = {
 					who = event_target:bwm_ancestor_country
 					amount = 10
@@ -1895,9 +1874,7 @@ event = {
 				change_pc = pc_bwm_cracked	
 				remove_planet_flag = bwm_ancestor_touched
 				reset_planet = yes
-				orbital_deposit_tile = {
-					add_dark_matter = yes 
-				}
+				add_dark_matter = yes
 				add_threat = {
 					who = event_target:bwm_ancestor_country
 					amount = 10
@@ -1919,9 +1896,7 @@ event = {
 				change_pc = pc_ringworld_habitable_damaged
 				remove_planet_flag = bwm_ancestor_touched
 				reset_planet = yes
-				orbital_deposit_tile = {
 					set_deposit = d_living_metal_deposit
-				}
 				add_threat = {
 					who = event_target:bwm_ancestor_country
 					amount = 10
@@ -3504,12 +3479,8 @@ planet_event = {
 					event_target:bwm_prison_system = {
 						every_system_planet = {
 							limit = { has_planet_flag = bwm_ancestor_prison_planet_1 }
-							orbital_deposit_tile = {
 								clear_deposits = yes
-							}
-							orbital_deposit_tile = {
 								add_deposit = d_bwm_seal_exhausted
-							}
 							change_pc = pc_black_hole
 							bwm_ancestor_clear_station = yes	
 						}
@@ -3529,12 +3500,8 @@ planet_event = {
 					event_target:bwm_prison_system = {
 						every_system_planet = {
 							limit = { has_planet_flag = bwm_ancestor_prison_planet_2 }
-							orbital_deposit_tile = {
 								clear_deposits = yes
-							}
-							orbital_deposit_tile = {
 								add_deposit = d_bwm_seal_exhausted
-							}
 							change_pc = pc_black_hole
 							bwm_ancestor_clear_station = yes
 						}
@@ -3554,12 +3521,8 @@ planet_event = {
 					event_target:bwm_prison_system = {
 						every_system_planet = {
 							limit = { has_planet_flag = bwm_ancestor_prison_planet_3 }
-							orbital_deposit_tile = {
 								clear_deposits = yes
-							}
-							orbital_deposit_tile = {
 								add_deposit = d_bwm_seal_exhausted
-							}
 							change_pc = pc_black_hole
 							bwm_ancestor_clear_station = yes
 						}
@@ -3579,12 +3542,8 @@ planet_event = {
 					event_target:bwm_prison_system = {
 						every_system_planet = {
 							limit = { has_planet_flag = bwm_ancestor_prison_planet_4 }
-							orbital_deposit_tile = {
 								clear_deposits = yes
-							}
-							orbital_deposit_tile = {
 								add_deposit = d_bwm_seal_exhausted
-							}
 							change_pc = pc_black_hole
 							bwm_ancestor_clear_station = yes
 						}
@@ -3604,12 +3563,8 @@ planet_event = {
 					event_target:bwm_prison_system = {
 						every_system_planet = {
 							limit = { has_planet_flag = bwm_ancestor_prison_planet_5 }
-							orbital_deposit_tile = {
 								clear_deposits = yes
-							}
-							orbital_deposit_tile = {
 								add_deposit = d_bwm_seal_exhausted
-							}
 							change_pc = pc_black_hole
 							bwm_ancestor_clear_station = yes
 						}
@@ -3629,12 +3584,8 @@ planet_event = {
 					event_target:bwm_prison_system = {
 						every_system_planet = {
 							limit = { has_planet_flag = bwm_ancestor_prison_planet_6 }
-							orbital_deposit_tile = {
 								clear_deposits = yes
-							}
-							orbital_deposit_tile = {
 								add_deposit = d_bwm_seal_exhausted
-							}
 							change_pc = pc_black_hole
 							bwm_ancestor_clear_station = yes
 						}
@@ -3709,9 +3660,7 @@ country_event = {
 				limit = {
 					has_planet_flag = bwm_ancestor_prison_star 
 				}
-				orbital_deposit_tile = {
 					add_deposit = d_bwm_prison_1
-				}
 			}
 		}
 		every_country = {
@@ -3775,12 +3724,8 @@ country_event = {
 				limit = {
 					has_planet_flag = bwm_ancestor_prison_star 
 				}
-				orbital_deposit_tile = {
 					clear_deposits = yes
-				}
-				orbital_deposit_tile = {
 					add_deposit = d_bwm_prison_2
-				}
 				bwm_ancestor_clear_station = yes
 			}
 		}
@@ -3838,12 +3783,8 @@ country_event = {
 				limit = {
 					has_planet_flag = bwm_ancestor_prison_star 
 				}
-				orbital_deposit_tile = {
 					clear_deposits = yes
-				}
-				orbital_deposit_tile = {
 					add_deposit = d_bwm_prison_3
-				}
 				bwm_ancestor_clear_station = yes
 			}
 		}
@@ -3878,12 +3819,8 @@ country_event = {
 				}
 				change_pc = pc_black_hole
 				change_planet_size = 100
-				orbital_deposit_tile = {
 					clear_deposits = yes
-				}
-				orbital_deposit_tile = {
 					add_deposit = d_bwm_prison_exhausted
-				}
 				bwm_effect_explosion_6_big = yes
 				bwm_ancestor_clear_station = yes
 			}
@@ -3980,7 +3917,7 @@ country_event = {
 					save_global_event_target_as = bwm_ancestor_country
 					set_country_flag = bwm_ancestor_country
 					set_graphical_culture = fallen_empire_01
-					guardian_difficulty = yes
+					#guardian_difficulty = yes
 					lex_get_full_map = yes
 				}
 				bwm_effect_explosion_6_big = yes
@@ -4157,9 +4094,11 @@ country_event = {
 				civic = civic_ancient_caches_of_technology
 			}
 		}
-		add_minerals = 20000
-		add_energy = 10000
-		add_influence = 1000
+		add_resource = {
+			minerals = 20000
+			energy = 10000
+			influence = 1000
+		}
 		
 		every_country = {
 			limit = {
@@ -4640,9 +4579,9 @@ country_event = {
 				limit = {
 					has_planet_flag = bwm_ancestor_world
 				}
-				every_tile = {
-					limit = { has_blocker = "tb_bwm_nature" }
-					remove_blocker = yes
+				while = {
+					limit = { any_deposit = { is_deposit_type = tb_bwm_nature } }
+					remove_deposit = tb_bwm_nature
 				}
 			}
 		}
@@ -4876,7 +4815,9 @@ country_event = {
 	}	
 	option = {
 		name = bwm_ancestor.61.b
-		add_influence = 100
+		add_resource = {
+			influence = 100
+		}
 	}
 }
 

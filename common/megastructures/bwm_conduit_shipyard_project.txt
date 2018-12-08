@@ -11,14 +11,18 @@ bwm_conduit_shipyard_00 = {
 	entity_offset = { x = @phase_0_entity_x y = @phase_0_entity_y }
 	build_time = 1800
 	
-	build_cost = {
-		minerals = 8000
-		influence = 400
-	}
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+			influence = 300
+		}
 
-	maintenance = {
-		energy = 10
+		upkeep = {
+			energy = 10
+		}
 	}
+	
 	
 	prerequisites = { "tech_bwm_lex_garden" }
 
@@ -141,12 +145,15 @@ bwm_conduit_shipyard_01 = {
 	}
 	build_time = 2880
 	
-	build_cost = {
-		minerals = 16000
-	}
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 8000
+		}
 
-	maintenance = {
-		energy = 20
+		upkeep = {
+			energy = 20
+		}
 	}
 	
 	potential = {
@@ -160,7 +167,9 @@ bwm_conduit_shipyard_01 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_conduit_shipyard_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -177,8 +186,15 @@ bwm_conduit_shipyard_02 = {
 	}
 	build_time = 2880
 	
-	build_cost = {
-		minerals = 16000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 8000
+		}
+
+		upkeep = {
+			energy = 20
+		}
 	}
 	
 	potential = {
@@ -188,15 +204,13 @@ bwm_conduit_shipyard_02 = {
 		}
 	}
 
-	maintenance = {
-		energy = 20
-	}
-
 	possible = {
 		from = {
 			OR = {
 				has_country_flag = bwm_conduit_shipyard_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -213,8 +227,15 @@ bwm_conduit_shipyard_03 = {
 	}
 	build_time = 720
 	
-	build_cost = {
-		minerals = 2000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1000
+		}
+
+		upkeep = {
+			energy = 30
+		}
 	}
 	
 	potential = {
@@ -224,15 +245,13 @@ bwm_conduit_shipyard_03 = {
 		}
 	}
 
-	maintenance = {
-		energy = 30
-	}
-
 	possible = {
 		from = {
 			OR = {
 				has_country_flag = bwm_conduit_shipyard_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -249,8 +268,15 @@ bwm_conduit_shipyard_04 = {
 	}
 	build_time = 720
 	
-	build_cost = {
-		minerals = 2000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1000
+		}
+
+		upkeep = {
+			energy = 30
+		}
 	}
 	
 	potential = {
@@ -260,15 +286,13 @@ bwm_conduit_shipyard_04 = {
 		}
 	}
 
-	maintenance = {
-		energy = 30
-	}
-
 	possible = {
 		from = {
 			OR = {
 				has_country_flag = bwm_conduit_shipyard_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -285,8 +309,15 @@ bwm_conduit_shipyard_05 = {
 	}
 	build_time = 2160
 	
-	build_cost = {
-		minerals = 8000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+
+		upkeep = {
+			energy = 40
+		}
 	}
 	
 	potential = {
@@ -296,15 +327,13 @@ bwm_conduit_shipyard_05 = {
 		}
 	}
 
-	maintenance = {
-		energy = 40
-	}
-
 	possible = {
 		from = {
 			OR = {
 				has_country_flag = bwm_conduit_shipyard_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -321,8 +350,15 @@ bwm_conduit_shipyard_06 = {
 	}
 	build_time = 2160
 	
-	build_cost = {
-		minerals = 8000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+
+		upkeep = {
+			energy = 40
+		}
 	}
 	
 	potential = {
@@ -332,15 +368,13 @@ bwm_conduit_shipyard_06 = {
 		}
 	}
 
-	maintenance = {
-		energy = 40
-	}
-
 	possible = {
 		from = {
 			OR = {
 				has_country_flag = bwm_conduit_shipyard_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -357,8 +391,15 @@ bwm_conduit_shipyard_07 = {
 	}
 	build_time = 1440
 	
-	build_cost = {
-		minerals = 4000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+
+		upkeep = {
+			energy = 50
+		}
 	}
 	
 	potential = {
@@ -368,15 +409,13 @@ bwm_conduit_shipyard_07 = {
 		}
 	}
 
-	maintenance = {
-		energy = 50
-	}
-
 	possible = {
 		from = {
 			OR = {
 				has_country_flag = bwm_conduit_shipyard_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -393,8 +432,15 @@ bwm_conduit_shipyard_08 = {
 	}
 	build_time = 1440
 	
-	build_cost = {
-		minerals = 4000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+
+		upkeep = {
+			energy = 50
+		}
 	}
 	
 	potential = {
@@ -403,16 +449,14 @@ bwm_conduit_shipyard_08 = {
 			has_country_flag = bwm_the_conduit_ai_lock_1
 		}
 	}
-
-	maintenance = {
-		energy = 50
-	}
-
+	
 	possible = {
 		from = {
 			OR = {
 				has_country_flag = bwm_conduit_shipyard_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -429,8 +473,15 @@ bwm_conduit_shipyard_09 = {
 	}
 	build_time = 360
 	
-	build_cost = {
-		minerals = 1000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 500
+		}
+
+		upkeep = {
+			energy = 60
+		}
 	}
 	
 	potential = {
@@ -440,15 +491,13 @@ bwm_conduit_shipyard_09 = {
 		}
 	}
 
-	maintenance = {
-		energy = 60
-	}
-
 	possible = {
 		from = {
 			OR = {
 				has_country_flag = bwm_conduit_shipyard_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -527,8 +576,11 @@ bwm_conduit_corvette_00 = {
 	entity_offset = { x = @entity_x y = @entity_y }
 	build_time = 960
 	
-	build_cost = {
-		minerals = 8000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
 	}
 
 	potential = {
@@ -655,8 +707,11 @@ bwm_conduit_destroyer_00 = {
 	entity_offset = { x = @entity_x y = @entity_y }
 	build_time = 960
 	
-	build_cost = {
-		minerals = 8000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
 	}
 
 	potential = {
@@ -784,8 +839,11 @@ bwm_conduit_cruiser_00 = {
 	entity_offset = { x = @entity_x y = @entity_y }
 	build_time = 960
 	
-	build_cost = {
-		minerals = 8000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
 	}
 
 	potential = {
@@ -913,8 +971,11 @@ bwm_conduit_battleship_00 = {
 	entity_offset = { x = @entity_x y = @entity_y }
 	build_time = 960
 	
-	build_cost = {
-		minerals = 8000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
 	}
 
 	potential = {

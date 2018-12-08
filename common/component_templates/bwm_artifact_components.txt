@@ -214,7 +214,6 @@ weapon_component_template = {
 	icon_frame = 1
 
 	power = 0
-	cost = 0
 	
 	damage = { min = 32.0 max = 64.0 }
 	windup = { min = 1.0 max = 5.0 }
@@ -251,7 +250,6 @@ weapon_component_template = {
 	icon_frame = 1
 
 	power = 0
-	cost = 0
 	
 	damage = { min = 64.0 max = 128.0 }
 	windup = { min = 1.0 max = 5.0 }

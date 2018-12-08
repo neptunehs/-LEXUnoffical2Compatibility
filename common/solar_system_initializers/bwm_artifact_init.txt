@@ -33,9 +33,7 @@ bwm_gate = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 			save_global_event_target_as = bwm_artifact_relic_loc
 			create_ambient_object = {
 				type = "bwm_artifact_relic_alt_object"
@@ -109,9 +107,7 @@ bwm_gate = {
 		
 		init_effect ={
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 		}
 	}
 
@@ -127,9 +123,7 @@ bwm_gate = {
 		
 		init_effect ={
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 		}
 	}
 
@@ -145,9 +139,7 @@ bwm_gate = {
 		
 		init_effect ={
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 		}
 	}
 	
@@ -159,7 +151,6 @@ bwm_gate = {
 			orbit_angle = 60
 		    modifiers = none
 			has_ring = yes
-			tile_blockers = none
 			size = 40
 			
 			flags = {
@@ -184,12 +175,8 @@ bwm_gate = {
 			
 			init_effect = {
 				prevent_anomaly = yes
-			    orbital_deposit_tile = {
                 clear_deposits = yes
-                }
-				orbital_deposit_tile = {
 					add_deposit = d_zro_deposit_3
-				}
 				create_ambient_object = {
 					type = "small_debris_object"
 					location = this
@@ -340,9 +327,7 @@ bwm_cipher_1 = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 			save_global_event_target_as = bwm_cipher_1_star_loc
 			create_country = {
 				name = "Gatekeepers"
@@ -376,7 +361,7 @@ bwm_cipher_1 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_1_1
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01
@@ -439,7 +424,7 @@ bwm_cipher_1 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_1_2
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01
@@ -502,7 +487,7 @@ bwm_cipher_1 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_1_3
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01
@@ -565,7 +550,7 @@ bwm_cipher_1 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_1_4
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01
@@ -628,7 +613,7 @@ bwm_cipher_1 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_1_5
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01
@@ -691,7 +676,7 @@ bwm_cipher_1 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_1_6
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01
@@ -764,9 +749,7 @@ bwm_cipher_2 = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 			save_global_event_target_as = bwm_cipher_2_star_loc
 			create_country = {
 				name = "Gatekeepers"
@@ -800,7 +783,7 @@ bwm_cipher_2 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_2_1
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01
@@ -863,7 +846,7 @@ bwm_cipher_2 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_2_2
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01
@@ -926,7 +909,7 @@ bwm_cipher_2 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_2_3
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01
@@ -989,7 +972,7 @@ bwm_cipher_2 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_2_4
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01
@@ -1052,7 +1035,7 @@ bwm_cipher_2 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_2_5
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01
@@ -1115,7 +1098,7 @@ bwm_cipher_2 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_2_6
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01
@@ -1188,9 +1171,7 @@ bwm_cipher_3 = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 			save_global_event_target_as = bwm_cipher_3_star_loc
 			create_country = {
 				name = "Gatekeepers"
@@ -1224,7 +1205,7 @@ bwm_cipher_3 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_3_1
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01
@@ -1287,7 +1268,7 @@ bwm_cipher_3 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_3_2
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01
@@ -1350,7 +1331,7 @@ bwm_cipher_3 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_3_3
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01
@@ -1413,7 +1394,7 @@ bwm_cipher_3 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_3_4
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01
@@ -1476,7 +1457,7 @@ bwm_cipher_3 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_3_5
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01
@@ -1539,7 +1520,7 @@ bwm_cipher_3 = {
 					days = -1
 				}
 			}
-			guardian_difficulty = yes
+			#guardian_difficulty = yes
 			save_global_event_target_as = bwm_cipher_lock_country_3_6
 			set_country_flag = bwm_cipher_lock_country
 			set_graphical_culture = fallen_empire_01

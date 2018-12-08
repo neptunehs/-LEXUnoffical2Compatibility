@@ -35,7 +35,7 @@ bwm_ancient_nova = {
 	rotation_speed = 0
 	collision_radius = 0
 	modifier = {
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 1
 	size_multiplier = 0
@@ -60,7 +60,7 @@ bwm_ancient_nova_charged = {
 	rotation_speed = 0
 	collision_radius = 0
 	modifier = {
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 1
 	size_multiplier = 0
@@ -88,7 +88,7 @@ bwm_ancient_weapon = {
 		ship_evasion_add = 60
 		ship_armor_add = 150
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 120000
 	size_multiplier = 32
@@ -114,7 +114,7 @@ bwm_ancient_cruiser = {
 		ship_evasion_add = 20
 		ship_armor_add = 60
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 4000
 	size_multiplier = 8
@@ -124,7 +124,16 @@ bwm_ancient_cruiser = {
 	is_space_station = no
 	icon_frame = 5
 	
-	cost = 2000
+	resources = {
+		category = ships
+		cost = {
+			alloys = 1000
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
 	base_buildtime = 200
 
 	class = shipclass_military
@@ -143,7 +152,7 @@ bwm_ancient_escort = {
 		ship_evasion_add = 40
 		ship_armor_add = 40
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 2000
 	size_multiplier = 2
@@ -153,7 +162,16 @@ bwm_ancient_escort = {
 	icon_frame = 3
 	is_space_station = no
 	
-	cost = 1000
+	resources = {
+		category = ships
+		cost = {
+			alloys = 500
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
 	base_buildtime = 100
 
 	class = shipclass_military
@@ -172,7 +190,7 @@ bwm_ancient_control_drone = {
 		ship_evasion_add = 60
 		ship_armor_add = 20
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 1000
 	size_multiplier = 1
@@ -182,7 +200,16 @@ bwm_ancient_control_drone = {
 	icon_frame = 3
 	is_space_station = no
 	
-	cost = 500
+	resources = {
+		category = ships
+		cost = {
+			alloys = 250
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
 	base_buildtime = 50
 
 	class = shipclass_military
@@ -201,7 +228,7 @@ bwm_ancient_combat_drone = {
 		ship_evasion_add = 60
 		ship_armor_add = 20
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 1000
 	size_multiplier = 1
@@ -211,7 +238,16 @@ bwm_ancient_combat_drone = {
 	icon_frame = 3
 	is_space_station = no
 	
-	cost = 250
+	resources = {
+		category = ships
+		cost = {
+			alloys = 120
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
 	base_buildtime = 25
 
 	class = shipclass_military
@@ -227,7 +263,7 @@ bwm_ancient_large_military_station = {
 		ship_evasion_mult = -1
 		ship_armor_add = 100
 		ship_weapon_range_mult = 1
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 16000
 	size_multiplier = 8
@@ -239,7 +275,16 @@ bwm_ancient_large_military_station = {
 	is_space_station = yes
 	build_block_radius = @build_block_radius_military
 	
-	cost = 2000
+	resources = {
+		category = ships
+		cost = {
+			alloys = 1000
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
 	base_buildtime = 1000
 	
 	class = shipclass_military_station
@@ -255,7 +300,7 @@ bwm_ancient_small_military_station = {
 		ship_evasion_mult = -1
 		ship_armor_add = 50
 		ship_weapon_range_mult = 1
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 8000
 	size_multiplier = 4
@@ -267,7 +312,16 @@ bwm_ancient_small_military_station = {
 	is_space_station = yes
 	build_block_radius = @build_block_radius_military
 	
-	cost = 1000
+	resources = {
+		category = ships
+		cost = {
+			alloys = 500
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
 	base_buildtime = 500
 	
 	class = shipclass_military_station

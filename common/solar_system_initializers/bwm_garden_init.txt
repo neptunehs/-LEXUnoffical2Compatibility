@@ -25,9 +25,7 @@ bwm_garden = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 			
 			create_ambient_object = {
 				type = "bwm_conduit_off_object"
@@ -90,12 +88,8 @@ bwm_garden = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
-			orbital_deposit_tile = {
-                add_deposit = d_yurantic_deposit_3
-			}
+                add_deposit = d_volatile_motes_3
 			save_event_target_as = bwm_garden_molten_amoeba
 		}
 	}
@@ -113,9 +107,7 @@ bwm_garden = {
 
 		init_effect = {
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 			save_event_target_as = bwm_garden_toxic_amoeba
 		}
 	}
@@ -130,7 +122,6 @@ bwm_garden = {
 		
 		entity = "bwm_arcadia_shielded_entity"
 		
-		tile_blockers = none
 		modifiers = none
 		
 		flags = {
@@ -142,9 +133,7 @@ bwm_garden = {
 			save_global_event_target_as = bwm_shielded_target
 			
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 		}
 		
 		moon = {
@@ -293,9 +282,7 @@ bwm_garden_anchor_1_init = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 		}
 	}
 	
@@ -379,9 +366,7 @@ bwm_garden_anchor_2_init = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 		}
 	}
 	
@@ -457,9 +442,7 @@ bwm_garden_anchor_3_init = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 		}
 	}
 	
@@ -542,9 +525,7 @@ bwm_garden_anchor_4_init = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 		}
 	}
 	
@@ -626,9 +607,7 @@ bwm_garden_other_1_init = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 		}
 	}
 	
@@ -734,10 +713,8 @@ bwm_garden_other_2_init = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
-		}
+            		}
 	}
 	
 	planet = {
@@ -869,9 +846,8 @@ bwm_garden_other_3_init = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
+            
 		}
 	}
 	
@@ -994,9 +970,8 @@ bwm_garden_other_4_init = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
+            
 		}
 	}
 	
@@ -1126,10 +1101,8 @@ bwm_garden_other_5_init = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
             }
-		}
 	}
 	
 	planet = {

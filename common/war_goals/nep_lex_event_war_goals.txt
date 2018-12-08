@@ -38,8 +38,10 @@ wg_nep_lex_bomb_war = {
 	}
 	on_accept  = {
 		hidden_effect = {
-			add_influence = 100
-			from = { add_modifier = { modifier = stopbombs days = 3600 } 
+			add_resource = {
+				influence = 100
+			}
+			from = { add_modifier = { modifier = nep_stopbombs days = 3600 } 
 			}			
 		}
 	}		

@@ -325,7 +325,9 @@ country_event = {
 	}	
 	option = {
 		name = bwm_throne_watchers.21.b
-		add_influence = 100
+		add_resource = {
+			influence = 100
+		}
 	}
 }
 
@@ -573,15 +575,6 @@ country_event = {
 				set_planet_entity = {
 					entity = "bwm_ringworld_habitable_01_entity"
 				}
-				while = {
-					limit = {
-						any_tile = { has_blocker = yes }
-					}
-					random_tile = {
-						limit = { has_blocker = yes }
-						remove_blocker = yes
-					}
-				}
 				set_planet_flag = bwm_ring_1_unlocked
 				set_planet_flag = fallen_empire_world
 				set_planet_flag = colony_event
@@ -594,7 +587,8 @@ country_event = {
 					modifier = "natural_beauty"
 					days = -1
 				}
-				bwm_throne_science_tiles = yes
+				#bwm_throne_science_tiles = yes
+				bwm_throne_ring_tiles = yes
 			}
 			every_system_planet = {
 				limit = {
@@ -608,15 +602,6 @@ country_event = {
 				set_planet_entity = {
 					entity = "bwm_ringworld_habitable_01_entity"
 				}
-				while = {
-					limit = {
-						any_tile = { has_blocker = yes }
-					}
-					random_tile = {
-						limit = { has_blocker = yes }
-						remove_blocker = yes
-					}
-				}
 				set_planet_flag = bwm_ring_2_unlocked
 				set_planet_flag = fallen_empire_world
 				set_planet_flag = colony_event
@@ -629,7 +614,8 @@ country_event = {
 					modifier = "natural_beauty"
 					days = -1
 				}
-				bwm_throne_energy_tiles = yes
+				#bwm_throne_energy_tiles = yes
+				bwm_throne_ring_tiles = yes
 			}
 			every_system_planet = {
 				limit = {
@@ -643,15 +629,6 @@ country_event = {
 				set_planet_entity = {
 					entity = "bwm_ringworld_habitable_01_entity"
 				}
-				while = {
-					limit = {
-						any_tile = { has_blocker = yes }
-					}
-					random_tile = {
-						limit = { has_blocker = yes }
-						remove_blocker = yes
-					}
-				}
 				set_planet_flag = bwm_ring_3_unlocked
 				set_planet_flag = fallen_empire_world
 				set_planet_flag = colony_event
@@ -664,7 +641,8 @@ country_event = {
 					modifier = "natural_beauty"
 					days = -1
 				}
-				bwm_throne_mineral_tiles = yes
+				#bwm_throne_mineral_tiles = yes
+				bwm_throne_ring_tiles = yes
 			}
 			set_star_flag = bwm_ring_transform
 		}
@@ -914,15 +892,6 @@ ship_event = {
 					set_planet_entity = {
 						entity = "bwm_ringworld_habitable_01_entity"
 					}
-					while = {
-						limit = {
-							any_tile = { has_blocker = yes }
-						}
-						random_tile = {
-							limit = { has_blocker = yes }
-							remove_blocker = yes
-						}
-					}
 					set_planet_flag = bwm_ring_1_unlocked
 					set_planet_flag = fallen_empire_world
 					set_planet_flag = colony_event
@@ -935,7 +904,9 @@ ship_event = {
 						modifier = "natural_beauty"
 						days = -1
 					}
-					bwm_throne_science_tiles = yes
+					
+					#bwm_throne_energy_tiles = yes
+					bwm_throne_ring_tiles = yes
 				}
 				every_system_planet = {
 					limit = {
@@ -949,15 +920,6 @@ ship_event = {
 					set_planet_entity = {
 						entity = "bwm_ringworld_habitable_01_entity"
 					}
-					while = {
-						limit = {
-							any_tile = { has_blocker = yes }
-						}
-						random_tile = {
-							limit = { has_blocker = yes }
-							remove_blocker = yes
-						}
-					}
 					set_planet_flag = bwm_ring_2_unlocked
 					set_planet_flag = fallen_empire_world
 					set_planet_flag = colony_event
@@ -970,7 +932,8 @@ ship_event = {
 						modifier = "natural_beauty"
 						days = -1
 					}
-					bwm_throne_energy_tiles = yes
+					bwm_throne_ring_tiles = yes
+					#bwm_throne_energy_tiles = yes
 				}
 				every_system_planet = {
 					limit = {
@@ -984,15 +947,6 @@ ship_event = {
 					set_planet_entity = {
 						entity = "bwm_ringworld_habitable_01_entity"
 					}
-					while = {
-						limit = {
-							any_tile = { has_blocker = yes }
-						}
-						random_tile = {
-							limit = { has_blocker = yes }
-							remove_blocker = yes
-						}
-					}
 					set_planet_flag = bwm_ring_3_unlocked
 					set_planet_flag = fallen_empire_world
 					set_planet_flag = colony_event
@@ -1005,7 +959,9 @@ ship_event = {
 						modifier = "natural_beauty"
 						days = -1
 					}
-					bwm_throne_mineral_tiles = yes
+					
+					#bwm_throne_energy_tiles = yes
+					bwm_throne_ring_tiles = yes
 				}
 				set_star_flag = bwm_ring_transform
 			}
@@ -1083,7 +1039,9 @@ country_event = {
 	}
 	option = {
 		name = "bwm_throne_watchers.45.b"
-		add_influence = 100
+		add_resource = {
+			influence = 100
+		}
 	}
 }
 
@@ -1250,7 +1208,9 @@ country_event = {
 	}
 	option = {
 		name = "bwm_throne_watchers.48.b"
-		add_influence = 100
+		add_resource = {
+			influence = 100
+		}
 	}
 }
 
@@ -1452,7 +1412,9 @@ country_event = {
 	}
 	option = {
 		name = "bwm_throne_watchers.60.b"
-		add_influence = 100
+		add_resource = {
+			influence = 100
+		}
 		hidden_effect = {
 			set_country_flag = bwm_titan_schematic_tech_lock
 		}

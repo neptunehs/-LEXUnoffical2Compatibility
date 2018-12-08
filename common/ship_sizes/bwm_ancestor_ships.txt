@@ -34,7 +34,7 @@ bwm_apostle_seal = {
 	modifier = {
 		ship_evasion_mult = -1
 		ship_armor_add = 150
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 120000
 	size_multiplier = 8
@@ -61,7 +61,7 @@ bwm_apostle_s_cloud = {
 	collision_radius = @corvette_collision_radius
 	modifier = {
 		ship_evasion_add = 60
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 500
 	size_multiplier = 1
@@ -86,7 +86,7 @@ bwm_apostle_m_cloud = {
 	collision_radius = @corvette_collision_radius
 	modifier = {
 		ship_evasion_add = 50
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 1000
 	size_multiplier = 2
@@ -111,7 +111,7 @@ bwm_apostle_l_cloud = {
 	collision_radius = @corvette_collision_radius
 	modifier = {
 		ship_evasion_add = 40
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 1500
 	size_multiplier = 4
@@ -136,7 +136,7 @@ bwm_apostle_xl_cloud = {
 	collision_radius = @corvette_collision_radius
 	modifier = {
 		ship_evasion_add = 30
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 2000
 	size_multiplier = 8
@@ -162,7 +162,7 @@ bwm_apostle_xxl_cloud = {
 	modifier = {
 		ship_evasion_add = 20
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 2500
 	size_multiplier = 32
@@ -189,7 +189,7 @@ bwm_apostle_scout = {
 		ship_evasion_add = 20
 		ship_armor_add = 50
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 12000
 	size_multiplier = 2
@@ -213,7 +213,7 @@ bwm_apostle_station = {
 		ship_evasion_mult = -1
 		ship_armor_add = 50
 		ship_weapon_range_mult = 1
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 24000
 	size_multiplier = 8
@@ -242,7 +242,7 @@ bwm_apostle_1 = {
 		ship_evasion_add = 40
 		ship_armor_add = 100
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 60000
 	size_multiplier = 32
@@ -268,7 +268,7 @@ bwm_apostle_2 = {
 		ship_evasion_add = 40
 		ship_armor_add = 100
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 60000
 	size_multiplier = 32
@@ -294,7 +294,7 @@ bwm_apostle_3 = {
 		ship_evasion_add = 40
 		ship_armor_add = 100
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 60000
 	size_multiplier = 32
@@ -320,7 +320,7 @@ bwm_apostle_4 = {
 		ship_evasion_add = 20
 		ship_armor_add = 50
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 20000
 	size_multiplier = 32
@@ -346,7 +346,7 @@ bwm_apostle_egg = {
 		ship_evasion_add = 40
 		ship_armor_add = 100
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 60000
 	size_multiplier = 32
@@ -372,7 +372,7 @@ bwm_apostle_child = {
 		ship_evasion_add = 60
 		ship_armor_add = 150
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 120000
 	size_multiplier = 32

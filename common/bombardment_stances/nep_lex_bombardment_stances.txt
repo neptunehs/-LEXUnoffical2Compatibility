@@ -55,8 +55,6 @@ lex_doom = {
 	
 	kill_pop_chance = 0.75
 	min_pops_to_kill_pop = 0
-	add_blocker_chance = 0.6
-	max_blockers = -1
 	
 	# root = fleet
 	# from = planet

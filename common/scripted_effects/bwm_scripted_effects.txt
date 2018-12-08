@@ -1,445 +1,30 @@
 #Misc
 
 bwm_throne_nuked_tiles = {
-	random_tile = {
-		limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
-		set_building = "bwm_building_ancient_ruin_2"
-		set_deposit = d_rich_mineral_energy_deposit
-		random_neighboring_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_building = "building_agri_processing_complex"
-				set_deposit = d_rich_farmland_deposit						
-		}
-		random_neighboring_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_building = "building_dark_matter_power_plant"
-				set_deposit = d_rich_energy_deposit 						
-		}
-		random_neighboring_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_building = "building_dark_matter_power_plant"
-				set_deposit = d_rich_energy_deposit 						
-		}
-		random_neighboring_tile = {
-				limit = { has_blocker = no has_building = no }
-				set_building = "building_ancient_factory"
-				set_deposit = d_rich_mineral_deposit						
-		}				
-	}
-	random_tile = {
-		limit = { has_blocker = no has_building = no }
-		set_building = "bwm_building_ancient_monolith_0"	
-		clear_deposits = yes
-	}
-	random_tile = {
-		limit = { has_blocker = no has_building = no }
-		set_blocker = "tb_ancient_ruins"
-		set_deposit = d_vast_engineering_deposit		
-	}
-	random_tile = {
-		limit = { has_blocker = no has_building = no }
-		set_blocker = "tb_ancient_ruins"	
-		set_deposit = d_vast_society_deposit				
-	}
-	random_tile = {
-		limit = { has_blocker = no has_building = no }
-		set_blocker = "tb_ancient_ruins"
-		set_deposit = d_vast_physics_deposit				
-	}
-	random_tile = {
-		limit = { has_blocker = no has_building = no }
-		set_blocker = "tb_bomb_crater"
-		set_deposit = d_energy_deposit				
-	}
-	random_tile = {
-		limit = { has_blocker = no has_building = no }
-		set_blocker = "tb_bomb_crater"
-		set_deposit = d_energy_deposit					
-	}
+	add_deposit = d_city_ruins
+	add_deposit = d_city_ruins
+	add_deposit = d_city_ruins
+	add_deposit = d_bomb_crater
+	add_deposit = d_bomb_crater
+	add_building = bwm_building_agri_processing_complex
+	add_building = bwm_building_dark_matter_power_plant
+	add_building = bwm_building_dark_matter_power_plant
+	add_building = bwm_building_ancient_factory_4
 }
 
-bwm_throne_science_tiles = {
-	random_tile = {
-		limit = { has_building = no has_blocker = no num_adjacent_tiles > 3 }
-		set_building = "bwm_building_ancient_ruin_2"
-		set_deposit = d_rich_mineral_energy_deposit
-		random_neighboring_tile = {
-			limit = { has_building = no has_blocker = no }
-			set_building = "bwm_building_ancient_ruin_1"
-			set_deposit = d_vast_farmland_deposit				
-		}
-		random_neighboring_tile = {
-			limit = { has_building = no has_blocker = no }
-			set_building = "bwm_building_ancient_ruin_1"
-			set_deposit = d_vast_farmland_deposit				
-		}
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_monolith_0"
-		clear_deposits = yes				
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_engineering_deposit
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_society_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_physics_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_engineering_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_society_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_physics_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_engineering_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_society_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_physics_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_engineering_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_society_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_physics_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_engineering_deposit	
-	}			
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_society_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_physics_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_engineering_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_society_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_physics_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_engineering_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_society_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_physics_deposit	
-	}
-}
-
-bwm_throne_energy_tiles = {
-	random_tile = {
-		limit = { has_building = no has_blocker = no num_adjacent_tiles > 3 }
-		set_building = "bwm_building_ancient_ruin_2"
-		set_deposit = d_rich_mineral_energy_deposit
-		random_neighboring_tile = {
-			limit = { has_building = no has_blocker = no }
-			set_building = "bwm_building_ancient_ruin_1"
-			set_deposit = d_vast_energy_deposit						
-		}
-		random_neighboring_tile = {
-			limit = { has_building = no has_blocker = no }
-			set_building = "bwm_building_ancient_ruin_1"
-			set_deposit = d_vast_energy_deposit						
-		}
-		random_neighboring_tile = {
-			limit = { has_building = no has_blocker = no }
-			set_building = "bwm_building_ancient_ruin_1"
-			set_deposit = d_vast_energy_deposit						
-		}
-		random_neighboring_tile = {
-			limit = { has_building = no has_blocker = no }
-			set_building = "bwm_building_ancient_ruin_1"
-			set_deposit = d_vast_energy_deposit						
-		}	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_farmland_deposit				
-	}			
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_farmland_deposit				
-	}	
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_monolith_0"
-		clear_deposits = yes				
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_energy_deposit						
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_energy_deposit						
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_energy_deposit						
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_energy_deposit						
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_energy_deposit						
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_energy_deposit						
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_energy_deposit						
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_energy_deposit						
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_energy_deposit						
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_energy_deposit						
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_energy_deposit						
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_energy_deposit						
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_energy_deposit						
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_energy_deposit						
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_energy_deposit						
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_energy_deposit						
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_energy_deposit						
-	}
-}
-
-bwm_throne_mineral_tiles = {
-	random_tile = {
-		limit = { has_building = no has_blocker = no num_adjacent_tiles > 3 }
-		set_building = "bwm_building_ancient_ruin_2"
-		set_deposit = d_rich_mineral_energy_deposit
-		random_neighboring_tile = {
-			limit = { has_building = no has_blocker = no }
-			set_building = "bwm_building_ancient_ruin_1"
-			set_deposit = d_vast_mineral_deposit	
-		}
-		random_neighboring_tile = {
-			limit = { has_building = no has_blocker = no }
-			set_building = "bwm_building_ancient_ruin_1"
-			set_deposit = d_vast_mineral_deposit	
-		}
-		random_neighboring_tile = {
-			limit = { has_building = no has_blocker = no }
-			set_building = "bwm_building_ancient_ruin_1"
-			set_deposit = d_vast_mineral_deposit	
-		}
-		random_neighboring_tile = {
-			limit = { has_building = no has_blocker = no }
-			set_building = "bwm_building_ancient_ruin_1"
-			set_deposit = d_vast_mineral_deposit	
-		}
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_farmland_deposit				
-	}			
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_farmland_deposit				
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_monolith_0"
-		clear_deposits = yes				
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_mineral_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_mineral_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_mineral_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_mineral_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_mineral_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_mineral_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_mineral_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_mineral_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_mineral_deposit	
-	}			
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_mineral_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_mineral_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_mineral_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_mineral_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_mineral_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_mineral_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_mineral_deposit	
-	}
-	random_tile = {
-		limit = { has_building = no has_blocker = no }
-		set_building = "bwm_building_ancient_ruin_1"
-		set_deposit = d_vast_mineral_deposit	
-	}
+bwm_throne_ring_tiles = {
+	add_building = bwm_building_ancient_ruin_2
+	add_building = bwm_building_ancient_ruin_1
+	add_building = bwm_building_ancient_ruin_1
+	add_building = bwm_building_ancient_ruin_1
+	add_building = bwm_building_ancient_ruin_1
+	add_building = bwm_building_ancient_ruin_1
+	add_building = bwm_building_ancient_ruin_1
+	add_building = bwm_building_ancient_ruin_1
+	add_building = bwm_building_ancient_ruin_1
+	add_building = bwm_building_ancient_ruin_1
+	add_building = bwm_building_ancient_ruin_1
+	add_building = bwm_building_ancient_monolith_0
 }
 
 bwm_primitives_spawn = {
@@ -578,21 +163,9 @@ bwm_primitives_spawn = {
 	}
 	while = {
 		count = 2
-		random_tile = {
-			limit = {
-				has_grown_pop = no
-				has_growing_pop = no
-			}
-			if = {
-				limit = {
-					has_blocker = yes
-				}
-				remove_blocker = yes
-			}
 			create_pop = {
 				species = last_created
 			}
-		}
 	}
 	if = {
 		limit = {
@@ -602,43 +175,15 @@ bwm_primitives_spawn = {
 		}
 		while = {
 			count = 2
-			random_tile = {
-				limit = {
-					has_grown_pop = no
-					has_growing_pop = no
-				}
-				if = {
-					limit = {
-						has_blocker = yes
-					}
-					remove_blocker = yes
-				}
 				create_pop = {
 					species = last_created
 				}
-			}
 		}						
 	}
-	random_tile = {
-		limit = { has_building = "building_colony_shelter" }
-		remove_building = yes
-	}					
+		remove_building = building_colony_shelter
 	while = {
 		count = 4
-		random_tile = {
-			limit = { 
-				has_building = no 
-				has_grown_pop = yes
-			}
-			if = {
-				limit = {
-					has_blocker = yes
-				}
-				remove_blocker = yes
-			}
-			set_building = "building_primitive_farm"										
-			set_deposit = d_vast_farmland_deposit
-		}
+			add_building = "building_primitive_farm"
 	}
 	if = {
 		limit = {
@@ -652,38 +197,13 @@ bwm_primitives_spawn = {
 		}
 		while = {
 			count = 2
-			random_tile = {
-				limit = {
-					has_grown_pop = no
-					has_growing_pop = no
-				}
-				if = {
-					limit = {
-						has_blocker = yes
-					}
-					remove_blocker = yes
-				}
 				create_pop = {
 					species = last_created
 				}
-			}
 		}		
 		while = {
 			count = 2
-			random_tile = {
-				limit = { 
-					has_building = no 
-					has_grown_pop = yes
-				}
-				if = {
-					limit = {
-						has_blocker = yes
-					}
-					remove_blocker = yes
-				}
-				set_building = "building_primitive_farm"
-				set_deposit = d_vast_farmland_deposit
-			}
+				add_building = "building_primitive_farm"
 		}						
 	}					
 	if = {
@@ -694,22 +214,9 @@ bwm_primitives_spawn = {
 		}
 		while = {
 			count = 2
-			random_tile = {
-				limit = { 
-					has_building = no 
-					has_grown_pop = yes
-				}
-				if = {
-					limit = {
-						has_blocker = yes
-					}
-					remove_blocker = yes
-				}
-				set_building = "building_primitive_farm"
-				set_deposit = d_vast_farmland_deposit
-			}
+				add_building = "building_primitive_farm"
 		}						
-	}				
+	}			
 	last_created_country = {				
 		if = {
 			limit = { has_country_flag = bronze_age }
@@ -5380,9 +4887,7 @@ bwm_ancestor_seal_change_1 = {
 				limit = {
 					has_planet_flag = bwm_ancestor_prison_planet_1
 				}
-				orbital_deposit_tile = {
 					add_deposit = d_bwm_seal
-				}
 			}
 			every_system_planet = {
 				limit = {
@@ -5440,9 +4945,7 @@ bwm_ancestor_seal_change_2 = {
 				limit = {
 					has_planet_flag = bwm_ancestor_prison_planet_2
 				}
-				orbital_deposit_tile = {
 					add_deposit = d_bwm_seal
-				}
 			}
 			every_system_planet = {
 				limit = {
@@ -5500,9 +5003,7 @@ bwm_ancestor_seal_change_3 = {
 				limit = {
 					has_planet_flag = bwm_ancestor_prison_planet_3
 				}
-				orbital_deposit_tile = {
 					add_deposit = d_bwm_seal
-				}
 			}
 			every_system_planet = {
 				limit = {
@@ -5560,9 +5061,7 @@ bwm_ancestor_seal_change_4 = {
 				limit = {
 					has_planet_flag = bwm_ancestor_prison_planet_4
 				}
-				orbital_deposit_tile = {
 					add_deposit = d_bwm_seal
-				}
 			}
 			every_system_planet = {
 				limit = {
@@ -5620,9 +5119,7 @@ bwm_ancestor_seal_change_5 = {
 				limit = {
 					has_planet_flag = bwm_ancestor_prison_planet_5
 				}
-				orbital_deposit_tile = {
 					add_deposit = d_bwm_seal
-				}
 			}
 			every_system_planet = {
 				limit = {
@@ -5680,9 +5177,7 @@ bwm_ancestor_seal_change_6 = {
 				limit = {
 					has_planet_flag = bwm_ancestor_prison_planet_6
 				}
-				orbital_deposit_tile = {
 					add_deposit = d_bwm_seal
-				}
 			}
 			every_system_planet = {
 				limit = {

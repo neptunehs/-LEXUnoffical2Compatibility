@@ -40,7 +40,7 @@ bwm_conduit_escort = {
 		ship_evasion_add = 40
 		ship_armor_add = 10
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 2000
 	size_multiplier = 2
@@ -67,7 +67,7 @@ bwm_conduit_cruiser = {
 		ship_evasion_add = 30
 		ship_armor_add = 20
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 4000
 	size_multiplier = 4
@@ -94,7 +94,7 @@ bwm_conduit_titan = {
 		ship_evasion_add = 20
 		ship_armor_add = 30
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 8000
 	size_multiplier = 8
@@ -121,7 +121,7 @@ bwm_conduit_titan_alt = {
 		ship_evasion_add = 10
 		ship_armor_add = 40
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 16000
 	size_multiplier = 32
@@ -145,7 +145,7 @@ bwm_conduit_fortress = {
 		ship_evasion_mult = -1
 		ship_armor_add = 150
 		ship_weapon_range_mult = 1
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 120000
 	size_multiplier = 32
@@ -168,7 +168,7 @@ bwm_conduit_converter = {
 	rotation_speed = 0.0
 	modifier = {
 		ship_evasion_mult = -1
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 60000
 	size_multiplier = 32
@@ -194,7 +194,7 @@ bwm_conduit_anchor = {
 		ship_evasion_mult = -1
 		ship_armor_add = 100
 		ship_weapon_range_mult = 1
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 40000
 	size_multiplier = 16
@@ -217,7 +217,7 @@ bwm_conduit_pillar = {
 	modifier = {
 		ship_evasion_mult = -1
 		ship_armor_add = 50
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 20000
 	size_multiplier = 8
@@ -245,7 +245,7 @@ bwm_conduit_avatar_bound = {
 		ship_evasion_add = 60
 		ship_armor_add = 50
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 4000
 	size_multiplier = 1
@@ -272,7 +272,7 @@ bwm_conduit_avatar = {
 		ship_evasion_add = 60
 		ship_armor_add = 50
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 20000
 	size_multiplier = 32
@@ -299,7 +299,7 @@ bwm_conduit_avatar_alt = {
 		ship_evasion_add = 60
 		ship_armor_add = 50
 		ship_interstellar_speed_mult = 1	
-		ship_upkeep_mult = -1
+		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 20000
 	size_multiplier = 32

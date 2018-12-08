@@ -30,9 +30,7 @@ bwm_ringworld = {
 
 		init_effect = {
 	        prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 			save_event_target_as = bwm_ring_sun
 
 			create_country = {
@@ -67,7 +65,7 @@ bwm_ringworld = {
 						days = -1
 					}
 				}
-				guardian_difficulty = yes
+				#guardian_difficulty = yes
 				save_global_event_target_as = bwm_ring_country
 				set_country_flag = bwm_ring_country
 				set_graphical_culture = fallen_empire_02
@@ -191,7 +189,6 @@ bwm_ringworld = {
 		size = 25
 		orbit_angle = 30
 		orbit_distance = 0
-		tile_blockers = none
 		modifiers = none
 		
 		entity = "bwm_ringworld_shielded_01_entity"
@@ -204,9 +201,7 @@ bwm_ringworld = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-            orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 			
 			last_created_country = {
 				create_fleet = {
@@ -242,12 +237,8 @@ bwm_ringworld = {
 	init_effect = {
 	
 	        prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
-            orbital_deposit_tile = {
                 add_deposit = d_living_metal_deposit
-            }
 			
 			last_created_country = {
 				create_fleet = {
@@ -272,7 +263,6 @@ bwm_ringworld = {
 		size = 25
 		orbit_angle = 30
 		orbit_distance = 0
-		tile_blockers = none
 		modifiers = none
 		
 		entity = "bwm_ringworld_shielded_01_entity"
@@ -286,9 +276,7 @@ bwm_ringworld = {
 	init_effect = {
 
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 			
 			last_created_country = {
 				create_fleet = {
@@ -324,12 +312,8 @@ bwm_ringworld = {
 	init_effect = {
 	
 	        prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
-            orbital_deposit_tile = {
                 add_deposit = d_living_metal_deposit
-            }
 			
 			last_created_country = {
 				create_fleet = {
@@ -354,7 +338,6 @@ bwm_ringworld = {
 		size = 25
 		orbit_angle = 30
 		orbit_distance = 0
-		tile_blockers = none
 		modifiers = none
 		
 		flags = {
@@ -368,9 +351,7 @@ bwm_ringworld = {
 		init_effect = {
 
 			prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 			
 			last_created_country = {
 				create_fleet = {
@@ -406,12 +387,8 @@ bwm_ringworld = {
 	init_effect = {
 	
 	        prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
-            orbital_deposit_tile = {
                 add_deposit = d_living_metal_deposit
-            }
 			
 			last_created_country = {
 				create_fleet = {
@@ -437,7 +414,6 @@ bwm_ringworld = {
 		size = 25
 		orbit_angle = 30
 		orbit_distance = 0
-		tile_blockers = none
 		modifiers = none
 		
 		flags = {
@@ -451,9 +427,7 @@ bwm_ringworld = {
 		init_effect = {
 		
 			prevent_anomaly = yes		
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 			
 			last_created_country = {
 				create_fleet = {
@@ -489,13 +463,8 @@ bwm_ringworld = {
 	init_effect = {
 	
 	        prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
-            orbital_deposit_tile = {
                 add_deposit = d_living_metal_deposit
-            }
-			
 			last_created_country = {
 				create_fleet = {
 					settings = { spawn_debris = no is_boss = yes }
@@ -520,7 +489,6 @@ bwm_ringworld = {
 		size = 25
 		orbit_angle = 30
 		orbit_distance = 0
-		tile_blockers = none
 		modifiers = none
 		
 		flags = { 
@@ -535,9 +503,7 @@ bwm_ringworld = {
 
 			prevent_anomaly = yes
 			
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 			
 			last_created_country = {
 				create_fleet = {
@@ -573,12 +539,10 @@ bwm_ringworld = {
 	init_effect = {
 	
 	        prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
-            orbital_deposit_tile = {
+           
                 add_deposit = d_living_metal_deposit
-            }
+            
 			
 			last_created_country = {
 				create_fleet = {
@@ -604,7 +568,6 @@ bwm_ringworld = {
 		size = 25
 		orbit_angle = 30
 		orbit_distance = 0
-		tile_blockers = none
 		modifiers = none
 		
 		flags = { 
@@ -618,9 +581,7 @@ bwm_ringworld = {
 		init_effect = {
 
 			prevent_anomaly = yes			
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 			
 			last_created_country = {
 				create_fleet = {
@@ -656,12 +617,8 @@ bwm_ringworld = {
 	init_effect = {
 	
 	        prevent_anomaly = yes
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
-            orbital_deposit_tile = {
                 add_deposit = d_living_metal_deposit
-            }
 			
 			last_created_country = {
 				create_fleet = {
@@ -687,7 +644,6 @@ bwm_ringworld = {
 			orbit_angle = 120
 		    modifiers = none
 			has_ring = yes
-			tile_blockers = none
 			size = 16
 			
 			entity = "bwm_nuked_shielded_entity"
@@ -698,9 +654,7 @@ bwm_ringworld = {
 
     init_effect = {	 
 			prevent_anomaly = yes	
-			orbital_deposit_tile = {
                 clear_deposits = yes
-            }
 			save_global_event_target_as = bwm_ring_tomb_world			
         }
 		moon = {
@@ -716,12 +670,8 @@ bwm_ringworld = {
 		        save_global_event_target_as = bwm_ring_tomb_moon
 				
 	            prevent_anomaly = yes
-			    orbital_deposit_tile = {
                 clear_deposits = yes
-                }
-				orbital_deposit_tile = {
                 add_deposit = d_dark_matter_deposit_3
-                }
 			    create_ambient_object = {
 			    type = "bwm_battlefield_object"
 				location = THIS

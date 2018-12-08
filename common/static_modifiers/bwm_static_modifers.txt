@@ -1,30 +1,30 @@
 bwm_cipher_1_power = {
 	country_physics_tech_research_speed = 0.1
-	tile_resource_physics_research_mult = 0.1
-	tile_resource_energy_mult = 0.1
+	planets_physics_research_produces_mult = 0.1
+	planets_energy_produces_mult = 0.1
 }
 
 bwm_cipher_2_power = {
 	country_society_tech_research_speed = 0.1
-	tile_resource_society_research_mult = 0.1
-	tile_resource_food_mult = 0.1
+	planets_society_research_produces_mult = 0.1
+	planets_food_produces_mult = 0.1
 }
 
 bwm_cipher_3_power = {
 	country_engineering_tech_research_speed = 0.1
-	tile_resource_engineering_research_mult = 0.1
-	tile_resource_minerals_mult = 0.1
+	planets_engineering_research_produces_mult = 0.1
+	planets_minerals_produces_mult = 0.1
 }
 
 bwm_cipher_full_power = {
 	all_technology_research_speed = 0.1
-	tile_resource_physics_research_mult = 0.1
-	tile_resource_society_research_mult = 0.1
-	tile_resource_engineering_research_mult = 0.1
-	tile_resource_energy_mult = 0.1
-	tile_resource_food_mult = 0.1
-	tile_resource_minerals_mult = 0.1
-	tile_resource_unity_mult = 0.1
+	planets_physics_research_produces_mult = 0.1
+	planets_society_research_produces_mult = 0.1
+	planets_engineering_research_produces_mult = 0.1
+	planets_energy_produces_mult = 0.1
+	planets_food_produces_mult = 0.1
+	planets_minerals_produces_mult = 0.1
+	planets_unity_produces_mult = 0.1
 }
 
 bwm_leviathan_research_debuff = {
@@ -75,14 +75,14 @@ bwm_ancient_weapon_ftl_trap_debuff = {
 	ship_speed_mult = -0.5
 }
 
-bwm_ancient_weapon_planet_debuff = {
+bwm_ancient_weapon_planets_debuff = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
 	icon_frame = 3
 
 	pop_happiness = -0.5
 	planet_sensor_range_add = -2
-	planet_building_upkeep_mult = 0.5
-	tile_resource_energy_mult = -0.5
+	planet_buildings_upkeep_mult = 0.5
+	planets_energy_produces_mult = -0.5
 }
 
 bwm_artifact_drone_boss_stack_buff = {
@@ -396,7 +396,7 @@ bwm_ancestor_pc_boss_debuff = {
 	ship_armor_regen_add_perc = -1.0
 	ship_evasion_mult = -1.0
 	ship_speed_mult = -1.0
-	ship_upkeep_mult = 1.0
+	ships_upkeep_mult = 1.0
 }
 
 bwm_ancestor_ai_fleet_debuff = {
@@ -408,7 +408,7 @@ bwm_ancestor_ai_fleet_debuff = {
 	ship_armor_regen_add_perc = -1.0
 	ship_evasion_mult = -1.0
 	ship_speed_mult = -1.0
-	ship_upkeep_mult = 1.0
+	ships_upkeep_mult = 1.0
 }
 
 bwm_ancestor_ai_debuff = {
@@ -428,14 +428,14 @@ bwm_ancestor_pc_herald_debuff = {
 	ship_armor_regen_add_perc = -0.5
 	ship_evasion_mult = -0.5
 	ship_speed_mult = -0.5
-	ship_upkeep_mult = 0.5
+	ships_upkeep_mult = 0.5
 }
 
 bwm_ancestor_in_system = {
 	pop_happiness = -0.25
 	building_time_mult = 0.25
-	pop_migration_speed = 0.25
-	tile_resource_unity_mult = -0.25
+	planet_immigration_pull_mult = 0.25
+	planets_unity_produces_mult = -0.25
 	pop_government_ethic_attraction = -0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_atmospheric_hallucinogen.dds"
@@ -446,7 +446,7 @@ bwm_ancestor_garden_world = {
 	pop_happiness = 0.25
 	pop_growth_speed = 0.25
 	building_time_mult = -0.25
-	tile_resource_food_mult = 0.25
+	planets_food_produces_mult = 0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_holy_planet.dds"
 	icon_frame = 2
@@ -454,12 +454,12 @@ bwm_ancestor_garden_world = {
 
 bwm_pop_ancestor = {
 	pop_happiness = 1
-	tile_resource_society_research_mult = -1
-	tile_resource_physics_research_mult = -1
-	tile_resource_engineering_research_mult = -1
-	tile_resource_minerals_mult = -1
-	tile_resource_energy_mult = -1
-	tile_resource_food_mult = -1
+	planets_society_research_produces_mult = -1
+	planets_physics_research_produces_mult = -1
+	planets_engineering_research_produces_mult = -1
+	planets_minerals_produces_mult = -1
+	planets_energy_produces_mult = -1
+	planets_food_produces_mult = -1
 }
 
 bwm_seal_power = {
@@ -519,11 +519,11 @@ bwm_conduit_core_kill_bonus = {
 }
 
 bwm_uncertain_past = {
-	tile_resource_physics_research_mult = 0.1
-	tile_resource_society_research_mult = 0.1
-	tile_resource_engineering_research_mult = 0.1
+	planets_physics_research_produces_mult = 0.1
+	planets_society_research_produces_mult = 0.1
+	planets_engineering_research_produces_mult = 0.1
 	pop_happiness = -0.1
-	tile_resource_unity_mult = -0.1
+	planets_unity_produces_mult = -0.1
 	pop_government_ethic_attraction = -0.1
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_irradiated.dds"
@@ -534,7 +534,7 @@ bwm_garden_mod = {
 	pop_happiness = 0.25
 	pop_growth_speed = 0.25
 	building_time_mult = -0.25
-	tile_resource_food_mult = 0.25
+	planets_food_produces_mult = 0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_holy_planet.dds"
 	icon_frame = 2
@@ -542,8 +542,8 @@ bwm_garden_mod = {
 
 bwm_obelisk_1_mod = {
 	planet_sensor_range_add = 2
-	tile_resource_minerals_mult = 0.25
-	tile_resource_energy_mult = 0.25
+	planets_minerals_produces_mult = 0.25
+	planets_energy_produces_mult = 0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 2
@@ -551,8 +551,8 @@ bwm_obelisk_1_mod = {
 
 bwm_obelisk_2_mod = {
 	planet_sensor_range_add = 2
-	tile_resource_minerals_mult = 0.25
-	tile_resource_energy_mult = 0.25
+	planets_minerals_produces_mult = 0.25
+	planets_energy_produces_mult = 0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 2
@@ -560,8 +560,8 @@ bwm_obelisk_2_mod = {
 
 bwm_obelisk_3_mod = {
 	planet_sensor_range_add = 2
-	tile_resource_minerals_mult = 0.25
-	tile_resource_energy_mult = 0.25
+	planets_minerals_produces_mult = 0.25
+	planets_energy_produces_mult = 0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 2
@@ -569,8 +569,8 @@ bwm_obelisk_3_mod = {
 
 bwm_obelisk_4_mod = {
 	planet_sensor_range_add = 2
-	tile_resource_minerals_mult = 0.25
-	tile_resource_energy_mult = 0.25
+	planets_minerals_produces_mult = 0.25
+	planets_energy_produces_mult = 0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 2
@@ -578,8 +578,8 @@ bwm_obelisk_4_mod = {
 
 bwm_obelisk_5_mod = {
 	pop_happiness = 0.25
-	pop_migration_speed = -0.25
-	tile_resource_unity_mult = 0.25
+	planet_emigration_push_mult = 0.25
+	planets_unity_produces_mult = 0.25
 	pop_government_ethic_attraction = -0.25
 	
 	icon = "gfx/interface/icons/planet_modifiers/pm_atmospheric_hallucinogen.dds"
@@ -588,8 +588,8 @@ bwm_obelisk_5_mod = {
 
 bwm_obelisk_6_mod = {
 	pop_happiness = -0.25
-	pop_migration_speed = 0.25
-	tile_resource_unity_mult = -0.25
+	planet_immigration_pull_mult = 0.25
+	planets_unity_produces_mult = -0.25
 	pop_government_ethic_attraction = 0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_starvation.dds"
@@ -598,8 +598,8 @@ bwm_obelisk_6_mod = {
 
 bwm_obelisk_7_mod = {
 	pop_happiness = 0.25
-	pop_migration_speed = 0.25
-	tile_resource_unity_mult = 0.25
+	planet_immigration_pull_mult = 0.25
+	planets_unity_produces_mult = 0.25
 	pop_government_ethic_attraction = 0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_atmospheric_hallucinogen.dds"
@@ -611,55 +611,55 @@ bwm_obelisk_8_mod = {
 	#spaceport_ship_build_time_mult = 1
 	#spaceport_ship_build_cost_mult = 1
 	planet_army_build_speed_mult = -1
-	planet_army_build_cost_mult = 1
+	planets_army_build_cost_mult = 1
 	planet_building_build_speed_mult = -1
-	planet_building_cost_mult = 1
+	planet_buildings_cost_mult = 1
 
 	icon_frame = 3
 	icon = "gfx/interface/icons/planet_modifiers/pm_unrest.dds"
 }
 
 bwm_pop_conduit_1 = {
-	pop_slave_resource_output = 0.05
-	slave_food_output = 0.05
+	planet_jobs_slave_produces_mult = 0.05
+	planet_jobs_slave_food_produces_mult = 0.05
 }
 
 bwm_pop_conduit_2 = {
-	pop_slave_resource_output = 0.1
-	slave_food_output = 0.1
+	planet_jobs_slave_produces_mult = 0.1
+	planet_jobs_slave_food_produces_mult = 0.1
 }
 
 bwm_pop_conduit_3 = {
-	pop_slave_resource_output = 0.15
-	slave_food_output = 0.15
+	planet_jobs_slave_produces_mult = 0.15
+	planet_jobs_slave_food_produces_mult = 0.15
 }
 
 bwm_pop_conduit_4 = {
-	pop_slave_resource_output = 0.2
-	slave_food_output = 0.2
+	planet_jobs_slave_produces_mult = 0.2
+	planet_jobs_slave_food_produces_mult = 0.2
 }
 
 bwm_pop_conduit_5 = {
 	pop_happiness = -1
-	tile_resource_society_research_mult = -1
-	tile_resource_physics_research_mult = -1
-	tile_resource_engineering_research_mult = -1
-	tile_resource_minerals_mult = -1
-	tile_resource_energy_mult = -1
-	tile_resource_food_mult = -1
+	planets_society_research_produces_mult = -1
+	planets_physics_research_produces_mult = -1
+	planets_engineering_research_produces_mult = -1
+	planets_minerals_produces_mult = -1
+	planets_energy_produces_mult = -1
+	planets_food_produces_mult = -1
 }
 
-bwm_artifact_bomb_2_planet_effect = {
+bwm_artifact_bomb_2_planets_effect = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
 	icon_frame = 3
 	
 	pop_happiness = -0.25
-	tile_resource_society_research_mult = -0.25
-	tile_resource_physics_research_mult = -0.25
-	tile_resource_engineering_research_mult = -0.25
-	tile_resource_minerals_mult = -0.25
-	tile_resource_energy_mult = -0.25
-	tile_resource_food_mult = -0.25
+	planets_society_research_produces_mult = -0.25
+	planets_physics_research_produces_mult = -0.25
+	planets_engineering_research_produces_mult = -0.25
+	planets_minerals_produces_mult = -0.25
+	planets_energy_produces_mult = -0.25
+	planets_food_produces_mult = -0.25
 }
 
 bwm_artifact_bomb_1_temp = {
@@ -683,6 +683,6 @@ bwm_artifact_bomb_2_temp = {
 bwm_bombardment_debuff = {
 	planet_orbital_bombardment_damage = -1.0
 	
-	icon = "gfx/interface/icons/planet_modifiers/pm_chthonian_planet.dds"
+	icon = "gfx/interface/icons/planet_modifier/pm_chthonian_planet.dds"
 	icon_frame = 3
 }

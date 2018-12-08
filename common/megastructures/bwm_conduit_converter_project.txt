@@ -7,13 +7,16 @@ bwm_conduit_converter_00 = {
 	
 	build_time = 1800
 	
-	build_cost = {
-		minerals = 8000
-		influence = 400
-	}
-
-	maintenance = {
-		energy = 10
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+			influence = 400
+		}
+		
+		upkeep = {
+			energy = 10
+		}
 	}
 	
 	prerequisites = { "tech_bwm_lex_garden" }
@@ -156,14 +159,17 @@ bwm_conduit_converter_01 = {
 	}
 	build_time = 360
 	
-	build_cost = {
-		energy = 5000
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 5000
+		}
+		
+		upkeep = {
+			energy = 20
+		}
 	}
-	
-	maintenance = {
-		energy = 20
-	}
-	
+		
 	potential = {
 		OR = {
 			is_ai = no
@@ -175,7 +181,9 @@ bwm_conduit_converter_01 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_conduit_converter_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp
 			}
 		}
 	}
@@ -393,12 +401,15 @@ bwm_conduit_converter_02 = {
 	
 	build_time = 3600
 	
-	build_cost = {
-		minerals = 24000
-	}
-
-	maintenance = {
-		energy = 30
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+		}
+		
+		upkeep = {
+			energy = 30
+		}
 	}
 	
 	potential = {
@@ -412,7 +423,9 @@ bwm_conduit_converter_02 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_conduit_converter_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -429,12 +442,15 @@ bwm_conduit_converter_03 = {
 	
 	build_time = 3600
 	
-	build_cost = {
-		minerals = 24000
-	}
-
-	maintenance = {
-		energy = 30
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 12000
+		}
+		
+		upkeep = {
+			energy = 30
+		}
 	}
 	
 	potential = {
@@ -448,7 +464,9 @@ bwm_conduit_converter_03 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_conduit_converter_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -465,12 +483,15 @@ bwm_conduit_converter_04 = {
 	
 	build_time = 1440
 	
-	build_cost = {
-		minerals = 4000
-	}
-
-	maintenance = {
-		energy = 40
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+		
+		upkeep = {
+			energy = 40
+		}
 	}
 	
 	potential = {
@@ -484,7 +505,9 @@ bwm_conduit_converter_04 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_conduit_converter_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -501,12 +524,15 @@ bwm_conduit_converter_05 = {
 	
 	build_time = 1440
 	
-	build_cost = {
-		minerals = 4000
-	}
-
-	maintenance = {
-		energy = 40
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+		
+		upkeep = {
+			energy = 40
+		}
 	}
 	
 	potential = {
@@ -520,7 +546,9 @@ bwm_conduit_converter_05 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_conduit_converter_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -537,12 +565,15 @@ bwm_conduit_converter_06 = {
 	
 	build_time = 2880
 	
-	build_cost = {
-		minerals = 16000
-	}
-
-	maintenance = {
-		energy = 50
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 8000
+		}
+		
+		upkeep = {
+			energy = 50
+		}
 	}
 	
 	potential = {
@@ -556,7 +587,9 @@ bwm_conduit_converter_06 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_conduit_converter_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -573,14 +606,17 @@ bwm_conduit_converter_07 = {
 	
 	build_time = 2880
 	
-	build_cost = {
-		minerals = 16000
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 8000
+		}
+		
+		upkeep = {
+			energy = 50
+		}
 	}
 
-	maintenance = {
-		energy = 50
-	}
-	
 	potential = {
 		OR = {
 			is_ai = no
@@ -592,7 +628,9 @@ bwm_conduit_converter_07 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_conduit_converter_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}
@@ -609,8 +647,11 @@ bwm_conduit_converter_08 = {
 	
 	build_time = 360
 	
-	build_cost = {
-		energy = 10000
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 10000
+		}
 	}
 	
 	potential = {
@@ -624,7 +665,9 @@ bwm_conduit_converter_08 = {
 		from = {
 			OR = {
 				has_country_flag = bwm_conduit_converter_builder
-				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_megacorp
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
 		}
 	}

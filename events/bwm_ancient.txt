@@ -259,34 +259,34 @@ country_event = {
 											}
 										}
 										add_modifier = {
-											modifier = "bwm_ancient_weapon_planet_debuff"
+											modifier = "bwm_ancient_weapon_planets_debuff"
 											days = 30
 										}
-										every_tile = {
-											if = {
-												limit = {
-													has_building = yes
-													is_ruined = no
-													OR = {
-														has_resource = {
-															type = energy
-															amount > 0
-														}
-														has_resource = {
-															type = sr_betharian
-															amount > 0
-														}
-													}
-												}
-												random_list = {
-													75 = {
-														set_ruined = yes
-													}
-													25 = {
-													}
-												}
-											}
-										}
+										# every_tile = {
+											# if = {
+												# limit = {
+													# has_building = yes
+													# is_ruined = no
+													# OR = {
+														# has_resource = {
+															# type = energy
+															# amount > 0
+														# }
+														# has_resource = {
+															# type = sr_betharian
+															# amount > 0
+														# }
+													# }
+												# }
+												# random_list = {
+													# 75 = {
+														# set_ruined = yes
+													# }
+													# 25 = {
+													# }
+												# }
+											# }
+										# }
 										if = {
 											limit = {
 												is_planet_class = pc_ringworld_tech
@@ -431,34 +431,34 @@ country_event = {
 															}
 														}
 														add_modifier = {
-															modifier = "bwm_ancient_weapon_planet_debuff"
+															modifier = "bwm_ancient_weapon_planets_debuff"
 															days = 20
 														}
-														every_tile = {
-															if = {
-																limit = {
-																	has_building = yes
-																	is_ruined = no
-																	OR = {
-																		has_resource = {
-																			type = energy
-																			amount > 0
-																		}
-																		has_resource = {
-																			type = sr_betharian
-																			amount > 0
-																		}
-																	}
-																}
-																random_list = {
-																	50 = {
-																		set_ruined = yes
-																	}
-																	50 = {
-																	}
-																}
-															}
-														}
+														# every_tile = {
+															# if = {
+																# limit = {
+																	# has_building = yes
+																	# is_ruined = no
+																	# OR = {
+																		# has_resource = {
+																			# type = energy
+																			# amount > 0
+																		# }
+																		# has_resource = {
+																			# type = sr_betharian
+																			# amount > 0
+																		# }
+																	# }
+																# }
+																# random_list = {
+																	# 50 = {
+																		# set_ruined = yes
+																	# }
+																	# 50 = {
+																	# }
+																# }
+															# }
+														# }
 														if = {
 															limit = {
 																is_planet_class = pc_ringworld_tech
@@ -651,34 +651,34 @@ country_event = {
 																	}
 																}
 																add_modifier = {
-																	modifier = "bwm_ancient_weapon_planet_debuff"
+																	modifier = "bwm_ancient_weapon_planets_debuff"
 																	days = 10
 																}
-																every_tile = {
-																	if = {
-																		limit = {
-																			has_building = yes
-																			is_ruined = no
-																			OR = {
-																				has_resource = {
-																					type = energy
-																					amount > 0
-																				}
-																				has_resource = {
-																					type = sr_betharian
-																					amount > 0
-																				}
-																			}
-																		}
-																		random_list = {
-																			25 = {
-																				set_ruined = yes
-																			}
-																			75 = {
-																			}
-																		}
-																	}
-																}
+																# every_tile = {
+																	# if = {
+																		# limit = {
+																			# has_building = yes
+																			# is_ruined = no
+																			# OR = {
+																				# has_resource = {
+																					# type = energy
+																					# amount > 0
+																				# }
+																				# has_resource = {
+																					# type = sr_betharian
+																					# amount > 0
+																				# }
+																			# }
+																		# }
+																		# random_list = {
+																			# 25 = {
+																				# set_ruined = yes
+																			# }
+																			# 75 = {
+																			# }
+																		# }
+																	# }
+																# }
 															}
 															if = {
 																limit = {

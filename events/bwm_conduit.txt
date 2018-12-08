@@ -158,130 +158,18 @@ ship_event = {
 							modifier = "bwm_garden_mod"
 							days = -1
 						}
-						random_tile = {
-							limit = { has_blocker = no has_building = no num_adjacent_tiles = 2 }
-							set_building = "bwm_building_obelisk_0_1"		
-							clear_deposits = yes
-						}
-						random_tile = {
-							limit = { has_blocker = no has_building = no num_adjacent_tiles = 2 }
-							set_building = "bwm_building_obelisk_0_2"		
-							clear_deposits = yes
-						}
-						random_tile = {
-							limit = { has_blocker = no has_building = no num_adjacent_tiles = 2 }
-							set_building = "bwm_building_obelisk_0_3"	
-							clear_deposits = yes
-						}
-						random_tile = {
-							limit = { has_building = no has_blocker = no num_adjacent_tiles = 2 }
-							set_building = "bwm_building_obelisk_0_4"	
-							clear_deposits = yes
-						}
-						random_tile = {
-							limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
-							set_building = "bwm_building_ancient_ruin_2"
-							set_deposit = d_rich_mineral_energy_deposit
-							random_neighboring_tile = {
-									limit = { has_blocker = no has_building = no }
-									set_building = "building_agri_processing_complex"
-									set_deposit = d_immense_farmland_deposit					
-							}
-							random_neighboring_tile = {
-									limit = { has_blocker = no has_building = no }
-									set_building = "building_dark_matter_power_plant"
-									set_deposit = d_immense_energy_deposit						
-							}
-							random_neighboring_tile = {
-									limit = { has_blocker = no has_building = no }
-									set_building = "building_dark_matter_power_plant"
-									set_deposit = d_immense_energy_deposit							
-							}
-							random_neighboring_tile = {
-									limit = { has_blocker = no has_building = no }
-									set_building = "building_ancient_factory"
-									set_deposit = d_immense_mineral_deposit						
-							}				
-						}
-						random_tile = {
-							limit = { has_building = no has_blocker = no }
-							set_blocker = tb_ancient_ruins	
-							set_deposit = d_immense_engineering_deposit
-						}
-						random_tile = {
-							limit = { has_building = no has_blocker = no }
-							set_blocker = tb_ancient_ruins	
-							set_deposit = d_immense_society_deposit
-						}
-						random_tile = {
-							limit = { has_building = no has_blocker = no }
-							set_blocker = tb_ancient_ruins	
-							set_deposit = d_immense_physics_deposit
-						}
-						random_tile = {
-							limit = { has_building = no has_blocker = no }
-							set_blocker = tb_ancient_ruins	
-							set_deposit = d_betharian_deposit	
-						}
-						random_tile = {
-							limit = { has_building = no has_blocker = no }
-							set_blocker = tb_bwm_paradise	
-							set_deposit = d_betharian_deposit
-						}
-						random_tile = {
-							limit = { has_building = no has_blocker = no }
-							set_blocker = tb_bwm_paradise	
-							set_deposit = d_alien_pets_deposit		
-						}
-						random_tile = {
-							limit = { has_building = no has_blocker = no }
-							set_blocker = tb_bwm_paradise	
-							set_deposit = d_rich_engineering_deposit
-						}
-						random_tile = {
-							limit = { has_building = no has_blocker = no }
-							set_blocker = tb_bwm_paradise	
-							set_deposit = d_rich_society_deposit							
-						}
-						random_tile = {
-							limit = { has_building = no has_blocker = no }
-							set_blocker = tb_bwm_paradise	
-							set_deposit = d_rich_physics_deposit		
-						}
-						random_tile = {
-							limit = { has_building = no has_blocker = no }
-							set_blocker = tb_bwm_paradise	
-							set_deposit = d_rich_farmland_deposit		
-						}
-						random_tile = {
-							limit = { has_building = no has_blocker = no }
-							set_blocker = tb_bwm_paradise	
-							set_deposit = d_rich_energy_deposit	
-						}
-						random_tile = {
-							limit = { has_building = no has_blocker = no }
-							set_blocker = tb_bwm_paradise	
-							set_deposit = d_rich_mineral_deposit	
-						}
-						random_tile = {
-							limit = { has_building = no has_blocker = no }
-							set_blocker = tb_bwm_paradise	
-							set_deposit = d_bwm_energy_food		
-						}
-						random_tile = {
-							limit = { has_building = no has_blocker = no }
-							set_blocker = tb_bwm_paradise	
-							set_deposit = d_bwm_energy_food		
-						}
-						random_tile = {
-							limit = { has_building = no has_blocker = no }
-							set_blocker = tb_bwm_paradise	
-							set_deposit = d_bwm_mineral_food	
-						}
-						random_tile = {
-							limit = { has_building = no has_blocker = no }
-							set_blocker = tb_bwm_paradise	
-							set_deposit = d_bwm_mineral_food	
+							add_building = "bwm_building_obelisk_0_1"
+							add_building = "bwm_building_obelisk_0_2"
+							add_building = "bwm_building_obelisk_0_3"
+							add_building = "bwm_building_obelisk_0_4"
+									add_building = "bwm_building_agri_processing_complex"
+									add_building = "bwm_building_dark_matter_power_plant"
+									add_building = "bwm_building_dark_matter_power_plant"
+									add_building = "bwm_building_ancient_factory_4"
+									
+						while = {
+							limit = { num_free_districts = { type = any value > 0 } }
+							add_deposit = tb_bwm_nature
 						}
 				}
 				solar_system = {
@@ -293,7 +181,11 @@ ship_event = {
 	option = {
 		name = "bwm_the_conduit.5.b"
 		owner = { 
-			add_influence = 100
+			add_resource = {
+				minerals = 20000
+				energy = 10000
+				influence = 100
+			}
 		}
 	}
 }
@@ -345,7 +237,9 @@ planet_event = {
 	option = {
 		name = bwm_the_conduit.11.b
 		owner = { 
-			add_influence = -100
+			add_resource = {
+				influence = -100
+			}
 		}
 	}
 }
@@ -411,7 +305,9 @@ planet_event = {
 			}
 		}
 		owner = { 
-			add_influence = -100
+			add_resource = {
+				influence = -100
+			}
 		}
 	}
 }
@@ -481,7 +377,9 @@ planet_event = {
 			}
 		}
 		owner = { 
-			add_influence = -100
+			add_resource = {
+				influence = -100
+			}
 		}
 	}
 }
@@ -555,7 +453,9 @@ planet_event = {
 			}
 		}
 		owner = { 
-			add_influence = -100
+			add_resource = {
+				influence = -100
+			}
 		}
 	}
 }
@@ -1120,7 +1020,7 @@ country_event = {
 		save_global_event_target_as = bwm_conduit_country
 		set_country_flag = bwm_conduit_country
 		set_graphical_culture = fallen_empire_03
-		guardian_difficulty = yes
+		#guardian_difficulty = yes
 		lex_get_full_map = yes
 		}
 		event_target:bwm_conduit_system = {
@@ -2237,7 +2137,9 @@ country_event = {
 	}
 	option = {
 		name = bwm_the_conduit.71.b
-		add_influence = 100
+		add_resource = {
+			influence = 100
+		}
 	}
 }
 
@@ -3468,28 +3370,28 @@ ship_event = {
 					limit = {
 						has_planet_flag = bwm_conduit_garden
 					}
-					every_tile = {
-						if = {
-							limit = {
-								has_building = yes
-								is_ruined = no
-								NOR = {
-									has_building = "building_agri_processing_complex"
-									has_building = "building_dark_matter_power_plant"
-									has_building = "building_ancient_factory"
-									has_building = "bwm_building_obelisk_0_1"
-									has_building = "bwm_building_obelisk_0_2"
-									has_building = "bwm_building_obelisk_0_3"
-									has_building = "bwm_building_obelisk_0_4"
-									has_building = "bwm_building_obelisk_1"
-									has_building = "bwm_building_obelisk_2"
-									has_building = "bwm_building_obelisk_3"
-									has_building = "bwm_building_obelisk_4"
-								}
-							}
-							set_ruined = yes
-						}
-					}
+					# every_building = {
+						# if = {
+							# limit = {
+								# has_building = yes
+								# is_ruined = no
+								# NOR = {
+									# has_building = "building_agri_processing_complex"
+									# has_building = "building_dark_matter_power_plant"
+									# has_building = "building_ancient_factory"
+									# has_building = "bwm_building_obelisk_0_1"
+									# has_building = "bwm_building_obelisk_0_2"
+									# has_building = "bwm_building_obelisk_0_3"
+									# has_building = "bwm_building_obelisk_0_4"
+									# has_building = "bwm_building_obelisk_1"
+									# has_building = "bwm_building_obelisk_2"
+									# has_building = "bwm_building_obelisk_3"
+									# has_building = "bwm_building_obelisk_4"
+								# }
+							# }
+							# set_ruined = yes
+						# }
+					# }
 					while = {
 						limit = {
 							num_pops > 1
@@ -4227,9 +4129,11 @@ country_event = {
 	
 	option = {
 		name = "bwm_the_conduit.111.b"
-		add_influence = 100
-		add_minerals = 5000
-		add_energy = 5000
+		add_resource = {
+			minerals = 5000
+			energy = 5000
+			influence = 100
+		}
 	}
 }
 
@@ -4339,7 +4243,9 @@ country_event = {
 	
 	option = {
 		name = "bwm_the_conduit.121.b"
-		add_influence = 100
+		add_resource = {
+			influence = 100
+		}
 	}
 }
 
@@ -4417,8 +4323,10 @@ ship_event = {
 	option = {
 		name = "bwm_the_conduit.122.b"
 		owner = {
-		add_minerals = 5000
-		add_energy = 5000
+		add_resource = {
+			minerals = 5000
+			energy = 5000
+		}
 		}
 	}
 }
@@ -4471,7 +4379,9 @@ country_event = {
 	}
 	option = {
 		name = "bwm_the_conduit.130.b"
-		add_influence = 100
+		add_resource = {
+			influence = 100
+		}
 	}
 }
 
@@ -4645,7 +4555,9 @@ country_event = {
 	}
 	option = {
 		name = "bwm_the_conduit.133.b"
-		add_influence = 100
+		add_resource = {
+			influence = 100
+		}
 		hidden_effect = {
 			set_country_flag = bwm_conduit_schematic_tech_lock
 		}
@@ -4824,7 +4736,9 @@ country_event = {
 	}
 	option = {
 		name = "bwm_the_conduit.200.b"
-		add_influence = 100
+		add_resource = {
+			influence = 100
+		}
 	}
 }
 
@@ -5558,8 +5472,10 @@ country_event = {
 					which = "bwm_corvette_counter_scrap"
 					value = -1
 				}
-				add_minerals = 70
-				add_energy = 14
+				add_resource = {
+					minerals = 70
+					energy = 14
+				}
 			}
 		}
 		if = {
@@ -5580,8 +5496,10 @@ country_event = {
 					which = "bwm_destroyer_counter_scrap"
 					value = -1
 				}
-				add_minerals = 160
-				add_energy = 32
+				add_resource = {
+					minerals = 160
+					energy = 32
+				}
 			}
 		}
 		if = {
@@ -5602,8 +5520,10 @@ country_event = {
 					which = "bwm_cruiser_counter_scrap"
 					value = -1
 				}
-				add_minerals = 360
-				add_energy = 72
+				add_resource = {
+					minerals = 360
+					energy = 72
+				}
 			}
 		}
 		if = {
@@ -5624,8 +5544,10 @@ country_event = {
 					which = "bwm_battleship_counter_scrap"
 					value = -1
 				}
-				add_minerals = 720
-				add_energy = 144
+				add_resource = {
+					minerals = 720
+					energy = 144
+				}
 			}
 		}
 		if = {
@@ -5646,8 +5568,10 @@ country_event = {
 					which = "bwm_constructor_counter_scrap"
 					value = -1
 				}
-				add_minerals = 85
-				add_energy = 17
+				add_resource = {
+					minerals = 85
+					energy = 17
+				}
 			}
 		}
 		if = {
@@ -5668,8 +5592,10 @@ country_event = {
 					which = "bwm_colonizer_counter_scrap"
 					value = -1
 				}
-				add_minerals = 485
-				add_energy = 97
+				add_resource = {
+					minerals = 485
+					energy = 97
+				}
 			}
 		}
 		if = {
@@ -5690,8 +5616,10 @@ country_event = {
 					which = "bwm_science_counter_scrap"
 					value = -1
 				}
-				add_minerals = 85
-				add_energy = 17
+				add_resource = {
+					minerals = 85
+					energy = 17
+				}
 			}
 		}
 		if = {
@@ -5712,8 +5640,10 @@ country_event = {
 					which = "bwm_transport_counter_scrap"
 					value = -1
 				}
-				add_minerals = 35
-				add_energy = 7
+				add_resource = {
+					minerals = 35
+					energy = 7
+				}
 			}
 		}
 		if = {
@@ -5734,8 +5664,10 @@ country_event = {
 					which = "bwm_military_station_s_counter_scrap"
 					value = -1
 				}
-				add_minerals = 100
-				add_energy = 20
+				add_resource = {
+					minerals = 100
+					energy = 20
+				}
 			}
 		}
 		if = {
@@ -5756,8 +5688,10 @@ country_event = {
 					which = "bwm_military_station_m_counter_scrap"
 					value = -1
 				}
-				add_minerals = 160
-				add_energy = 32
+				add_resource = {
+					minerals = 160
+					energy = 32
+				}
 			}
 		}
 		if = {
@@ -5778,8 +5712,10 @@ country_event = {
 					which = "bwm_military_station_l_counter_scrap"
 					value = -1
 				}
-				add_minerals = 320
-				add_energy = 64
+				add_resource = {
+					minerals = 320
+					energy = 64
+				}
 			}
 		}
 		if = {
@@ -5800,8 +5736,10 @@ country_event = {
 					which = "bwm_orbital_station_counter_scrap"
 					value = -1
 				}
-				add_minerals = 300
-				add_energy = 60
+				add_resource = {
+					minerals = 300
+					energy = 60
+				}
 			}
 		}
 		if = {
@@ -5822,8 +5760,10 @@ country_event = {
 					which = "bwm_mining_station_counter_scrap"
 					value = -1
 				}
-				add_minerals = 90
-				add_energy = 18
+				add_resource = {
+					minerals = 90
+					energy = 18
+				}
 			}
 		}
 		if = {
@@ -5844,8 +5784,10 @@ country_event = {
 					which = "bwm_research_station_counter_scrap"
 					value = -1
 				}
-				add_minerals = 90
-				add_energy = 18
+				add_resource = {
+					minerals = 90
+					energy = 18
+				}
 			}
 		}
 		if = {
@@ -5866,8 +5808,10 @@ country_event = {
 					which = "bwm_wormhole_station_counter_scrap"
 					value = -1
 				}
-				add_minerals = 75
-				add_energy = 15
+				add_resource = {
+					minerals = 75
+					energy = 15
+				}
 			}
 		}
 		if = {
@@ -5888,8 +5832,10 @@ country_event = {
 					which = "bwm_observation_station_counter_scrap"
 					value = -1
 				}
-				add_minerals = 50
-				add_energy = 10
+				add_resource = {
+					minerals = 50
+					energy = 10
+				}
 			}
 		}
 		if = {
@@ -5910,8 +5856,10 @@ country_event = {
 					which = "bwm_outpost_station_counter_scrap"
 					value = -1
 				}
-				add_minerals = 200
-				add_energy = 40
+				add_resource = {
+					minerals = 200
+					energy = 40
+				}
 			}
 		}
 		if = {
@@ -5932,8 +5880,10 @@ country_event = {
 					which = "bwm_transport_class_counter_scrap"
 					value = -1
 				}
-				add_minerals = 35
-				add_energy = 7
+				add_resource = {
+					minerals = 35
+					energy = 7
+				}
 			}
 		}
 		if = {
@@ -5954,8 +5904,10 @@ country_event = {
 					which = "bwm_constructor_class_counter_scrap"
 					value = -1
 				}
-				add_minerals = 85
-				add_energy = 17
+				add_resource = {
+					minerals = 85
+					energy = 17
+				}
 			}
 		}
 		if = {
@@ -5976,8 +5928,10 @@ country_event = {
 					which = "bwm_science_class_counter_scrap"
 					value = -1
 				}
-				add_minerals = 85
-				add_energy = 17
+				add_resource = {
+					minerals = 85
+					energy = 17
+				}
 			}
 		}
 		if = {
@@ -5998,8 +5952,10 @@ country_event = {
 					which = "bwm_colonizer_class_counter_scrap"
 					value = -1
 				}
-				add_minerals = 485
-				add_energy = 97
+				add_resource = {
+					minerals = 485
+					energy = 97
+				}
 			}
 		}
 		if = {
@@ -6020,8 +5976,10 @@ country_event = {
 					which = "bwm_military_ship_class_counter_scrap"
 					value = -1
 				}
-				add_minerals = 160
-				add_energy = 32
+				add_resource = {
+					minerals = 160
+					energy = 32
+				}
 			}
 		}
 		if = {
@@ -6042,8 +6000,10 @@ country_event = {
 					which = "bwm_military_station_class_counter_scrap"
 					value = -1
 				}
-				add_minerals = 320
-				add_energy = 64
+				add_resource = {
+					minerals = 320
+					energy = 64
+				}
 			}
 		}
 	}
@@ -6068,8 +6028,10 @@ country_event = {
 					is_ship_size = corvette
 				}
 			}
-			add_minerals = 14
-			add_energy = 28
+				add_resource = {
+					minerals = 14
+					energy = 28
+				}
 			break = yes
 		}
 		if = {
@@ -6078,8 +6040,10 @@ country_event = {
 					is_ship_size = destroyer
 				}
 			}
-			add_minerals = 32
-			add_energy = 64
+				add_resource = {
+					minerals = 32
+					energy = 64
+				}
 			break = yes
 		}
 		if = {
@@ -6088,8 +6052,10 @@ country_event = {
 					is_ship_size = cruiser
 				}
 			}
-			add_minerals = 72
-			add_energy = 144
+				add_resource = {
+					minerals = 72
+					energy = 144
+				}
 			break = yes
 		}
 		if = {
@@ -6098,8 +6064,10 @@ country_event = {
 					is_ship_size = battleship
 				}
 			}
-			add_minerals = 144
-			add_energy = 288
+				add_resource = {
+					minerals = 144
+					energy = 288
+				}
 			break = yes
 		}
 		if = {
@@ -6108,8 +6076,10 @@ country_event = {
 					is_ship_size = constructor
 				}
 			}
-			add_minerals = 17
-			add_energy = 34
+				add_resource = {
+					minerals = 17
+					energy = 34
+				}
 			break = yes
 		}
 		if = {
@@ -6118,8 +6088,10 @@ country_event = {
 					is_ship_size = colonizer
 				}
 			}
-			add_minerals = 97
-			add_energy = 194
+				add_resource = {
+					minerals = 97
+					energy = 194
+				}
 			break = yes
 		}
 		if = {
@@ -6128,8 +6100,10 @@ country_event = {
 					is_ship_size = science
 				}
 			}
-			add_minerals = 17
-			add_energy = 34
+				add_resource = {
+					minerals = 17
+					energy = 34
+				}
 			break = yes
 		}
 		if = {
@@ -6138,8 +6112,10 @@ country_event = {
 					is_ship_size = military_station_small
 				}
 			}
-			add_minerals = 20
-			add_energy = 40
+				add_resource = {
+					minerals = 20
+					energy = 40
+				}
 			break = yes
 		}
 		if = {
@@ -6148,8 +6124,10 @@ country_event = {
 					is_ship_size = military_station_medium
 				}
 			}
-			add_minerals = 32
-			add_energy = 64
+				add_resource = {
+					minerals = 32
+					energy = 64
+				}
 			break = yes
 		}
 		if = {
@@ -6158,8 +6136,10 @@ country_event = {
 					is_ship_size = military_station_large
 				}
 			}
-			add_minerals = 64
-			add_energy = 128
+				add_resource = {
+					minerals = 64
+					energy = 128
+				}
 			break = yes
 		}
 		if = {
@@ -6168,8 +6148,10 @@ country_event = {
 					is_ship_size = mining_station
 				}
 			}
-			add_minerals = 18
-			add_energy = 36
+				add_resource = {
+					minerals = 18
+					energy = 36
+				}
 			break = yes
 		}
 		if = {
@@ -6178,8 +6160,10 @@ country_event = {
 					is_ship_size = research_station
 				}
 			}
-			add_minerals = 18
-			add_energy = 36
+				add_resource = {
+					minerals = 18
+					energy = 36
+				}
 			break = yes
 		}
 		if = {
@@ -6188,8 +6172,10 @@ country_event = {
 					is_ship_size = observation_station
 				}
 			}
-			add_minerals = 10
-			add_energy = 20
+				add_resource = {
+					minerals = 10
+					energy = 20
+				}
 			break = yes
 		}
 		if = {
@@ -6219,8 +6205,10 @@ country_event = {
 						is_ship_class = shipclass_transport
 					}
 				}
-				add_minerals = 7
-				add_energy = 14
+				add_resource = {
+					minerals = 7
+					energy = 14
+				}
 				break = yes
 			}
 			if = {
@@ -6229,8 +6217,10 @@ country_event = {
 						is_ship_class = shipclass_constructor
 					}
 				}
-				add_minerals = 17
-				add_energy = 34
+				add_resource = {
+					minerals = 17
+					energy = 34
+				}
 				break = yes
 			}
 			if = {
@@ -6239,8 +6229,10 @@ country_event = {
 						is_ship_class = shipclass_science_ship
 					}
 				}
-				add_minerals = 17
-				add_energy = 34
+				add_resource = {
+					minerals = 17
+					energy = 34
+				}
 				break = yes
 			}
 			if = {
@@ -6249,8 +6241,10 @@ country_event = {
 						is_ship_class = shipclass_colonizer
 					}
 				}
-				add_minerals = 97
-				add_energy = 194
+				add_resource = {
+					minerals = 97
+					energy = 194
+				}
 				break = yes
 			}
 			if = {
@@ -6259,8 +6253,10 @@ country_event = {
 						is_ship_class = shipclass_military
 					}
 				}
-				add_minerals = 32
-				add_energy = 64
+				add_resource = {
+					minerals = 32
+					energy = 64
+				}
 				break = yes
 			}
 			if = {
@@ -6271,8 +6267,10 @@ country_event = {
 						is_ship_size = colossus
 					}
 				}
-				add_minerals = 64
-				add_energy = 128
+				add_resource = {
+					minerals = 64
+					energy = 128
+				}
 				break = yes
 			}
 		}

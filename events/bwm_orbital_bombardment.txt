@@ -462,7 +462,7 @@ country_event = {
 		name = bwm_orbital_bombardment.3.a
 		custom_tooltip = bwm_orbital_bombardment.3.a.tooltip
 		allow = {
-			produced_energy > 5000
+			has_country_resource = { type = energy amount >= 5000 }
 		}
 		add_resource = {
 			energy = -5000

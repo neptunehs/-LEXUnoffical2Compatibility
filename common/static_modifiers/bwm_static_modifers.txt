@@ -683,6 +683,6 @@ bwm_artifact_bomb_2_temp = {
 bwm_bombardment_debuff = {
 	planet_orbital_bombardment_damage = -1.0
 	
-	icon = "gfx/interface/icons/planet_modifier/pm_chthonian_planet.dds"
+	icon = "gfx/interface/icons/planet_modifiers/pm_chthonian_planet.dds"
 	icon_frame = 3
 }

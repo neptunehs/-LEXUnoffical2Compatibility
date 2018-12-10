@@ -185,7 +185,6 @@ on_ship_disabled = {
 
 # A building construction has been completed, which is an upgrade of previous building.
 # This = Planet
-# From = Tile
 on_building_upgraded = {
 	events = {
 		bwm_throne_watchers.41

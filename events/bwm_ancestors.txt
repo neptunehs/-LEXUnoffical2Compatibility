@@ -1313,7 +1313,7 @@ planet_event = {
 			set_planet_flag = bwm_ancestor_world
 			remove_planet_flag = bwm_ancestor_touched
 			while = {
-				limit = { num_free_districts = { type = any value > 0 } }
+				count = 10
 				add_deposit = tb_bwm_nature
 			}
 #			random_tile = {
@@ -1810,7 +1810,7 @@ event = {
 				set_planet_flag = bwm_ancestor_world
 				remove_planet_flag = bwm_ancestor_touched
 				while = {
-					limit = { num_free_districts = { type = any value > 0 } }
+					count = 10
 					add_deposit = tb_bwm_nature
 				}
 				# random_tile = {

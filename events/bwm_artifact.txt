@@ -4432,9 +4432,7 @@ planet_event = {
 
 	
 	trigger = {
-		from = {
-			has_planet_flag = bwm_building_shipwreck_1
-		}
+		has_planet_flag = bwm_building_shipwreck_1
 	}
 	
 	is_triggered_only = yes

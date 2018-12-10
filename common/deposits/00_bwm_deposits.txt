@@ -105,6 +105,9 @@ tb_bwm_paradise = {
 
 	time = 180
 
+	is_for_colonizeable = yes
+	category = deposit_cat_blockers
+
 	resources = {
 		category = deposit_blockers
 		cost = {
@@ -130,6 +133,9 @@ tb_bwm_nature = {
 	icon = d_alien_pets_deposit
 
 	time = 180
+
+	is_for_colonizeable = yes
+	category = deposit_cat_blockers
 
 	resources = {
 		category = deposit_blockers

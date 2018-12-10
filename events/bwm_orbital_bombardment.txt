@@ -23,16 +23,18 @@ fleet_event = {
 					is_same_value = root
 				}
 			}
-			OWNER = {
-				exists = this
-				OR = {
-					is_at_war_with = root
-					is_country_type = swarm
-					is_country_type = extradimensional
-					is_country_type = extradimensional_2
-					is_country_type = extradimensional_3
-					is_country_type = ai_empire
-					is_country_type = primitive
+			AND = {
+				exists = owner
+				OWNER = {
+					OR = {
+						is_at_war_with = root
+						is_country_type = swarm
+						is_country_type = extradimensional
+						is_country_type = extradimensional_2
+						is_country_type = extradimensional_3
+						is_country_type = ai_empire
+						is_country_type = primitive
+					}
 				}
 			}
 			solar_system = {

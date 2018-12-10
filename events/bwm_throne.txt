@@ -977,9 +977,7 @@ planet_event = {
 
 	
 	trigger = {
-		from = {
-			has_building = bwm_building_ancient_monolith_4
-		}
+		has_building = bwm_building_ancient_monolith_4
 	}
 	
 	is_triggered_only = yes

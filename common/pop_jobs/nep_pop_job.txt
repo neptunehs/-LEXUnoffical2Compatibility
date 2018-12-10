@@ -13,7 +13,7 @@ nep_e_researcher = {
 		category = planet_researchers
 		produces = {
 			physics_research = 1
-			engineering_research = 6
+			engineering_research = 10
 			society_research = 1
 		}
 		produces = {

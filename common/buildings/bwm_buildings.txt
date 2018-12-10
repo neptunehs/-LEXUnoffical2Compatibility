@@ -12,11 +12,8 @@ bwm_building_ancient_ruin_1 = {
 		always = no
 	}
 	
-	convert_to = {
-		bwm_building_ancient_factory_1
-		bwm_building_ancient_factory_2
-		bwm_building_ancient_factory_3
-		bwm_building_ancient_factory_4
+	upgrades = {
+		bwm_building_ancient_factory
 		bwm_building_dark_matter_power_plant
 		bwm_building_agri_processing_complex
 		bwm_building_engineering_facility
@@ -234,7 +231,7 @@ bwm_building_ancient_monolith_4 = {
 	}
 }
 
-bwm_building_ancient_factory_1 = {
+bwm_building_ancient_factory = {
     can_build = no
 	icon = "building_ancient_factory"
 	
@@ -246,126 +243,22 @@ bwm_building_ancient_factory_1 = {
 			}
 		}
 	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			energy = 500
-		}
-		produces = {
-			minerals = 25
-		}
-		upkeep = {
-			energy = 8
-		}
-	}
 	
 	planet_modifier = {
-		planet_housing_add = 5
-		job_clerk_add = 3
-		job_chemist_add = 2
-		job_artisan_add = 2
+		job_clerk_add = 10
 	}
-}
-
-bwm_building_ancient_factory_2 = {
-    can_build = no
-	icon = "building_ancient_factory"
 	
-	allow = {
-		custom_tooltip = {
-			text = "requires_building_ancient_monolith"
-			planet = {
-					has_building = "bwm_building_ancient_monolith_3"
-			}
-		}
-	}
-
 	resources = {
 		category = planet_buildings
-		cost = {
-			energy = 500
-		}
 		produces = {
-			minerals = 25
+			minerals = 50
+			rare_crystals = 1
+			exotic_gases = 1
+			volatile_motes = 1
 		}
 		upkeep = {
-			energy = 8
+			energy = 10
 		}
-	}
-	
-	planet_modifier = {
-		planet_housing_add = 5
-		job_clerk_add = 3
-		job_translucer_add = 2	
-		job_artisan_add = 2
-	}
-}
-
-bwm_building_ancient_factory_3 = {
-    can_build = no
-	icon = "building_ancient_factory"
-	
-	allow = {
-		custom_tooltip = {
-			text = "requires_building_ancient_monolith"
-			planet = {
-					has_building = "bwm_building_ancient_monolith_3"
-			}
-		}
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			energy = 500
-		}
-		produces = {
-			minerals = 25
-		}
-		upkeep = {
-			energy = 8
-		}
-	}
-	
-	planet_modifier = {
-		planet_housing_add = 5
-		job_clerk_add = 3
-		job_gas_refiner_add = 2
-		job_artisan_add = 2
-	}
-}
-
-bwm_building_ancient_factory_4 = {
-    can_build = no
-	icon = "building_ancient_factory"
-	
-	allow = {
-		custom_tooltip = {
-			text = "requires_building_ancient_monolith"
-			planet = {
-					has_building = "bwm_building_ancient_monolith_3"
-			}
-		}
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			energy = 500
-		}
-		produces = {
-			minerals = 25
-		}
-		upkeep = {
-			energy = 8
-		}
-	}
-	
-	planet_modifier = {
-		planet_housing_add = 5
-		job_clerk_add = 2
-		job_foundry_add = 5
 	}
 }
 
@@ -384,19 +277,13 @@ bwm_building_dark_matter_power_plant = {
 	
 	resources = {
 		category = planet_buildings
-		cost = {
-			energy = 500
-		}
 		produces = {
-			energy = 32
+			energy = 125
 		}
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 5
-		job_clerk_add = 2
-		job_artisan_add = 2
-		job_telepath_add = 1
+		job_clerk_add = 10
 	}
 }
 
@@ -419,21 +306,16 @@ bwm_building_agri_processing_complex = {
 	
 	resources = {
 		category = planet_buildings
-		cost = {
-			energy = 500
-		}
 		produces = {
-			food = 25
+			food = 50
 		}
 		upkeep = {
-			energy = 8
+			energy = 10
 		}
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 5
-		job_clerk_add = 2
-		job_farmer_add = 5
+		job_clerk_add = 10
 	}
 }
 
@@ -456,24 +338,22 @@ bwm_building_engineering_facility = {
 			energy = 500
 		}
 		produces = {
-			engineering_research = 20
-			physics_research = 1
-			society_research = 1
+			physics_research = 50
+			society_research = 5
+			engineering_research = 5
 		}
 		upkeep = {
-			energy = 8
+			energy = 10
 		}
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 5
-		job_clerk_add = 2
+		job_clerk_add = 5
 		job_nep_e_researcher_add = 5
 	}
 }
 
 bwm_building_biolab = {
-
 	can_build = no
 	icon = "building_bwm_lex_ring_biolab"
 	
@@ -493,18 +373,17 @@ bwm_building_biolab = {
 			energy = 500
 		}
 		produces = {
-			engineering_research = 1
-			physics_research = 1
-			society_research = 20
+			engineering_research = 5
+			physics_research = 5
+			society_research = 50
 		}
 		upkeep = {
-			energy = 8
+			energy = 10
 		}
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 5
-		job_clerk_add = 2
+		job_clerk_add = 5
 		job_nep_s_researcher_add = 5
 	}
 }
@@ -528,18 +407,17 @@ bwm_building_physics_lab = {
 			energy = 500
 		}
 		produces = {
-			engineering_research = 1
-			physics_research = 20
-			society_research = 1
+			engineering_research = 5
+			physics_research = 50
+			society_research = 5
 		}
 		upkeep = {
-			energy = 8
+			energy = 10
 		}
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 5
-		job_clerk_add = 2
+		job_clerk_add = 5
 		job_nep_p_researcher_add = 5
 	}
 }
@@ -678,9 +556,12 @@ bwm_building_obelisk_1 = {
 	}
 	
 	planet_modifier  = {
-		planets_engineering_research_produces_mult = 0.25
-		planets_physics_research_produces_mult = 0.25
-		planets_society_research_produces_mult = 0.25
+		planet_jobs_engineering_research_produces_mult = 0.25
+		planet_jobs_physics_research_produces_mult = 0.25
+		planet_jobs_society_research_produces_mult = 0.25
+		planet_buildings_engineering_research_produces_mult = 0.25
+		planet_buildings_physics_research_produces_mult = 0.25
+		planet_buildings_society_research_produces_mult = 0.25
 	}
 }
 
@@ -718,9 +599,12 @@ bwm_building_obelisk_2 = {
 	}
 	
 	planet_modifier  = {
-		planets_engineering_research_produces_mult = 0.25
-		planets_physics_research_produces_mult = 0.25
-		planets_society_research_produces_mult = 0.25
+		planet_jobs_engineering_research_produces_mult = 0.25
+		planet_jobs_physics_research_produces_mult = 0.25
+		planet_jobs_society_research_produces_mult = 0.25
+		planet_buildings_engineering_research_produces_mult = 0.25
+		planet_buildings_physics_research_produces_mult = 0.25
+		planet_buildings_society_research_produces_mult = 0.25
 	}
 }
 
@@ -758,9 +642,12 @@ bwm_building_obelisk_3 = {
 	}
 	
 	planet_modifier  = {
-		planets_engineering_research_produces_mult = 0.25
-		planets_physics_research_produces_mult = 0.25
-		planets_society_research_produces_mult = 0.25
+		planet_jobs_engineering_research_produces_mult = 0.25
+		planet_jobs_physics_research_produces_mult = 0.25
+		planet_jobs_society_research_produces_mult = 0.25
+		planet_buildings_engineering_research_produces_mult = 0.25
+		planet_buildings_physics_research_produces_mult = 0.25
+		planet_buildings_society_research_produces_mult = 0.25
 	}
 }
 
@@ -798,8 +685,11 @@ bwm_building_obelisk_4 = {
 	}
 	
 	planet_modifier  = {
-		planets_engineering_research_produces_mult = 0.25
-		planets_physics_research_produces_mult = 0.25
-		planets_society_research_produces_mult = 0.25
+		planet_jobs_engineering_research_produces_mult = 0.25
+		planet_jobs_physics_research_produces_mult = 0.25
+		planet_jobs_society_research_produces_mult = 0.25
+		planet_buildings_engineering_research_produces_mult = 0.25
+		planet_buildings_physics_research_produces_mult = 0.25
+		planet_buildings_society_research_produces_mult = 0.25
 	}
 }

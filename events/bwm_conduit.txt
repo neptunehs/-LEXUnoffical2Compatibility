@@ -134,46 +134,47 @@ ship_event = {
 					has_star_flag = bwm_garden_system
 				}
 				random_system_planet = {
-						limit = {
-							is_planet_class = pc_shielded
-							has_planet_flag = bwm_conduit_shielded
+					limit = {
+						is_planet_class = pc_shielded
+						has_planet_flag = bwm_conduit_shielded
+						NOT = {
+							has_planet_flag = bwm_conduit_garden 
+						}
+						solar_system = {
 							NOT = {
-								has_planet_flag = bwm_conduit_garden 
-							}
-							solar_system = {
-								NOT = {
-									has_star_flag = bwm_garden_unlock 
-								}
+								has_star_flag = bwm_garden_unlock 
 							}
 						}
-						change_pc = pc_gaia
-						set_planet_entity = {
-							entity = "gaia_planet_01_entity"
-						}
-						set_planet_flag = bwm_conduit_garden
-						set_planet_flag = fallen_empire_world
-						set_planet_flag = colony_event
-						
-						add_modifier = {
-							modifier = "bwm_garden_mod"
-							days = -1
-						}
-							add_building = "bwm_building_obelisk_0_1"
-							add_building = "bwm_building_obelisk_0_2"
-							add_building = "bwm_building_obelisk_0_3"
-							add_building = "bwm_building_obelisk_0_4"
-									add_building = "bwm_building_agri_processing_complex"
-									add_building = "bwm_building_dark_matter_power_plant"
-									add_building = "bwm_building_dark_matter_power_plant"
-									add_building = "bwm_building_ancient_factory_4"
-									
-						while = {
-							limit = { num_free_districts = { type = any value > 0 } }
-							add_deposit = tb_bwm_nature
-						}
+					}
+					change_pc = pc_gaia
+					set_planet_entity = {
+						entity = "gaia_planet_01_entity"
+					}
+					reroll_planet = yes
+					clear_planet_modifiers = yes
+					set_planet_flag = bwm_conduit_garden
+					set_planet_flag = fallen_empire_world
+					set_planet_flag = colony_event
+					add_modifier = {
+						modifier = "bwm_garden_mod"
+						days = -1
+					}
+					add_building = "bwm_building_obelisk_0_1"
+					add_building = "bwm_building_obelisk_0_2"
+					add_building = "bwm_building_obelisk_0_3"
+					add_building = "bwm_building_obelisk_0_4"
+					add_building = "bwm_building_agri_processing_complex"
+					add_building = "bwm_building_dark_matter_power_plant"
+					add_building = "bwm_building_dark_matter_power_plant"
+					add_building = "bwm_building_ancient_factory"
+					
+					while = {
+						count = 10
+						add_deposit = tb_bwm_nature
+					}
 				}
 				solar_system = {
-					set_star_flag = bwm_garden_unlock 
+					set_star_flag = bwm_garden_unlock
 				}
 			}
 		}
@@ -606,9 +607,7 @@ planet_event = {
 			has_global_flag = bwm_conduit_pillar_1_activated
 			has_global_flag = bwm_conduit_eye_appeared
 		}
-		from = {
-			has_building = bwm_building_obelisk_1
-		}
+		has_building = bwm_building_obelisk_1
 	}
 	
 	is_triggered_only = yes
@@ -666,9 +665,7 @@ planet_event = {
 			has_global_flag = bwm_conduit_pillar_2_activated
 			has_global_flag = bwm_conduit_eye_appeared
 		}
-		from = {
-			has_building = bwm_building_obelisk_2
-		}
+		has_building = bwm_building_obelisk_2
 	}
 	
 	is_triggered_only = yes
@@ -726,9 +723,7 @@ planet_event = {
 			has_global_flag = bwm_conduit_eye_appeared
 			has_global_flag = bwm_conduit_pillar_3_activated
 		}
-		from = {
-			has_building = bwm_building_obelisk_3
-		}
+		has_building = bwm_building_obelisk_3
 	}
 	
 	is_triggered_only = yes
@@ -786,9 +781,7 @@ planet_event = {
 			has_global_flag = bwm_conduit_eye_appeared
 			has_global_flag = bwm_conduit_pillar_4_activated
 		}
-		from = {
-			has_building = bwm_building_obelisk_4
-		}
+		has_building = bwm_building_obelisk_4
 	}
 	
 	is_triggered_only = yes

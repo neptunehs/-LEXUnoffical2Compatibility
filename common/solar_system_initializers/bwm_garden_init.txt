@@ -25,7 +25,6 @@ bwm_garden = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-                clear_deposits = yes
 			
 			create_ambient_object = {
 				type = "bwm_conduit_off_object"

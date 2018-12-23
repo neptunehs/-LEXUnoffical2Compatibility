@@ -159,14 +159,14 @@ ship_event = {
 						modifier = "bwm_garden_mod"
 						days = -1
 					}
-					add_building = "bwm_building_obelisk_0_1"
-					add_building = "bwm_building_obelisk_0_2"
-					add_building = "bwm_building_obelisk_0_3"
-					add_building = "bwm_building_obelisk_0_4"
 					add_building = "bwm_building_agri_processing_complex"
 					add_building = "bwm_building_dark_matter_power_plant"
 					add_building = "bwm_building_dark_matter_power_plant"
 					add_building = "bwm_building_ancient_factory"
+					add_building = "bwm_building_obelisk_0_1"
+					add_building = "bwm_building_obelisk_0_2"
+					add_building = "bwm_building_obelisk_0_3"
+					add_building = "bwm_building_obelisk_0_4"
 					
 					while = {
 						count = 10
@@ -928,7 +928,7 @@ country_event = {
 					angle = 675 
 				}
 			}
-			save_event_target_as = bwm_conduit_system
+			save_global_event_target_as = bwm_conduit_system
 		}
 		every_country = {
 			if = {
@@ -999,22 +999,22 @@ country_event = {
 			}
 		}
 		last_created_country = {
-		if = {
-			limit = {
-				NOT = {
-					has_modifier = bwm_conduit_power
+			if = {
+				limit = {
+					NOT = {
+						has_modifier = bwm_conduit_power
+					}
+				}
+				add_modifier = {
+					modifier = bwm_conduit_power
+					days = -1
 				}
 			}
-			add_modifier = {
-				modifier = bwm_conduit_power
-				days = -1
-			}
-		}
-		save_global_event_target_as = bwm_conduit_country
-		set_country_flag = bwm_conduit_country
-		set_graphical_culture = fallen_empire_03
-		#guardian_difficulty = yes
-		lex_get_full_map = yes
+			save_global_event_target_as = bwm_conduit_country
+			set_country_flag = bwm_conduit_country
+			set_graphical_culture = fallen_empire_03
+			#guardian_difficulty = yes
+			lex_get_full_map = yes
 		}
 		event_target:bwm_conduit_system = {
 			if = {
@@ -3593,7 +3593,7 @@ ship_event = {
 				set_owner = event_target:bwm_conduit_slayer_target
 				save_event_target_as = bwm_garden_aid
 			}
-			save_event_target_as = bwm_conduit_system 
+			#save_event_target_as = bwm_conduit_system 
 		}
 		event_target:bwm_conduit_system = {
 			if = {

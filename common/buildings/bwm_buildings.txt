@@ -124,9 +124,15 @@ bwm_building_ancient_monolith_1 = {
 	}
 	
 	planet_modifier = {
-		planets_engineering_research_produces_mult = 0.5
-		planets_society_research_produces_mult = 0.5
-		planets_physics_research_produces_mult = 0.5
+		planet_jobs_engineering_research_produces_mult = 0.5
+		planet_jobs_society_research_produces_mult = 0.5
+		planet_jobs_physics_research_produces_mult = 0.5
+		planet_buildings_engineering_research_produces_mult = 0.5
+		planet_buildings_society_research_produces_mult = 0.5
+		planet_buildings_physics_research_produces_mult = 0.5
+		planet_deposits_engineering_research_produces_mult = 0.5
+		planet_deposits_society_research_produces_mult = 0.5
+		planet_deposits_physics_research_produces_mult = 0.5
 	}
 }
 
@@ -157,7 +163,9 @@ bwm_building_ancient_monolith_2 = {
 	}
 	
 	planet_modifier  = {
-		planets_energy_produces_mult = 0.5		
+	    planet_jobs_energy_produces_mult = 0.5
+	    planet_buildings_energy_produces_mult = 0.5
+	    planet_deposits_energy_produces_mult = 0.5	
 	}
 		
 	prerequisites = {
@@ -192,8 +200,9 @@ bwm_building_ancient_monolith_3 = {
 	}
 	
 	planet_modifier  = {
-	    planets_minerals_produces_mult = 0.5
-		
+	    planet_jobs_minerals_produces_mult = 0.5
+	    planet_buildings_minerals_produces_mult = 0.5
+	    planet_deposits_minerals_produces_mult = 0.5
 	}
 		
 	prerequisites = {
@@ -432,11 +441,16 @@ bwm_building_obelisk_0_1 = {
 	allow = {
 		always = no
 	}
-			
+
 	upgrades = {
 		bwm_building_obelisk_1
 	}
 	
+	planet_modifier = { 
+		job_clerk_add = 5
+		job_researcher_add = 5
+	}
+
 	resources = {
 		category = planet_buildings
 		produces = {
@@ -462,6 +476,11 @@ bwm_building_obelisk_0_2 = {
 		bwm_building_obelisk_2
 	}
 	
+	planet_modifier = { 
+		job_clerk_add = 5
+		job_researcher_add = 5
+	}
+
 	resources = {
 		category = planet_buildings
 		produces = {
@@ -487,6 +506,11 @@ bwm_building_obelisk_0_3 = {
 		bwm_building_obelisk_3
 	}
 	
+	planet_modifier = { 
+		job_clerk_add = 5
+		job_researcher_add = 5
+	}
+
 	resources = {
 		category = planet_buildings
 		produces = {
@@ -510,6 +534,11 @@ bwm_building_obelisk_0_4 = {
 			
 	upgrades = {
 		bwm_building_obelisk_4
+	}
+
+	planet_modifier = { 
+		job_clerk_add = 5
+		job_researcher_add = 5
 	}
 	
 	resources = {
@@ -559,9 +588,8 @@ bwm_building_obelisk_1 = {
 		planet_jobs_engineering_research_produces_mult = 0.25
 		planet_jobs_physics_research_produces_mult = 0.25
 		planet_jobs_society_research_produces_mult = 0.25
-		planet_buildings_engineering_research_produces_mult = 0.25
-		planet_buildings_physics_research_produces_mult = 0.25
-		planet_buildings_society_research_produces_mult = 0.25
+		job_clerk_add = 5
+		job_researcher_add = 5
 	}
 }
 
@@ -602,9 +630,8 @@ bwm_building_obelisk_2 = {
 		planet_jobs_engineering_research_produces_mult = 0.25
 		planet_jobs_physics_research_produces_mult = 0.25
 		planet_jobs_society_research_produces_mult = 0.25
-		planet_buildings_engineering_research_produces_mult = 0.25
-		planet_buildings_physics_research_produces_mult = 0.25
-		planet_buildings_society_research_produces_mult = 0.25
+		job_clerk_add = 5
+		job_researcher_add = 5
 	}
 }
 
@@ -645,9 +672,8 @@ bwm_building_obelisk_3 = {
 		planet_jobs_engineering_research_produces_mult = 0.25
 		planet_jobs_physics_research_produces_mult = 0.25
 		planet_jobs_society_research_produces_mult = 0.25
-		planet_buildings_engineering_research_produces_mult = 0.25
-		planet_buildings_physics_research_produces_mult = 0.25
-		planet_buildings_society_research_produces_mult = 0.25
+		job_clerk_add = 5
+		job_researcher_add = 5
 	}
 }
 
@@ -688,8 +714,7 @@ bwm_building_obelisk_4 = {
 		planet_jobs_engineering_research_produces_mult = 0.25
 		planet_jobs_physics_research_produces_mult = 0.25
 		planet_jobs_society_research_produces_mult = 0.25
-		planet_buildings_engineering_research_produces_mult = 0.25
-		planet_buildings_physics_research_produces_mult = 0.25
-		planet_buildings_society_research_produces_mult = 0.25
+		job_clerk_add = 5
+		job_researcher_add = 5
 	}
 }

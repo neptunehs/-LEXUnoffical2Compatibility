@@ -1,30 +1,30 @@
 bwm_cipher_1_power = {
 	country_physics_tech_research_speed = 0.1
-	planets_physics_research_produces_mult = 0.1
-	planets_energy_produces_mult = 0.1
+	planet_jobs_physics_research_produces_mult = 0.1
+	planet_jobs_energy_produces_mult = 0.1
 }
 
 bwm_cipher_2_power = {
 	country_society_tech_research_speed = 0.1
-	planets_society_research_produces_mult = 0.1
-	planets_food_produces_mult = 0.1
+	planet_jobs_society_research_produces_mult = 0.1
+	planet_jobs_food_produces_mult = 0.1
 }
 
 bwm_cipher_3_power = {
 	country_engineering_tech_research_speed = 0.1
-	planets_engineering_research_produces_mult = 0.1
-	planets_minerals_produces_mult = 0.1
+	planet_jobs_engineering_research_produces_mult = 0.1
+	planet_jobs_minerals_produces_mult = 0.1
 }
 
 bwm_cipher_full_power = {
 	all_technology_research_speed = 0.1
-	planets_physics_research_produces_mult = 0.1
-	planets_society_research_produces_mult = 0.1
-	planets_engineering_research_produces_mult = 0.1
-	planets_energy_produces_mult = 0.1
-	planets_food_produces_mult = 0.1
-	planets_minerals_produces_mult = 0.1
-	planets_unity_produces_mult = 0.1
+	planet_jobs_physics_research_produces_mult = 0.1
+	planet_jobs_society_research_produces_mult = 0.1
+	planet_jobs_engineering_research_produces_mult = 0.1
+	planet_jobs_energy_produces_mult = 0.1
+	planet_jobs_food_produces_mult = 0.1
+	planet_jobs_minerals_produces_mult = 0.1
+	planet_jobs_unity_produces_mult = 0.1
 }
 
 bwm_leviathan_research_debuff = {
@@ -82,7 +82,9 @@ bwm_ancient_weapon_planets_debuff = {
 	pop_happiness = -0.5
 	planet_sensor_range_add = -2
 	planet_buildings_upkeep_mult = 0.5
-	planets_energy_produces_mult = -0.5
+	planet_jobs_energy_produces_mult = -0.5
+	planet_buildings_energy_produces_mult = -0.5
+	planet_deposits_energy_produces_mult = -0.5
 }
 
 bwm_artifact_drone_boss_stack_buff = {
@@ -435,7 +437,9 @@ bwm_ancestor_in_system = {
 	pop_happiness = -0.25
 	building_time_mult = 0.25
 	planet_immigration_pull_mult = 0.25
-	planets_unity_produces_mult = -0.25
+	planet_jobs_unity_produces_mult = -0.25
+	planet_buildings_unity_produces_mult = -0.25
+	planet_deposits_unity_produces_mult = -0.25
 	pop_government_ethic_attraction = -0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_atmospheric_hallucinogen.dds"
@@ -454,12 +458,12 @@ bwm_ancestor_garden_world = {
 
 bwm_pop_ancestor = {
 	pop_happiness = 1
-	planets_society_research_produces_mult = -1
-	planets_physics_research_produces_mult = -1
-	planets_engineering_research_produces_mult = -1
-	planets_minerals_produces_mult = -1
-	planets_energy_produces_mult = -1
-	planets_food_produces_mult = -1
+	planet_jobs_society_research_produces_mult = -1
+	planet_jobs_physics_research_produces_mult = -1
+	planet_jobs_engineering_research_produces_mult = -1
+	planet_jobs_minerals_produces_mult = -1
+	planet_jobs_energy_produces_mult = -1
+	planet_jobs_food_produces_mult = -1
 }
 
 bwm_seal_power = {
@@ -519,11 +523,11 @@ bwm_conduit_core_kill_bonus = {
 }
 
 bwm_uncertain_past = {
-	planets_physics_research_produces_mult = 0.1
-	planets_society_research_produces_mult = 0.1
-	planets_engineering_research_produces_mult = 0.1
+	planet_jobs_physics_research_produces_mult = 0.1
+	planet_jobs_society_research_produces_mult = 0.1
+	planet_jobs_engineering_research_produces_mult = 0.1
 	pop_happiness = -0.1
-	planets_unity_produces_mult = -0.1
+	planet_jobs_unity_produces_mult = -0.1
 	pop_government_ethic_attraction = -0.1
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_irradiated.dds"
@@ -534,7 +538,7 @@ bwm_garden_mod = {
 	pop_happiness = 0.25
 	pop_growth_speed = 0.25
 	building_time_mult = -0.25
-	planets_food_produces_mult = 0.25
+	planet_jobs_food_produces_mult = 0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_holy_planet.dds"
 	icon_frame = 2
@@ -542,8 +546,8 @@ bwm_garden_mod = {
 
 bwm_obelisk_1_mod = {
 	planet_sensor_range_add = 2
-	planets_minerals_produces_mult = 0.25
-	planets_energy_produces_mult = 0.25
+	planet_jobs_minerals_produces_mult = 0.25
+	planet_jobs_energy_produces_mult = 0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 2
@@ -551,8 +555,8 @@ bwm_obelisk_1_mod = {
 
 bwm_obelisk_2_mod = {
 	planet_sensor_range_add = 2
-	planets_minerals_produces_mult = 0.25
-	planets_energy_produces_mult = 0.25
+	planet_jobs_minerals_produces_mult = 0.25
+	planet_jobs_energy_produces_mult = 0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 2
@@ -560,8 +564,8 @@ bwm_obelisk_2_mod = {
 
 bwm_obelisk_3_mod = {
 	planet_sensor_range_add = 2
-	planets_minerals_produces_mult = 0.25
-	planets_energy_produces_mult = 0.25
+	planet_jobs_minerals_produces_mult = 0.25
+	planet_jobs_energy_produces_mult = 0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 2
@@ -569,8 +573,8 @@ bwm_obelisk_3_mod = {
 
 bwm_obelisk_4_mod = {
 	planet_sensor_range_add = 2
-	planets_minerals_produces_mult = 0.25
-	planets_energy_produces_mult = 0.25
+	planet_jobs_minerals_produces_mult = 0.25
+	planet_jobs_energy_produces_mult = 0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_unknown.dds"
 	icon_frame = 2
@@ -579,7 +583,7 @@ bwm_obelisk_4_mod = {
 bwm_obelisk_5_mod = {
 	pop_happiness = 0.25
 	planet_emigration_push_mult = 0.25
-	planets_unity_produces_mult = 0.25
+	planet_jobs_unity_produces_mult = 0.25
 	pop_government_ethic_attraction = -0.25
 	
 	icon = "gfx/interface/icons/planet_modifiers/pm_atmospheric_hallucinogen.dds"
@@ -589,7 +593,7 @@ bwm_obelisk_5_mod = {
 bwm_obelisk_6_mod = {
 	pop_happiness = -0.25
 	planet_immigration_pull_mult = 0.25
-	planets_unity_produces_mult = -0.25
+	planet_jobs_unity_produces_mult = -0.25
 	pop_government_ethic_attraction = 0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_starvation.dds"
@@ -599,7 +603,7 @@ bwm_obelisk_6_mod = {
 bwm_obelisk_7_mod = {
 	pop_happiness = 0.25
 	planet_immigration_pull_mult = 0.25
-	planets_unity_produces_mult = 0.25
+	planet_jobs_unity_produces_mult = 0.25
 	pop_government_ethic_attraction = 0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_atmospheric_hallucinogen.dds"
@@ -641,12 +645,12 @@ bwm_pop_conduit_4 = {
 
 bwm_pop_conduit_5 = {
 	pop_happiness = -1
-	planets_society_research_produces_mult = -1
-	planets_physics_research_produces_mult = -1
-	planets_engineering_research_produces_mult = -1
-	planets_minerals_produces_mult = -1
-	planets_energy_produces_mult = -1
-	planets_food_produces_mult = -1
+	planet_jobs_society_research_produces_mult = -1
+	planet_jobs_physics_research_produces_mult = -1
+	planet_jobs_engineering_research_produces_mult = -1
+	planet_jobs_minerals_produces_mult = -1
+	planet_jobs_energy_produces_mult = -1
+	planet_jobs_food_produces_mult = -1
 }
 
 bwm_artifact_bomb_2_planets_effect = {
@@ -654,12 +658,12 @@ bwm_artifact_bomb_2_planets_effect = {
 	icon_frame = 3
 	
 	pop_happiness = -0.25
-	planets_society_research_produces_mult = -0.25
-	planets_physics_research_produces_mult = -0.25
-	planets_engineering_research_produces_mult = -0.25
-	planets_minerals_produces_mult = -0.25
-	planets_energy_produces_mult = -0.25
-	planets_food_produces_mult = -0.25
+	planet_jobs_society_research_produces_mult = -0.25
+	planet_jobs_physics_research_produces_mult = -0.25
+	planet_jobs_engineering_research_produces_mult = -0.25
+	planet_jobs_minerals_produces_mult = -0.25
+	planet_jobs_energy_produces_mult = -0.25
+	planet_jobs_food_produces_mult = -0.25
 }
 
 bwm_artifact_bomb_1_temp = {

@@ -1,7 +1,7 @@
 lex_diff_policy = {
 
 	potential = {
-		always = yes
+		is_ai = no
 	}
 	
 	option = {
@@ -514,6 +514,47 @@ lex_no_retreat = {
 			modifier = {
 				factor = 0
 				always = yes
+			}
+		}
+	}
+}
+
+lex_reject_nsc_policy = {
+	potential = {
+		has_global_flag = has_nsc_active
+		NOT = { has_global_flag = reject_lex_mod }
+		is_ai = no
+	}
+
+	option = {
+		name = "lex_allow_it"
+		AI_weight = {
+			modifier = {
+				factor = 1
+				always = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "lex_reject_it"
+
+
+		on_enabled = {
+			hidden_effect = {
+				set_global_flag = reject_lex_mod
+				every_ship = {
+					limit = {
+						has_modifier = lex_nsc
+					}
+					remove_modifier = lex_nsc
+				}
+			}
+		}
+		
+		AI_weight = {
+			modifier = {
+				factor = 0
 			}
 		}
 	}

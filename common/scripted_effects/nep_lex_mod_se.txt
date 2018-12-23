@@ -2,7 +2,8 @@ lex_mod = {
 	if = {
 		limit = {
 			has_global_flag = has_nsc_active
-			NOT = {
+			NOR = {
+				has_global_flag = reject_lex_mod
 				has_modifier = lex_nsc
 			}
 		}

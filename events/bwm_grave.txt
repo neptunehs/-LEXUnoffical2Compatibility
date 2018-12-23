@@ -385,7 +385,7 @@ fleet_event = {
 				has_hp_percentage < 0.3
 				has_hp_percentage > 0
 			}
-		}	
+		}
 	}
 	
 	immediate = {
@@ -473,8 +473,8 @@ fleet_event = {
 				}
 			}
 			solar_system = {
-					save_event_target_as = bwm_grave_roam_loc	
-					save_event_target_as = bwm_grave_temp_loc
+				save_event_target_as = bwm_grave_roam_loc	
+				save_event_target_as = bwm_grave_temp_loc
 			}
 		}
 		every_country = {
@@ -489,13 +489,21 @@ fleet_event = {
 					event_chain = "bwm_grave_tracker_chain"
 					target = this
 				}
+				create_point_of_interest = {
+					id = bwm_grave_tracker_poi.1
+					name = "bwm_grave_tracker_poi"
+					desc = "bwm_grave_tracker_poi_desc"
+					event_chain = bwm_grave_tracker_chain
+					location = root
+				}
 			}
 		}
 		fleet_event = { id = bwm_gravekeeper.25 days = 1800 }
 		clear_fleet_actions = this
+		
 		queue_actions = {
 			repeat = {
-				find_random_system = {
+				find_closest_system = {
 					trigger = {
 						id = "bwm_grave_roam.1"
 #						NOT = {
@@ -516,11 +524,9 @@ fleet_event = {
 #								is_ship_size = bwm_grave_awakened 
 #							}
 #						}
-						distance = {
-							source = event_target:bwm_grave_temp_loc
-							use_bypasses = no
-							min_jumps = 1
-							max_jumps = 4
+						exists = space_owner
+						space_owner = {
+							is_country_type = default
 						}
 					}
 					found_system = {
@@ -534,23 +540,23 @@ fleet_event = {
 								orbit_planet = this
 								effect = {
 									id = "bwm_grave_roam.3"
-									save_event_target_as = bwm_grave_temp_loc
+									#save_event_target_as = bwm_grave_temp_loc
 									event_target:bwm_grave_roaming = {
 										repair_ship = yes
 									}
-									every_country = {
-										limit = {
-											has_event_chain = bwm_grave_tracker_chain
-										}
-										remove_point_of_interest = bwm_grave_tracker_poi.1
-										create_point_of_interest = {
-											id = bwm_grave_tracker_poi.1
-											name = "bwm_grave_tracker_poi"
-											desc = "bwm_grave_tracker_poi_desc"
-											event_chain = bwm_grave_tracker_chain
-											location = event_target:bwm_grave_temp_loc
-										}
-									}
+									# every_country = {
+										# limit = {
+											# has_event_chain = bwm_grave_tracker_chain
+										# }
+										# remove_point_of_interest = bwm_grave_tracker_poi.1
+										# create_point_of_interest = {
+											# id = bwm_grave_tracker_poi.1
+											# name = "bwm_grave_tracker_poi"
+											# desc = "bwm_grave_tracker_poi_desc"
+											# event_chain = bwm_grave_tracker_chain
+											# location = event_target:bwm_grave_temp_loc
+										# }
+									# }
 								}
 							}
 						}
@@ -599,43 +605,169 @@ fleet_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		this = {
-			save_event_target_as = bwm_gravekeeper_reset
-		}
+		# this = {
+			# save_event_target_as = bwm_gravekeeper_reset
+		# }
+		# clear_fleet_actions = this
+		# queue_actions = {
+			# find_random_system = {
+				# trigger = {
+					# id = bwm_grave_return.1
+					# has_star_flag =	bwm_grave_system
+				# }
+				# found_system = {
+					# find_closest_planet = {
+						# trigger = {
+							# id =  bwm_grave_return.2
+							# is_star = yes
+						# }
+						# found_planet = {
+							# move_to = this
+							# effect = {
+								# id = bwm_grave_return.3
+								# save_event_target_as = bwm_grave_temp_2_loc
+								# event_target:bwm_gravekeeper_reset = {
+									# fleet_event = { id = bwm_gravekeeper.26 }
+								# }
+								# every_country = {
+									# limit = {
+										# has_event_chain = bwm_grave_tracker_chain
+									# }
+									# remove_point_of_interest = bwm_grave_tracker_poi.1
+									# create_point_of_interest = {
+										# id = bwm_grave_tracker_poi.1
+										# name = "bwm_grave_tracker_poi"
+										# desc = "bwm_grave_tracker_poi_desc"
+										# event_chain = bwm_grave_tracker_chain
+										# location = event_target:bwm_grave_temp_2_loc
+									# }
+								# }
+							# }
+						# }
+					# }
+				# }
+			# }
+		# }
+		save_event_target_as = bwm_gravekeeper_reset
 		clear_fleet_actions = this
-		queue_actions = {
-			find_random_system = {
-				trigger = {
-					id = bwm_grave_return.1
-					has_star_flag =	bwm_grave_system
+		if = {
+			limit = {
+				any_system = {
+					has_star_flag = bwm_grave_system
+					distance = {
+						source = event_target:bwm_gravekeeper_reset
+						min_distance > 1
+						max_distance < 151
+					}
 				}
-				found_system = {
-					find_closest_planet = {
-						trigger = {
-							id =  bwm_grave_return.2
-							is_star = yes
+				NOR = { 
+					has_fleet_flag = bwm_grave_jump_cooldown
+					has_fleet_flag = bwm_grave_ftl_cooldown 
+				}
+			}
+			random_system = {
+				limit = {
+					has_star_flag = bwm_grave_system
+				}
+				root = { 
+					set_location = prev
+					fleet_event = { id = bwm_gravekeeper.26 }
+					set_timed_fleet_flag = {
+						flag = bwm_grave_ftl_cooldown
+						days = 200
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOR = { 
+					has_fleet_flag = bwm_grave_jump_cooldown
+					has_fleet_flag = bwm_grave_ftl_cooldown 
+				}
+			}
+			random_system = {
+				limit = {
+					has_star_flag = bwm_grave_system
+				}
+				root = {
+					set_location = prev
+					fleet_event = { id = bwm_gravekeeper.25 days = 1800 }
+					set_timed_fleet_flag = {
+						flag = bwm_grave_ftl_cooldown
+						days = 200
+					}
+					save_event_target_as = bwm_grave_roaming
+					queue_actions = {
+						repeat = {
+							find_closest_system = {
+								trigger = {
+									id = "bwm_grave_roam.4"
+									exists = space_owner
+									space_owner = {
+										is_country_type = default
+									}
+								}
+								found_system = {
+									move_to = this
+									find_closest_planet = {
+										trigger = {
+											id = "bwm_grave_roam.5"
+											is_star = yes
+										}
+										found_planet = {
+											orbit_planet = this
+											effect = {
+												id = "bwm_grave_roam.6"
+												event_target:bwm_grave_roaming = {
+													repair_ship = yes
+												}
+											}
+										}
+									}
+									wait = {
+										duration = 90
+										random = 45
+									}
+								}
+							}
 						}
-						found_planet = {
+					}
+				}
+			}
+		}
+		else = {
+			fleet_event = { id = bwm_gravekeeper.25 days = 1800 }
+			queue_actions = {
+				repeat = {
+					find_closest_system = {
+						trigger = {
+							id = "bwm_grave_roam.7"
+							exists = space_owner
+							space_owner = {
+								is_country_type = default
+							}
+						}
+						found_system = {
 							move_to = this
-							effect = {
-								id = bwm_grave_return.3
-								save_event_target_as = bwm_grave_temp_2_loc
-								event_target:bwm_gravekeeper_reset = {
-									fleet_event = { id = bwm_gravekeeper.26 }
+							find_closest_planet = {
+								trigger = {
+									id = "bwm_grave_roam.8"
+									is_star = yes
 								}
-								every_country = {
-									limit = {
-										has_event_chain = bwm_grave_tracker_chain
-									}
-									remove_point_of_interest = bwm_grave_tracker_poi.1
-									create_point_of_interest = {
-										id = bwm_grave_tracker_poi.1
-										name = "bwm_grave_tracker_poi"
-										desc = "bwm_grave_tracker_poi_desc"
-										event_chain = bwm_grave_tracker_chain
-										location = event_target:bwm_grave_temp_2_loc
+								found_planet = {
+									orbit_planet = this
+									effect = {
+										id = "bwm_grave_roam.9"
+										event_target:bwm_grave_roaming = {
+											repair_ship = yes
+										}
 									}
 								}
+							}
+							wait = {
+								duration = 90
+								random = 45
 							}
 						}
 					}

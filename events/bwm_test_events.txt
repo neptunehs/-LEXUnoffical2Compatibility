@@ -1791,7 +1791,7 @@ fleet_event = {
 #								has_star_flag = bwm_prison_system
 #								has_star_flag = bwm_gate_system
 #							}
-#							any_planet = {
+#							any_system_planet = {
 #								is_colony = yes
 #								is_under_colonization = yes
 #							}

@@ -1975,7 +1975,7 @@ fleet_event = {
 							}
 							AND = {
 								exists = space_owner
-								any_planet = {
+								any_system_planet = {
 									OR = {
 										has_observation_outpost = yes
 										has_mining_station = yes
@@ -2077,7 +2077,7 @@ fleet_event = {
 							}
 							AND = {
 								exists = space_owner
-								any_planet = {
+								any_system_planet = {
 									OR = {
 										has_observation_outpost = yes
 										has_mining_station = yes

@@ -4132,7 +4132,7 @@ bwm_ancestor_vessel_init = {
 								}
 								AND = {
 									exists = space_owner
-									any_planet = {
+									any_system_planet = {
 										OR = { 
 											has_observation_outpost = yes
 											has_mining_station = yes
@@ -4201,7 +4201,7 @@ bwm_ancestor_target = {
 							is_country_type = awakened_fallen_empire
 						}
 					}
-					any_planet = {
+					any_system_planet = {
 						is_capital = yes
 						owner = {
 							is_primitive = no
@@ -4231,7 +4231,7 @@ bwm_ancestor_target = {
 						is_ai = yes
 						is_country_type = default
 					}
-					any_planet = {
+					any_system_planet = {
 						is_capital = yes
 						owner = {
 							is_primitive = no
@@ -4325,7 +4325,7 @@ bwm_ancestor_fanu_1 = {
 								}
 								AND = {
 									exists = space_owner
-									any_planet = {
+									any_system_planet = {
 										OR = {
 											has_observation_outpost = yes
 											has_mining_station = yes
@@ -4436,7 +4436,7 @@ bwm_ancestor_fanu_2 = {
 								}
 								AND = {
 									exists = space_owner
-									any_planet = {
+									any_system_planet = {
 										OR = {
 											has_observation_outpost = yes
 											has_mining_station = yes
@@ -4549,7 +4549,7 @@ bwm_ancestor_fanu_3 = {
 								}
 								AND = {
 									exists = space_owner
-									any_planet = {
+									any_system_planet = {
 										OR = {
 											has_observation_outpost = yes
 											has_mining_station = yes
@@ -4661,7 +4661,7 @@ bwm_ancestor_thesan_1 = {
 								}
 								AND = {
 									exists = space_owner
-									any_planet = {
+									any_system_planet = {
 										OR = {
 											has_observation_outpost = yes
 											has_mining_station = yes
@@ -4773,7 +4773,7 @@ bwm_ancestor_thesan_2 = {
 								}
 								AND = {
 									exists = space_owner
-									any_planet = {
+									any_system_planet = {
 										OR = {
 											has_observation_outpost = yes
 											has_mining_station = yes

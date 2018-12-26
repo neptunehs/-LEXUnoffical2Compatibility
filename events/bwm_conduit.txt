@@ -3640,7 +3640,7 @@ ship_event = {
 					any_system = {
 						AND = {
 							has_star_flag = bwm_garden_system
-							any_planet = {
+							any_system_planet = {
 								has_planet_flag = bwm_conduit_garden
 							}
 						}

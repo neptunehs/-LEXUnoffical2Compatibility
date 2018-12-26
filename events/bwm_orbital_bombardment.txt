@@ -19,6 +19,7 @@ fleet_event = {
 			}
 			NOT = {
 				has_modifier = bwm_bombardment_debuff
+				exists = owner
 				OWNER = {
 					is_same_value = root
 				}

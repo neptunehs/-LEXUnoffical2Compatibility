@@ -1,5 +1,5 @@
-# -LEXUnoffical2Compatibility - 0.04
-An unoffical 2.x compatibility for Stellaris mod LEX - Leviathan Events Xtended.
+# -LEXUnoffical2Compatibility - 0.05
+An unoffical 2.2.x compatibility for Stellaris mod LEX - Leviathan Events Xtended.
 Because some bugs I have no idea to sloved and "LEX temp fix" mod published,this project was abandoned.
 
 Progess：

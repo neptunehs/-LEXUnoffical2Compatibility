@@ -35,4 +35,10 @@
  lex_no_retreat_NO_desc: "We can't afford to lose those ships."
  lex_no_retreat_YES:0 "Yes"
  lex_no_retreat_YES_desc: "Why not let those ships use their maximum fire?" 
+ policy_lex_reject_nsc_policy:0 "LEX - No modifier for NSC enable"
+ policy_lex_reject_nsc_policy_desc:0 ""
+ lex_allow_it:0 "NO"
+ lex_allow_it_desc:0 ""
+ lex_reject_it:0 "YES"
+ lex_reject_it_desc:0 "Any modifier added to LEX stuff in a game with NSC enable will be remove."
  

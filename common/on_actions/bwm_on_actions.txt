@@ -224,7 +224,7 @@ on_daily_bombardment = {
 # Planet has reached 0 health
 # This = Planet
 # From = Bombarder
-on_planet_zero_health = {
+on_planet_bombarded = {
 	events = {
 		bwm_orbital_bombardment.2
 		bwm_ancestor.5

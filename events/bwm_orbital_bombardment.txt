@@ -361,6 +361,7 @@ planet_event = {
 	hide_window = yes
 	
 	trigger = {
+		planet_devastation >= 100
 		NOR = {
 			is_planet_class = pc_infested
 			has_planet_flag = machine_lair

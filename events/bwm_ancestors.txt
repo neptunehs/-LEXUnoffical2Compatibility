@@ -1214,6 +1214,7 @@ planet_event = {
 	hide_window = yes
 	
 	trigger = {
+		planet_devastation >= 100
 		FROM = {
 			is_country_type = bwm_ancestor_guardian
 		}
@@ -1384,6 +1385,7 @@ planet_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		planet_devastation >= 100
 		NOT = {
 			FROM = {
 				is_country_type = bwm_ancestor_guardian

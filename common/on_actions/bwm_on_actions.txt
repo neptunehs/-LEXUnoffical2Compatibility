@@ -204,30 +204,15 @@ on_fleet_enter_orbit = {
 	}
 }
 
-# A planet is being bombarded
-# This = planet under bombardment
-# From = bombarding empire
-#on_monthly_orbital_bombardment = {
-#	events = {
-#		bwm_orbital_bombardment.1
-#	}
-#}
-
-# Root = Planet being bombarded for a day.
-# From = Fleet performing the delicate bombardment.
-on_daily_bombardment = {
-	events = {
-		bwm_orbital_bombardment.4
-	}
-}
-
 # Planet has reached 0 health
 # This = Planet
 # From = Bombarder
 on_planet_bombarded = {
 	events = {
+		bwm_orbital_bombardment.1
 		bwm_orbital_bombardment.2
 		bwm_ancestor.5
 		bwm_ancestor.6
+		bwm_orbital_bombardment.4
 	}
 }	

@@ -127,12 +127,6 @@ bwm_building_ancient_monolith_1 = {
 		planet_jobs_engineering_research_produces_mult = 0.5
 		planet_jobs_society_research_produces_mult = 0.5
 		planet_jobs_physics_research_produces_mult = 0.5
-		planet_buildings_engineering_research_produces_mult = 0.5
-		planet_buildings_society_research_produces_mult = 0.5
-		planet_buildings_physics_research_produces_mult = 0.5
-		planet_deposits_engineering_research_produces_mult = 0.5
-		planet_deposits_society_research_produces_mult = 0.5
-		planet_deposits_physics_research_produces_mult = 0.5
 	}
 }
 
@@ -164,8 +158,6 @@ bwm_building_ancient_monolith_2 = {
 	
 	planet_modifier  = {
 	    planet_jobs_energy_produces_mult = 0.5
-	    planet_buildings_energy_produces_mult = 0.5
-	    planet_deposits_energy_produces_mult = 0.5	
 	}
 		
 	prerequisites = {
@@ -201,8 +193,6 @@ bwm_building_ancient_monolith_3 = {
 	
 	planet_modifier  = {
 	    planet_jobs_minerals_produces_mult = 0.5
-	    planet_buildings_minerals_produces_mult = 0.5
-	    planet_deposits_minerals_produces_mult = 0.5
 	}
 		
 	prerequisites = {
@@ -253,18 +243,35 @@ bwm_building_ancient_factory = {
 		}
 	}
 	
-	planet_modifier = {
-		job_clerk_add = 10
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_nep_crystal_miner_add = 1
+			job_clerk_add = 9
+		}
 	}
-	
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				OR = {
+					is_hive_empire = yes
+					is_machine_empire = yes
+				}
+			}
+		}
+		modifier = {
+			job_nep_crystal_miner_m_add = 1
+			job_maintenance_drone_add = 9
+		}
+	}
+
 	resources = {
 		category = planet_buildings
-		produces = {
-			minerals = 50
-			rare_crystals = 1
-			exotic_gases = 1
-			volatile_motes = 1
-		}
 		upkeep = {
 			energy = 10
 		}
@@ -279,20 +286,69 @@ bwm_building_dark_matter_power_plant = {
 		custom_tooltip = {
 			text = "requires_building_ancient_monolith"
 			planet = {
-					has_building = "bwm_building_ancient_monolith_2"
+				has_building = "bwm_building_ancient_monolith_2"
 			}
 		}
 	}
 	
 	resources = {
 		category = planet_buildings
-		produces = {
-			energy = 125
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_nep_dark_technician_add = 1
+			job_clerk_add = 9
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				OR = {
+					is_hive_empire = yes
+					is_machine_empire = yes
+				}
+			}
+		}
+		modifier = {
+			job_nep_dark_technician_m_add = 1
+			job_maintenance_drone_add = 9
+		}
+	}
+}
+
+bwm_building_affluence_center = {
+    can_build = no
+	icon = "building_hyper_entertainment_forum"
+
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_ancient_monolith"
+			planet = {
+				has_building = "bwm_building_ancient_monolith_2"
+			}
+		}
+		custom_tooltip = {
+			text = "requires_normal_empire"
+			planet = {
+				owner = { is_regular_empire = yes }
+			}
 		}
 	}
 	
+	resources = {
+		category = planet_buildings
+	}
+	
 	planet_modifier = {
-		job_clerk_add = 10
+		job_nep_auto_artisan_add = 9
+		job_clerk_add = 1
 	}
 }
 
@@ -322,9 +378,32 @@ bwm_building_agri_processing_complex = {
 			energy = 10
 		}
 	}
-	
-	planet_modifier = {
-		job_clerk_add = 10
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_nep_auto_farmer_add = 1
+			job_clerk_add = 9
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				OR = {
+					is_hive_empire = yes
+					is_machine_empire = yes
+				}
+			}
+		}
+		modifier = {
+			job_nep_auto_farmer_m_add = 1
+			job_maintenance_drone_add = 9
+		}
 	}
 }
 
@@ -336,7 +415,7 @@ bwm_building_engineering_facility = {
 		custom_tooltip = {
 			text = "requires_building_ancient_monolith"
 			planet = {
-					has_building = "bwm_building_ancient_monolith_1"
+				has_building = "bwm_building_ancient_monolith_1"
 			}
 		}
 	}
@@ -346,19 +425,36 @@ bwm_building_engineering_facility = {
 		cost = {
 			energy = 500
 		}
-		produces = {
-			physics_research = 50
-			society_research = 5
-			engineering_research = 5
-		}
 		upkeep = {
 			energy = 10
 		}
 	}
 	
-	planet_modifier = {
-		job_clerk_add = 5
-		job_nep_e_researcher_add = 5
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_clerk_add = 2
+			job_nep_e_researcher_add = 10
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				OR = {
+					is_hive_empire = yes
+					is_machine_empire = yes
+				}
+			}
+		}
+		modifier = {
+			job_nep_e_researcher_m_add = 10
+			job_maintenance_drone_add = 2
+		}
 	}
 }
 
@@ -371,7 +467,7 @@ bwm_building_biolab = {
 		custom_tooltip = {
 			text = "requires_building_ancient_monolith"
 			planet = {
-					has_building = "bwm_building_ancient_monolith_1"
+				has_building = "bwm_building_ancient_monolith_1"
 			}
 		}
 	}
@@ -381,19 +477,36 @@ bwm_building_biolab = {
 		cost = {
 			energy = 500
 		}
-		produces = {
-			engineering_research = 5
-			physics_research = 5
-			society_research = 50
-		}
 		upkeep = {
 			energy = 10
 		}
 	}
 	
-	planet_modifier = {
-		job_clerk_add = 5
-		job_nep_s_researcher_add = 5
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_clerk_add = 2
+			job_nep_s_researcher_add = 10
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				OR = {
+					is_hive_empire = yes
+					is_machine_empire = yes
+				}
+			}
+		}
+		modifier = {
+			job_nep_s_researcher_m_add = 10
+			job_maintenance_drone_add = 2
+		}
 	}
 }
 
@@ -405,7 +518,7 @@ bwm_building_physics_lab = {
 		custom_tooltip = {
 			text = "requires_building_ancient_monolith"
 			planet = {
-					has_building = "bwm_building_ancient_monolith_1"
+				has_building = "bwm_building_ancient_monolith_1"
 			}
 		}
 	}
@@ -415,19 +528,36 @@ bwm_building_physics_lab = {
 		cost = {
 			energy = 500
 		}
-		produces = {
-			engineering_research = 5
-			physics_research = 50
-			society_research = 5
-		}
 		upkeep = {
 			energy = 10
 		}
 	}
 	
-	planet_modifier = {
-		job_clerk_add = 5
-		job_nep_p_researcher_add = 5
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_clerk_add = 2
+			job_nep_p_researcher_add = 10
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				OR = {
+					is_hive_empire = yes
+					is_machine_empire = yes
+				}
+			}
+		}
+		modifier = {
+			job_nep_p_researcher_m_add = 10
+			job_maintenance_drone_add = 2
+		}
 	}
 }
 
@@ -446,18 +576,41 @@ bwm_building_obelisk_0_1 = {
 		bwm_building_obelisk_1
 	}
 	
-	planet_modifier = { 
-		job_clerk_add = 5
-		job_researcher_add = 5
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_clerk_add = 5
+			job_researcher_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 5
+			job_brain_drone_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 5
+			job_calculator_add = 6
+		}
 	}
 
 	resources = {
 		category = planet_buildings
-		produces = {
-			engineering_research = 15
-			physics_research = 15
-			society_research = 15
-		}
 	}
 }
 
@@ -476,18 +629,41 @@ bwm_building_obelisk_0_2 = {
 		bwm_building_obelisk_2
 	}
 	
-	planet_modifier = { 
-		job_clerk_add = 5
-		job_researcher_add = 5
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_clerk_add = 5
+			job_researcher_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 5
+			job_brain_drone_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 5
+			job_calculator_add = 6
+		}
 	}
 
 	resources = {
 		category = planet_buildings
-		produces = {
-			engineering_research = 15
-			physics_research = 15
-			society_research = 15
-		}
 	}
 }
 
@@ -506,18 +682,41 @@ bwm_building_obelisk_0_3 = {
 		bwm_building_obelisk_3
 	}
 	
-	planet_modifier = { 
-		job_clerk_add = 5
-		job_researcher_add = 5
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_clerk_add = 5
+			job_researcher_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 5
+			job_brain_drone_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 5
+			job_calculator_add = 6
+		}
 	}
 
 	resources = {
 		category = planet_buildings
-		produces = {
-			engineering_research = 15
-			physics_research = 15
-			society_research = 15
-		}
 	}
 }
 
@@ -536,18 +735,41 @@ bwm_building_obelisk_0_4 = {
 		bwm_building_obelisk_4
 	}
 
-	planet_modifier = { 
-		job_clerk_add = 5
-		job_researcher_add = 5
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_clerk_add = 5
+			job_researcher_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 5
+			job_brain_drone_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 5
+			job_calculator_add = 6
+		}
 	}
 	
 	resources = {
 		category = planet_buildings
-		produces = {
-			engineering_research = 15
-			physics_research = 15
-			society_research = 15
-		}
 	}
 }
 
@@ -573,11 +795,6 @@ bwm_building_obelisk_1 = {
 
 	resources = {
 		category = planet_buildings
-		produces = {
-			engineering_research = 15
-			physics_research = 15
-			society_research = 15
-		}
 		cost = {
 			energy = 1000
 			influence = 50
@@ -588,8 +805,39 @@ bwm_building_obelisk_1 = {
 		planet_jobs_engineering_research_produces_mult = 0.25
 		planet_jobs_physics_research_produces_mult = 0.25
 		planet_jobs_society_research_produces_mult = 0.25
-		job_clerk_add = 5
-		job_researcher_add = 5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_clerk_add = 5
+			job_researcher_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 5
+			job_brain_drone_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 5
+			job_calculator_add = 6
+		}
 	}
 }
 
@@ -615,11 +863,6 @@ bwm_building_obelisk_2 = {
 	
 	resources = {
 		category = planet_buildings
-		produces = {
-			engineering_research = 15
-			physics_research = 15
-			society_research = 15
-		}
 		cost = {
 			energy = 2000
 			influence = 100
@@ -630,8 +873,39 @@ bwm_building_obelisk_2 = {
 		planet_jobs_engineering_research_produces_mult = 0.25
 		planet_jobs_physics_research_produces_mult = 0.25
 		planet_jobs_society_research_produces_mult = 0.25
-		job_clerk_add = 5
-		job_researcher_add = 5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_clerk_add = 5
+			job_researcher_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 5
+			job_brain_drone_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 5
+			job_calculator_add = 6
+		}
 	}
 }
 
@@ -657,11 +931,6 @@ bwm_building_obelisk_3 = {
 	
 	resources = {
 		category = planet_buildings
-		produces = {
-			engineering_research = 15
-			physics_research = 15
-			society_research = 15
-		}
 		cost = {
 			energy = 3000
 			influence = 150
@@ -672,8 +941,39 @@ bwm_building_obelisk_3 = {
 		planet_jobs_engineering_research_produces_mult = 0.25
 		planet_jobs_physics_research_produces_mult = 0.25
 		planet_jobs_society_research_produces_mult = 0.25
-		job_clerk_add = 5
-		job_researcher_add = 5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_clerk_add = 5
+			job_researcher_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 5
+			job_brain_drone_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 5
+			job_calculator_add = 6
+		}
 	}
 }
 
@@ -699,11 +999,6 @@ bwm_building_obelisk_4 = {
 	
 	resources = {
 		category = planet_buildings
-		produces = {
-			engineering_research = 15
-			physics_research = 15
-			society_research = 15
-		}
 		cost = {
 			energy = 4000
 			influence = 200
@@ -714,7 +1009,38 @@ bwm_building_obelisk_4 = {
 		planet_jobs_engineering_research_produces_mult = 0.25
 		planet_jobs_physics_research_produces_mult = 0.25
 		planet_jobs_society_research_produces_mult = 0.25
-		job_clerk_add = 5
-		job_researcher_add = 5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_clerk_add = 5
+			job_researcher_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 5
+			job_brain_drone_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 5
+			job_calculator_add = 6
+		}
 	}
 }

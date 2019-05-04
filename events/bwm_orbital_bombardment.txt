@@ -95,265 +95,263 @@ fleet_event = {
 }
 
 # Bombardment buff when precursor ship in system
-#planet_event = {
-#	id = bwm_orbital_bombardment.1
-#	hide_window = yes
-#	is_triggered_only = yes
-#	
-#	trigger = {
-#		NOR = {
-#			is_planet_class = pc_infested
-#			has_planet_flag = machine_lair
-#			has_planet_flag = machine_world_1
-#			has_planet_flag = machine_world_2
-#			has_planet_flag = machine_world_3
-#			has_planet_flag = machine_world_4
-#			has_planet_flag = bwm_ancestor_world
-#		}
-#		FROM = {
-#			any_owned_ship = {
-#				OR = {
-#					is_ship_size = bwm_titan
-#					is_ship_size = bwm_titan_pc
-#					is_ship_size = bwm_grave_awakened_pc
-#					is_ship_size = bwm_grave_awakened_pc_bound
-#					is_ship_size = bwm_conduit_avatar
-#					is_ship_size = bwm_conduit_avatar_bound
-#					is_ship_size = bwm_ancient_weapon
-#				}
-#			}
-#		}
-#		solar_system = {
-#			any_ship_in_system = { 
-#				OR = {
-#					is_ship_size = bwm_titan
-#					is_ship_size = bwm_titan_pc
-#					is_ship_size = bwm_grave_awakened_pc
-#					is_ship_size = bwm_grave_awakened_pc_bound
-#					is_ship_size = bwm_conduit_avatar
-#					is_ship_size = bwm_conduit_avatar_bound
-#					is_ship_size = bwm_ancient_weapon
-#				}
-#				fleet = {
-#					exists = this
-#					owner = {
-#						is_country = FROM
-#					}
-#					orbit = {
-#						is_same_value = root
-#					}
-#				}
-#			}
-#		}
-#	}
-#	
-#	immediate = {
-#		random_list = {
-#			10 = {
-#				if = {
-#					limit = {
-#						has_army = yes
-#						count_pops = {
-#							count > 1
-#						}
-#					}
-#					random_planet_army = {
-#						limit = {
-#							exists = this
-#						}
-#						remove_army = yes  
-#					}
-#				}
-#			}
-#			90 = {
-#			}
-#		}
-#		random_list = {
-#			10 = {
-#				if = {
-#					limit = {
-#						count_pops = {
-#							count > 1
-#							limit = {
-#								is_sapient = yes
-#								owner = { NOT = { is_country_type = "primitive" } }
-#							}
-#						}
-#					}
-#					#FROM = {
-#					#	country_event = { id = action.23 }
-#					#}							
-#					random_pop = {
-#						limit = {
-#							is_sapient = yes
-#							owner = { NOT = { is_country_type = "primitive" } }
-#						}
-#						kill_pop = yes
-#					}
-#				}
-#				else_if = {
-#					limit = {
-#						count_pops = {
-#							count = all
-#							limit = {
-#								OR = {
-#									is_sapient = no
-#									owner = { is_country_type = "primitive" }
-#								}
-#							}
-#						}
-#					}
-#					random_pop = {
-#						kill_pop = yes
-#					}
-#				}
-#			}
-#			90 = {
-#			}
-#		}
-#		random_list = {
-#			10 = {
-#				random_tile = {
-#					limit = {
-#						has_building = yes
-#						is_ruined = no
-#					}
-#					set_ruined = yes
-#				}
-#			}
-#			90 = {
-#			}
-#		}
-#		random_list = {
-#			10 = {
-#				if = {
-#					limit = {
-#						planet = {
-#							OR = {
-#								count_pops = {
-#									count > 1
-#									limit = {
-#										is_sapient = yes
-#										owner = { NOT = { is_country_type = "primitive" } }
-#									}
-#								}
-#								count_pops = {
-#									count = all
-#									limit = {
-#										OR = {
-#											is_sapient = no
-#											owner = { is_country_type = "primitive" }
-#										}
-#									}
-#								}
-#							}
-#						}
-#					}
-#					random_tile = {
-#						limit = {
-#							has_grown_pop = no
-#							has_growing_pop = no 
-#							has_blocker = no
-#							has_building = yes
-#							is_ruined = yes
-#						}
-#						set_blocker = "tb_bombarded_land"
-#					}
-#				}
-#				else = {
-#					random_tile = {
-#						limit = {
-#							has_grown_pop = no
-#							has_growing_pop = no 
-#							has_blocker = no
-#							has_building = yes
-#							is_ruined = yes
-#							OR = {
-#								NOT = { exists = pop }
-#								pop = {
-#									OR = {
-#										is_sapient = no
-#										owner = { is_country_type = "primitive" }
-#									}
-#								}
-#							}
-#						}
-#						set_blocker = "tb_bombarded_land"
-#					}
-#				}
-#			}
-#			90 = {
-#			}
-#		}
-#		random_list = {
-#			10 = {	
-#				if = {
-#					limit = {
-#						planet = {
-#							OR = {
-#								count_pops = {
-#									count > 1
-#									limit = {
-#										is_sapient = yes
-#										owner = { NOT = { is_country_type = "primitive" } }
-#									}
-#								}
-#								count_pops = {
-#									count = all
-#									limit = {
-#										OR = {
-#											is_sapient = no
-#											owner = { is_country_type = "primitive" }
-#										}
-#									}
-#								}
-#							}
-#						}
-#					}
-#					random_tile = {
-#						limit = {
-#							has_grown_pop = no
-#							has_growing_pop = no 
-#							has_blocker = no
-#							has_building = no
-#						}
-#						set_blocker = "tb_bombarded_land"
-#					}
-#					add_threat = {
-#						who = FROM
-#						amount = 1
-#					}
-#				}
-#				else = {
-#					random_tile = {
-#						limit = {
-#							has_grown_pop = no
-#							has_growing_pop = no 
-#							has_blocker = no
-#							has_building = no
-#							OR = {
-#								NOT = { exists = pop }
-#								pop = {
-#									OR = {
-#										is_sapient = no
-#										owner = { is_country_type = "primitive" }
-#									}
-#								}
-#							}
-#						}
-#						set_blocker = "tb_bombarded_land"
-#					}
-#					add_threat = {
-#						who = FROM
-#						amount = 1
-#					}
-#				}
-#			}
-#			90 = {
-#			}
-#		}
-#	}
-#}
+planet_event = {
+	id = bwm_orbital_bombardment.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		NOR = {
+			is_planet_class = pc_infested
+			has_planet_flag = machine_lair
+			has_planet_flag = machine_world_1
+			has_planet_flag = machine_world_2
+			has_planet_flag = machine_world_3
+			has_planet_flag = machine_world_4
+			has_planet_flag = bwm_ancestor_world
+		}
+		solar_system = {
+			any_ship_in_system = {
+				OR = {
+					is_ship_size = bwm_titan
+					is_ship_size = bwm_titan_pc
+					is_ship_size = bwm_grave_awakened_pc
+					is_ship_size = bwm_grave_awakened_pc_bound
+					is_ship_size = bwm_conduit_avatar
+					is_ship_size = bwm_conduit_avatar_bound
+					is_ship_size = bwm_ancient_weapon
+				}
+				fleet = {
+					exists = this
+					owner = {
+						is_country = FROM
+					}
+					orbit = {
+						is_same_value = root
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		add_planet_devastation = 0.5
+		random_list = {
+			1 = {
+				if = {
+					limit = {
+						has_army = yes
+						count_pops = {
+							count > 1
+						}
+					}
+					random_planet_army = {
+						limit = {
+							exists = this
+						}
+						remove_army = yes  
+					}
+				}
+			}
+			269 = {
+			}
+		}
+		random_list = {
+			1 = {
+				if = {
+					limit = {
+						count_pops = {
+							count > 1
+							limit = {
+								is_sapient = yes
+								owner = { NOT = { is_country_type = "primitive" } }
+							}
+						}
+					}
+					#FROM = {
+					#	country_event = { id = action.23 }
+					#}							
+					random_pop = {
+						limit = {
+							is_sapient = yes
+							owner = { NOT = { is_country_type = "primitive" } }
+						}
+						kill_pop = yes
+					}
+				}
+				else_if = {
+					limit = {
+						count_pops = {
+							count = all
+							limit = {
+								OR = {
+									is_sapient = no
+									owner = { is_country_type = "primitive" }
+								}
+							}
+						}
+					}
+					random_pop = {
+						kill_pop = yes
+					}
+				}
+			}
+			269 = {
+			}
+		}
+		random_list = {
+			1 = {
+				add_deposit = "d_bomb_crater"
+				add_threat = {
+					who = FROM
+					amount = 1
+				}
+			}
+			269 = { }
+		}
+		# random_list = {
+			# 1 = {
+				# random_tile = {
+					# limit = {
+						# has_building = yes
+						# is_ruined = no
+					# }
+					# set_ruined = yes
+				# }
+			# }
+			# 269 = {
+			# }
+		# }
+		# random_list = {
+			# 1 = {
+				# if = {
+					# limit = {
+						# planet = {
+							# OR = {
+								# count_pops = {
+									# count > 1
+									# limit = {
+										# is_sapient = yes
+										# owner = { NOT = { is_country_type = "primitive" } }
+									# }
+								# }
+								# count_pops = {
+									# count = all
+									# limit = {
+										# OR = {
+											# is_sapient = no
+											# owner = { is_country_type = "primitive" }
+										# }
+									# }
+								# }
+							# }
+						# }
+					# }
+					# random_tile = {
+						# limit = {
+							# has_grown_pop = no
+							# has_growing_pop = no 
+							# has_blocker = no
+							# has_building = yes
+							# is_ruined = yes
+						# }
+						# set_blocker = "tb_bombarded_land"
+					# }
+				# }
+				# else = {
+					# random_tile = {
+						# limit = {
+							# has_grown_pop = no
+							# has_growing_pop = no 
+							# has_blocker = no
+							# has_building = yes
+							# is_ruined = yes
+							# OR = {
+								# NOT = { exists = pop }
+								# pop = {
+									# OR = {
+										# is_sapient = no
+										# owner = { is_country_type = "primitive" }
+									# }
+								# }
+							# }
+						# }
+						# set_blocker = "tb_bombarded_land"
+					# }
+				# }
+			# }
+			# 269 = {
+			# }
+		# }
+		# random_list = {
+			# 10 = {	
+				# if = {
+					# limit = {
+						# planet = {
+							# OR = {
+								# count_pops = {
+									# count > 1
+									# limit = {
+										# is_sapient = yes
+										# owner = { NOT = { is_country_type = "primitive" } }
+									# }
+								# }
+								# count_pops = {
+									# count = all
+									# limit = {
+										# OR = {
+											# is_sapient = no
+											# owner = { is_country_type = "primitive" }
+										# }
+									# }
+								# }
+							# }
+						# }
+					# }
+					# random_tile = {
+						# limit = {
+							# has_grown_pop = no
+							# has_growing_pop = no 
+							# has_blocker = no
+							# has_building = no
+						# }
+						# set_blocker = "tb_bombarded_land"
+					# }
+					# add_threat = {
+						# who = FROM
+						# amount = 1
+					# }
+				# }
+				# else = {
+					# random_tile = {
+						# limit = {
+							# has_grown_pop = no
+							# has_growing_pop = no 
+							# has_blocker = no
+							# has_building = no
+							# OR = {
+								# NOT = { exists = pop }
+								# pop = {
+									# OR = {
+										# is_sapient = no
+										# owner = { is_country_type = "primitive" }
+									# }
+								# }
+							# }
+						# }
+						# set_blocker = "tb_bombarded_land"
+					# }
+					# add_threat = {
+						# who = FROM
+						# amount = 1
+					# }
+				# }
+			# }
+			# 90 = {
+			# }
+		# }
+	}
+}
 
 # Planetkiller init
 planet_event = {
@@ -403,7 +401,7 @@ planet_event = {
 				fleet = {
 					exists = this
 					owner = {
-						is_country = FROM
+						is_country = root.FROM
 					}
 					orbit = {
 						is_same_value = root
@@ -612,7 +610,7 @@ planet_event = {
 				fleet = {
 					exists = this
 					owner = {
-						is_country = from.owner
+						is_country = root.from
 					}
 					orbit = {
 						is_same_value = root

@@ -144,6 +144,7 @@ bwm_conduit_converter_00 = {
 		}
 		fromfrom.planet = {
 			set_planet_flag = has_megastructure
+			trigger_megastructure_icon = yes
 		}
 	}
 }
@@ -189,6 +190,9 @@ bwm_conduit_converter_01 = {
 	}
 	
 	on_build_complete = {
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
+		}
 		if = {
 			limit = {
 				fromfrom.planet = {
@@ -429,6 +433,11 @@ bwm_conduit_converter_02 = {
 			}
 		}
 	}
+	on_build_complete = {
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
+		}
+	}
 }
 
 bwm_conduit_converter_03 = {
@@ -468,6 +477,11 @@ bwm_conduit_converter_03 = {
 				has_ascension_perk = ap_galactic_wonders_megacorp
 				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
+		}
+	}
+	on_build_complete = {
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
 		}
 	}
 }
@@ -511,6 +525,11 @@ bwm_conduit_converter_04 = {
 			}
 		}
 	}
+	on_build_complete = {
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
+		}
+	}
 }
 
 bwm_conduit_converter_05 = {
@@ -550,6 +569,11 @@ bwm_conduit_converter_05 = {
 				has_ascension_perk = ap_galactic_wonders_megacorp
 				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
+		}
+	}
+	on_build_complete = {
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
 		}
 	}
 }
@@ -593,6 +617,11 @@ bwm_conduit_converter_06 = {
 			}
 		}
 	}
+	on_build_complete = {
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
+		}
+	}
 }
 
 bwm_conduit_converter_07 = {
@@ -634,6 +663,11 @@ bwm_conduit_converter_07 = {
 			}
 		}
 	}
+	on_build_complete = {
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
+		}
+	}
 }
 
 bwm_conduit_converter_08 = {
@@ -673,6 +707,9 @@ bwm_conduit_converter_08 = {
 	}
 	
 	on_build_complete = {
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
+		}
 		fromfrom.solar_system = {
 			random_system_planet = {
 				limit = {

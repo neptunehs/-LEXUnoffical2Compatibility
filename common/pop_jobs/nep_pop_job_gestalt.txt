@@ -1,0 +1,215 @@
+nep_e_researcher_m = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_bwm_lex_ring_engineering_facility
+	#clothes_texture_index = 3
+	icon = researcher
+
+	possible = {
+		drone_job_check_trigger = yes
+	}
+	
+	resources = {
+		category = planet_researchers
+		produces = {
+			physics_research = 1
+			engineering_research = 10
+			society_research = 1
+		}
+		produces = {
+			trigger = { 
+				owner = { has_valid_civic = civic_technocracy }
+			}
+			unity = 1
+		}
+		upkeep = {
+			energy = 3
+		}		
+	}
+	
+	weight = {
+		weight = @synapse_drone_job_weight
+		modifier = {
+			factor = 0.9
+			exists = owner
+			years_passed < 1
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}	
+	}
+}
+
+nep_s_researcher_m = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_bwm_lex_ring_biolab
+	#clothes_texture_index = 3
+	icon = researcher
+
+	possible = {
+		drone_job_check_trigger = yes
+	}
+	
+	resources = {
+		category = planet_researchers
+		produces = {
+			physics_research = 1
+			engineering_research = 1
+			society_research = 6
+		}
+		produces = {
+			trigger = { 
+				owner = { has_valid_civic = civic_technocracy }
+			}
+			unity = 1
+		}
+		upkeep = {
+			energy = 3
+		}		
+	}
+	
+	weight = {
+		weight = @synapse_drone_job_weight
+		modifier = {
+			factor = 0.9
+			exists = owner
+			years_passed < 1
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}	
+	}
+}
+
+nep_p_researcher_m = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_bwm_lex_ring_physics_lab
+	#clothes_texture_index = 3
+	icon = researcher
+
+	possible = {
+		drone_job_check_trigger = yes
+	}
+	
+	resources = {
+		category = planet_researchers
+		produces = {
+			physics_research = 1
+			engineering_research = 6
+			society_research = 1
+		}
+		produces = {
+			trigger = { 
+				owner = { has_valid_civic = civic_technocracy }
+			}
+			unity = 1
+		}
+		upkeep = {
+			energy = 1
+		}		
+	}
+	
+	weight = {
+		weight = @synapse_drone_job_weight
+		modifier = {
+			factor = 0.9
+			exists = owner
+			years_passed < 1
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}	
+	}
+}
+
+nep_auto_farmer_m = {
+	category = simple_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_agri_processing_complex
+	#clothes_texture_index = 2
+	icon = farmer
+	
+	possible = {
+		drone_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_farmers
+		produces = {
+			food = 50
+		}
+	}	
+	
+	weight = {
+		weight = @synapse_drone_job_weight
+		modifier = {
+			factor = 0.9
+			exists = owner
+			years_passed < 1
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}	
+	}
+}
+
+nep_dark_technician_m = {
+	category = simple_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = bwm_building_dark_matter_power_plant
+	#clothes_texture_index = 2
+	icon = technician_drone
+	
+	possible = {
+		drone_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_technician
+		produces = {
+			energy = 75
+		}
+	}	
+
+	weight = {
+		weight = @synapse_drone_job_weight
+		modifier = {
+			factor = 0.9
+			exists = owner
+			years_passed < 1
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}	
+	}
+}
+
+nep_crystal_miner_m = {	
+	category = simple_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_ancient_factory
+	#clothes_texture_index = 2
+	icon = crystal_mining_drone
+	
+	possible = {
+		drone_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_miners
+		produces = {
+			minerals = 50
+			rare_crystals = 1
+			exotic_gases = 1
+			volatile_motes = 1
+		}
+	}	
+	
+	weight = {
+		weight = @synapse_drone_job_weight
+		modifier = {
+			factor = 0.9
+			exists = owner
+			years_passed < 1
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}	
+	}
+}

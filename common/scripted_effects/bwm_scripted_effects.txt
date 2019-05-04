@@ -448,6 +448,244 @@ bwm_megastructure_swap = {
 			}
 			remove_megastructure = this
 		}
+		if = {
+			limit = {
+				is_megastructure_type = matter_decompressor_0
+			}
+			prev = {
+				if = {
+					limit = {
+						has_star_flag = matter_decompressor_built
+					}
+					remove_star_flag = matter_decompressor_built
+				}
+			}
+			this.planet = {
+				if = {
+					limit = {
+						has_planet_flag = has_megastructure
+					}
+					remove_planet_flag = has_megastructure
+				}
+			}
+			remove_megastructure = this
+		}
+		if = {
+			limit = {
+				OR = {
+					is_megastructure_type = matter_decompressor_4
+					is_megastructure_type = matter_decompressor_restored
+				}
+			}
+			this.planet = {
+				if = {
+					limit = {
+						has_planet_flag = has_megastructure
+					}
+					remove_planet_flag = has_megastructure
+				}
+				save_event_target_as = bwm_megastructure_matter_loc
+			}
+			prev = {
+				spawn_megastructure = { 
+					type = "matter_decompressor_ruined" 
+					location = event_target:bwm_megastructure_matter_loc
+				}
+			}
+			remove_megastructure = this
+		}
+		if = {
+			limit = {
+				is_megastructure_type = strategic_coordination_center_0
+			}
+			prev = {
+				if = {
+					limit = {
+						has_star_flag = strategic_coordination_center_built
+					}
+					remove_star_flag = strategic_coordination_center_built
+				}
+			}
+			this.planet = {
+				if = {
+					limit = {
+						has_planet_flag = has_megastructure
+					}
+					remove_planet_flag = has_megastructure
+				}
+			}
+			remove_megastructure = this
+		}
+		if = {
+			limit = {
+				OR = {
+					is_megastructure_type = strategic_coordination_center_3
+					is_megastructure_type = strategic_coordination_center_restored
+				}
+			}
+			this.planet = {
+				if = {
+					limit = {
+						has_planet_flag = has_megastructure
+					}
+					remove_planet_flag = has_megastructure
+				}
+				save_event_target_as = bwm_megastructure_center_loc
+			}
+			prev = {
+				spawn_megastructure = { 
+					type = "strategic_coordination_center_ruined" 
+					location = event_target:bwm_megastructure_center_loc
+				}
+			}
+			remove_megastructure = this
+		}
+		if = {
+			limit = {
+				is_megastructure_type = mega_art_installation_0
+			}
+			prev = {
+				if = {
+					limit = {
+						has_star_flag = mega_art_installation_built
+					}
+					remove_star_flag = mega_art_installation_built
+				}
+			}
+			this.planet = {
+				if = {
+					limit = {
+						has_planet_flag = has_megastructure
+					}
+					remove_planet_flag = has_megastructure
+				}
+			}
+			remove_megastructure = this
+		}
+		if = {
+			limit = {
+				OR = {
+					is_megastructure_type = mega_art_installation_3
+					is_megastructure_type = mega_art_installation_restored
+				}
+			}
+			this.planet = {
+				if = {
+					limit = {
+						has_planet_flag = has_megastructure
+					}
+					remove_planet_flag = has_megastructure
+				}
+				save_event_target_as = bwm_megastructure_art_loc
+			}
+			prev = {
+				spawn_megastructure = { 
+					type = "mega_art_installation_ruined" 
+					location = event_target:bwm_megastructure_art_loc
+				}
+			}
+			remove_megastructure = this
+		}
+		if = {
+			limit = {
+				is_megastructure_type = interstellar_assembly_0
+			}
+			prev = {
+				if = {
+					limit = {
+						has_star_flag = mega_art_installation_built
+					}
+					remove_star_flag = mega_art_installation_built
+				}
+			}
+			this.planet = {
+				if = {
+					limit = {
+						has_planet_flag = has_megastructure
+					}
+					remove_planet_flag = has_megastructure
+				}
+			}
+			remove_megastructure = this
+		}
+		if = {
+			limit = {
+				OR = {
+					is_megastructure_type = interstellar_assembly_4
+					is_megastructure_type = interstellar_assembly_restored
+				}
+			}
+			this.planet = {
+				if = {
+					limit = {
+						has_planet_flag = has_megastructure
+					}
+					remove_planet_flag = has_megastructure
+				}
+				save_event_target_as = bwm_megastructure_interstellar_loc
+			}
+			prev = {
+				spawn_megastructure = { 
+					type = "interstellar_assembly_ruined"
+					location = event_target:bwm_megastructure_interstellar_loc
+				}
+			}
+			remove_megastructure = this
+		}
+	}
+	every_system_megastructure = {
+		limit = {
+			NOR = {
+				is_megastructure_type = ring_world_1
+				is_megastructure_type = ring_world_2
+				is_megastructure_type = ring_world_2_intermediate
+				is_megastructure_type = ring_world_3_intermediate
+				is_megastructure_type = ring_world_ruined
+				is_megastructure_type = ring_world_restored
+				is_megastructure_type = dyson_sphere_1
+				is_megastructure_type = dyson_sphere_2
+				is_megastructure_type = dyson_sphere_3
+				is_megastructure_type = dyson_sphere_4
+				is_megastructure_type = dyson_sphere_5
+				is_megastructure_type = dyson_sphere_ruined
+				is_megastructure_type = spy_orb_1
+				is_megastructure_type = spy_orb_2
+				is_megastructure_type = spy_orb_3
+				is_megastructure_type = spy_orb_4
+				is_megastructure_type = spy_orb_ruined
+				is_megastructure_type = think_tank_1
+				is_megastructure_type = think_tank_2
+				is_megastructure_type = think_tank_3
+				is_megastructure_type = think_tank_4
+				is_megastructure_type = think_tank_ruined
+				is_megastructure_type = gateway_0
+				is_megastructure_type = gateway_final
+				is_megastructure_type = gateway_ruined
+				is_megastructure_type = gateway_restored
+				is_megastructure_type = matter_decompressor_1
+				is_megastructure_type = matter_decompressor_2
+				is_megastructure_type = matter_decompressor_3
+				is_megastructure_type = matter_decompressor_4
+				is_megastructure_type = matter_decompressor_ruined
+				is_megastructure_type = strategic_coordination_center_1
+				is_megastructure_type = strategic_coordination_center_2
+				is_megastructure_type = strategic_coordination_center_3
+				is_megastructure_type = strategic_coordination_center_ruined
+				is_megastructure_type = mega_art_installation_1
+				is_megastructure_type = mega_art_installation_2
+				is_megastructure_type = mega_art_installation_3
+				is_megastructure_type = mega_art_installation_ruined
+				is_megastructure_type = interstellar_assembly_1
+				is_megastructure_type = interstellar_assembly_2
+				is_megastructure_type = interstellar_assembly_3
+				is_megastructure_type = interstellar_assembly_4
+				is_megastructure_type = interstellar_assembly_ruined
+				is_megastructure_type = lgate_base
+				is_megastructure_type = nep_sealgate_ruined
+				is_megastructure_type = nep_sealgate_restored
+			}
+		}
+		remove_megastructure = this
 	}
 }
 
@@ -456,6 +694,15 @@ bwm_megastructure_erase = {
 		if = {
 			limit = {
 				exists = this
+				NOR = {
+					is_megastructure_type = lgate_base
+					is_megastructure_type = gateway_0
+					is_megastructure_type = gateway_final
+					is_megastructure_type = gateway_ruined
+					is_megastructure_type = gateway_restored
+					is_megastructure_type = nep_sealgate_ruined
+					is_megastructure_type = nep_sealgate_restored
+				}
 			}
 			remove_megastructure = this
 		}

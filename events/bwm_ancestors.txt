@@ -4069,7 +4069,7 @@ country_event = {
 				}
 				declare_war = {
 					target = event_target:bwm_ancestor_sealing_war_target
-					name = "War of Sealing"
+					name = "Punishment War"
 					attacker_war_goal = "wg_nep_lex_sealing_war"
 				}
 				event_target:bwm_ancestor_sealing_war_target = {

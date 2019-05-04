@@ -130,6 +130,7 @@ bwm_conduit_shipyard_00 = {
 		}
 		fromfrom.planet = {
 			set_planet_flag = has_megastructure
+			trigger_megastructure_icon = yes
 		}
 	}
 }
@@ -173,6 +174,11 @@ bwm_conduit_shipyard_01 = {
 			}
 		}
 	}
+	on_build_complete = {
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
+		}
+	}
 }
 
 bwm_conduit_shipyard_02 = {
@@ -212,6 +218,11 @@ bwm_conduit_shipyard_02 = {
 				has_ascension_perk = ap_galactic_wonders_megacorp
 				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
+		}
+	}
+	on_build_complete = {
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
 		}
 	}
 }
@@ -255,6 +266,11 @@ bwm_conduit_shipyard_03 = {
 			}
 		}
 	}
+	on_build_complete = {
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
+		}
+	}
 }
 
 bwm_conduit_shipyard_04 = {
@@ -294,6 +310,11 @@ bwm_conduit_shipyard_04 = {
 				has_ascension_perk = ap_galactic_wonders_megacorp
 				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
+		}
+	}
+	on_build_complete = {
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
 		}
 	}
 }
@@ -337,6 +358,11 @@ bwm_conduit_shipyard_05 = {
 			}
 		}
 	}
+	on_build_complete = {
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
+		}
+	}
 }
 
 bwm_conduit_shipyard_06 = {
@@ -376,6 +402,11 @@ bwm_conduit_shipyard_06 = {
 				has_ascension_perk = ap_galactic_wonders_megacorp
 				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
+		}
+	}
+	on_build_complete = {
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
 		}
 	}
 }
@@ -419,6 +450,11 @@ bwm_conduit_shipyard_07 = {
 			}
 		}
 	}
+	on_build_complete = {
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
+		}
+	}
 }
 
 bwm_conduit_shipyard_08 = {
@@ -458,6 +494,11 @@ bwm_conduit_shipyard_08 = {
 				has_ascension_perk = ap_galactic_wonders_megacorp
 				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp	
 			}
+		}
+	}
+	on_build_complete = {
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
 		}
 	}
 }
@@ -555,6 +596,7 @@ bwm_conduit_shipyard_09 = {
 		}
 		fromfrom.planet = {
 			set_planet_flag = bwm_conduit_shipyard_star
+			trigger_megastructure_icon = yes
 		}
 		from = {
 			if = {
@@ -695,6 +737,9 @@ bwm_conduit_corvette_00 = {
 				}
 			}
 		}
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
+		}
 		remove_megastructure = fromfrom
 	}
 }
@@ -826,6 +871,9 @@ bwm_conduit_destroyer_00 = {
 				}
 				set_formation_scale = 2.0
 			}
+		}
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
 		}
 		remove_megastructure = fromfrom
 	}
@@ -959,6 +1007,9 @@ bwm_conduit_cruiser_00 = {
 				set_formation_scale = 3.0
 			}
 		}
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
+		}
 		remove_megastructure = fromfrom
 	}
 }
@@ -1089,6 +1140,9 @@ bwm_conduit_battleship_00 = {
 					angle = random
 				}
 			}
+		}
+		fromfrom.planet = {
+			trigger_megastructure_icon = yes
 		}
 		remove_megastructure = fromfrom
 	}

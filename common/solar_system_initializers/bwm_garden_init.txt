@@ -160,7 +160,8 @@ bwm_garden = {
 				create_fleet = {
 					name = "Pilgrims"
 					settings = {
-						spawn_debris = no 
+						spawn_debris = no
+						garrison = yes
 					}
 					effect = {
 						set_owner = event_target:amoeba_country
@@ -190,6 +191,7 @@ bwm_garden = {
 					name = "Pilgrims"
 					settings = {
 						spawn_debris = no 
+						garrison = yes
 					}
 					effect = {
 						set_owner = event_target:amoeba_country
@@ -219,6 +221,7 @@ bwm_garden = {
 					name = "Pilgrims"
 					settings = {
 						spawn_debris = no 
+						garrison = yes
 					}
 					effect = {
 						set_owner = event_target:amoeba_country
